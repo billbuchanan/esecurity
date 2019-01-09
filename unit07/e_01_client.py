@@ -1,7 +1,7 @@
 import socket, ssl
 
 
-HOST, PORT = '10.10.10.10', 443
+HOST, PORT = '10.214.0.96', 443
 
 def handle(conn):
     conn.write(b'GET / HTTP/1.1\n')
