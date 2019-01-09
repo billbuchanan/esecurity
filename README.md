@@ -1,6 +1,10 @@
 # e-Security Module
 
-This is the code and labs for e-Security. Open up your Ubuntu instance, and downloaded from:
+The main module page is at:
+
+https://asecuritysite.com/esecurity
+
+This repository contains the code and labs for the module. Open up your Ubuntu instance, and downloaded from:
 
 git clone https://github.com/billbuchanan/esecurity
 
