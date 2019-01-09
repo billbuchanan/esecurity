@@ -63,7 +63,7 @@ with open('sites.csv') as csvfile:
 	for row in reader:
 
 		url = row['site'].strip()
-
+		print "Scanning (might take a few minutes): "+url
 		a = newScan(url)
 		with open("out3.txt", "a") as myfile:
     			myfile.write(str(row['web'])+"\n"+str(a)+"\n\n\n")
