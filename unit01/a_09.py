@@ -1,3 +1,3 @@
 import base64
-str=”crypto”
+str="crypto"
 print base64.b64encode(val)
