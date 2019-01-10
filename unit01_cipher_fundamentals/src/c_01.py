@@ -4,4 +4,3 @@ p = raw_input('Enter prime ')
 
 cipher = (int(message) ** int(e)) % int(p)
 print cipher
-
