@@ -1,3 +1,5 @@
+# Bit shift
+# https://asecuritysite.com/comms/shift
 import sys
 
 val1="00110101"
