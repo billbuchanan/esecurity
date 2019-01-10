@@ -1,3 +1,4 @@
+# 
 import sys
 
 test=1000
@@ -16,4 +17,5 @@ def sieve_for_primes_to(n):
             sieve[i+val::val] = [0]*tmp
     return [2] + [i*2+1 for i, v in enumerate(sieve) if v and i>0]
  
+
 print sieve_for_primes_to(test)

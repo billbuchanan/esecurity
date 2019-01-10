@@ -8,4 +8,3 @@ def gcd(a, b):
 
 g = gcd(54,8)
 print g
-

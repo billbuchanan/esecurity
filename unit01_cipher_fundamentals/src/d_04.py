@@ -1,3 +1,5 @@
+# http://asecuritysite.com/encryption/rabin
+
 import random
 import sys
  
