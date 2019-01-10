@@ -1,1 +1,1 @@
-openssl prime –hex 1111
+openssl prime -hex 1111
