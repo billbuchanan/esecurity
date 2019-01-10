@@ -1,4 +1,4 @@
-# e-Security Unit 2: Symmetric Key
+# Unit 2: Symmetric Key
 
 This is Unit 2 and the content is here:
 
