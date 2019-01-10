@@ -1,3 +1,6 @@
+# https://asecuritysite.com/encryption/bit
+# Bitcoin details
+
 import httplib2
 
 resp, content = httplib2.Http().request("https://blockchain.info/q/latesthash")
