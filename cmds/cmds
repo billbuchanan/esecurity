@@ -1,3 +1,9 @@
+Commands used to build Ubuntu instance. There are lots of other commands in here, but if you need to build your own instances, the main installs show be here:
+
+1. Node.js
+2. Hashcat
+3. Python libs
+
     1  cd Desktop/vmware-tools-distrib/
     2  sudo ./vmware-install.pl -d
     3  cd //
@@ -432,6 +438,9 @@
   432  sudo apt -f install intel-opencl
   433  cd ..
   434  cd
+
+### Building hashcat
+
   435  mkdir neo
   436  cd neo
   437  wget https://github.com/intel/compute-runtime/releases/download/18.52.12090/intel-gmmlib_18.4.0.348_amd64.deb
