@@ -1,15 +1,6 @@
-# e-Security Module
+# e-Security Unit 2: Symmetric Key
 
-The main module page is at:
+This is Unit 2 and the content is here:
 
-https://asecuritysite.com/esecurity
-
-This repository contains the code and labs for the module. Open up your Ubuntu instance, and downloaded from:
-
-git clone https://github.com/billbuchanan/esecurity
-
-If you need to update the code, go into the esecurity folder, and run:
-
-git pull
-
+https://asecuritysite.com/csn11117/unit02
 
