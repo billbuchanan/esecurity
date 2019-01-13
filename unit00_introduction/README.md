@@ -16,3 +16,7 @@ The units involved in the module are:
 * Cryptocurrencies and Blockchain. Outline of cryptocurrencies, Bitcoins, Ethereum and more.
 * Future Cryptography. Future cryptography.
 * Host security.
+
+
+https://img.youtube.com/vi/{zqmjUpJNcJA}/0.jpg
+
