@@ -18,5 +18,5 @@ The units involved in the module are:
 * Host security.
 
 
-https://img.youtube.com/vi/{zqmjUpJNcJA}/0.jpg
+[![Audi R8](http://img.youtube.com/vi/zqmjUpJNcJA/0.jpg)](https://www.youtube.com/watch?v=zqmjUpJNcJA "Audi R8")
 
