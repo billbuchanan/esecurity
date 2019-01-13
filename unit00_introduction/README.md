@@ -6,11 +6,12 @@ https://asecuritysite.com/esecurity
 
 The units involved in the module are:
 
-* Ciphers and Fundamentals. 
-* Symmetric (Secret) Key. 
-* Asymmetric (Public) Key. Public key: RSA, Elliptic Curve and ElGamal.
-* Key Exchange. Key exchange.
-* Trust and Digital Certificates. Trust and Digital Certificates
+* Ciphers and Fundamentals.  
+* Symmetric (Secret) Key. AES, ChaCha20.
+* Hashing and MAC. MD5, SHA-1, SHA-256.
+* Asymmetric (Public) Key.RSA and Elliptic Curve.
+* Key Exchange. 
+* Trust and Digital Certificates. 
 * Tunnelling. Tunnelling, including SSL.
 * Cryptocurrencies and Blockchain. Outline of cryptocurrencies, Bitcoins, Ethereum and more.
 * Future Cryptography. Future cryptography.
