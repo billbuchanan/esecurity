@@ -1,4 +1,4 @@
-== Unit 0: Introduction ==
+# Unit 0: Introduction
 
 This is an introduction to the module and the main site is here:
 
@@ -16,9 +16,3 @@ The units involved in the module are:
 * Cryptocurrencies and Blockchain. Outline of cryptocurrencies, Bitcoins, Ethereum and more.
 * Future Cryptography. Future cryptography.
 * Host security.
-
-
-
-
-
-
