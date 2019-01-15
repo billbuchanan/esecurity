@@ -21,3 +21,7 @@ An introduction is here:
 
 https://youtu.be/z9DaFxDuxxA
 
+If you need a demo of the Ubtuntu setup you can view here:
+
+https://youtu.be/tIQYpjaELcA
+
