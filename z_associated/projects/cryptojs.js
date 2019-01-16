@@ -12,6 +12,13 @@ var AES = require("crypto-js/aes");
 
 var CryptoJS = require("crypto-js");
 
+var args = process.argv;
+if (args.length>1) message=args[2];
+if (args.length>2) password=args[3];
+
+console.log("Message: ",message);
+console.log("Password: ",password);
+
 console.log("\n--- Hashes");
 console.log("MD5: ",MD5(message).toString());
 console.log("SHA-256: ",SHA256(message).toString());
@@ -81,6 +88,3 @@ console.log("HMAC: ",CryptoJS.HmacSHA1(message, password).toString());
 //     crypto-js/mode-ctr-gladman
 //     crypto-js/mode-ofb
 //     crypto-js/mode-ecb
-
-
-
