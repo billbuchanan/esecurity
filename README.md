@@ -1,4 +1,4 @@
-# e-Security Module
+# e-Security Module --
 
 The main module page is at:
 
@@ -11,5 +11,6 @@ git clone https://github.com/billbuchanan/esecurity
 If you need to update the code, go into the esecurity folder, and run:
 
 git pull
+
 
 
