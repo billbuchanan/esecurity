@@ -8,7 +8,8 @@ The key concepts involved are defining key entropy; key generators (such as usin
 * How salting is used to change the cipher blocks.
 * Use openssl to perform practical operations.
 * Understand the encoding formats used for cipher text and keys.
-*Define the importance difference between cipher block modes, such as between ECB and CBC.
+* Understand how key entropy can be applied to defining the strength of the encryption key.
+* Define the importance difference between cipher block modes, such as between ECB and CBC.
 
 The main content is here:
 
