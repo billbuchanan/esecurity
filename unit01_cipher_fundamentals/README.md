@@ -2,7 +2,7 @@
 
 The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Prime Numbers. GCD Large numbers. Random Number Generator . Data Integrity (CRC-32). Frequency Analysis. Key-based encryption. Key sizes. We will crack some ciphers, in order to get you into the way of solving puzzles.
 
-##What you should know at the end of unit?
+## What you should know at the end of unit?
 
 * Understand the conversion of characters between hex, decimal and octal. Sample question: Convert "hello" into a hex stream. Related material: [here]. Why are we studying this? Encrypted content is converted into a range of different formats, so we need to understand the process of taking plain text and then converting it into other encoding formats. Encryption keys, ciphertext and digital certificates are examples of binary content which must be represented in a text format.
 * Compute the GCD for values. Sample question: What is the GCD for 42 and 56? Related material: [here]. Why are we studying this? GCD is a fundamental building block used in public key encryption, where we must find two numbers who do not share a common divisor. When we look at public key encryption we will see how GCD is used.
