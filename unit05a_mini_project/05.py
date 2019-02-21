@@ -3,31 +3,22 @@ from Crypto.Cipher import AES
 import hashlib
 import sys
 import binascii
+import base64
 import Padding
 
-val='Hello'
-password='qwerty'
+plaintext='Hello'
+key='qwerty'
 salt='241fa86763b85341'
 
-print key
-plaintext=val
+if (len(sys.argv)>1):
+        plaintext=str(sys.argv[1])
+if (len(sys.argv)>2):
+        key=str(sys.argv[2])
+if (len(sys.argv)>3):
+        salt=str(sys.argv[3])
 
 def get_key_and_iv(password, salt, klen=32, ilen=16, msgdgst='md5'):
-    '''
-    Derive the key and the IV from the given password and salt.
-    This is a niftier implementation than my direct transliteration of
-    the C++ code although I modified to support different digests.
-    CITATION: http://stackoverflow.com/questions/13907841/implement-openssl-aes-encryption-in-python
-    @param password  The password to use as the seed.
-    @param salt      The salt.
-    @param klen      The key length.
-    @param ilen      The initialization vector length.
-    @param msgdgst   The message digest algorithm to use.
-    '''
-    # equivalent to:
-    #   from hashlib import <mdi> as mdf
-    #   from hashlib import md5 as mdf
-    #   from hashlib import sha512 as mdf
+
     mdf = getattr(__import__('hashlib', fromlist=[msgdgst]), msgdgst)
     password = password.encode('ascii', 'ignore')  # convert to ASCII
 
@@ -55,15 +46,19 @@ def decrypt(ciphertext,key, mode,salt):
 	encobj = AES.new(key,mode,iv)
 	return(encobj.decrypt(ciphertext))
 
-padding_len = 16 - (len(plaintext) % 16)
-plaintext = plaintext + (chr(padding_len) * padding_len)
+print "Plaintext:\t",plaintext
+print "Passphrase:\t",key
+print "Salt:\t\t",salt
+plaintext = Padding.appendPadding(plaintext,mode='CMS')
 
 ciphertext = encrypt(plaintext,key,AES.MODE_CBC,salt)
 
 ctext = b'Salted__' + salt.decode('hex') + ciphertext
 
-print "Cipher (ECB): "+base64.b64encode(ctext)
+
+print "\nCipher (CBC): "+base64.b64encode(ctext)
+print "Cipher in binary:",ctext
 
 plaintext = decrypt(ciphertext,key,AES.MODE_CBC,salt)
 plaintext = Padding.removePadding(plaintext,mode='CMS')
-print "  decrypt: "+plaintext
+print "\nDecrypted:\t"+plaintext
