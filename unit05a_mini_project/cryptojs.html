@@ -210,7 +210,22 @@
 <script type="text/javascript">
     function t6b(message, password) {
         var crypted = CryptoJS.DES.encrypt(message, password);
-        var plain = CryptoJS.RC4.decrypt(crypted, password);
+        var plain = CryptoJS.DES.decrypt(crypted, password);
+        document.getElementById("hash").innerHTML = "Type:\t\tDES";
+        document.getElementById("hash").innerHTML += "\nMessage:\t" + message;
+        document.getElementById("hash").innerHTML += "\nPassword:\t" + password;
+        var saltHex = crypted.salt.toString();     // random salt
+        var ivHex = crypted.iv.toString();
+        document.getElementById("hash").innerHTML += "\nSalt:\t\t" + saltHex;
+        document.getElementById("hash").innerHTML += "\nIV:\t\t" + ivHex;
+        document.getElementById("hash").innerHTML += "\nEncrypted:\t" + crypted;
+        document.getElementById("hash").innerHTML += "\nDecrypted:\t" + plain;
+    }
+</script>
+<script type="text/javascript">
+    function t6b_2(message, password) {
+        var crypted = CryptoJS.3DES.encrypt(message, password);
+        var plain = CryptoJS.3DES.decrypt(crypted, password);
         document.getElementById("hash").innerHTML = "Type:\t\t3DES";
         document.getElementById("hash").innerHTML += "\nMessage:\t" + message;
         document.getElementById("hash").innerHTML += "\nPassword:\t" + password;
@@ -790,14 +805,19 @@
    <input type="button" class="btn btn-medium btn-warning" onclick="t10(document.getElementById('input').value, document.getElementById('password').value)" value="PBKDF2">
 <input type="button" class="btn btn-medium btn-warning" onclick="t10a(document.getElementById('input').value, document.getElementById('password').value)" value="EvpKDF"></p>
 
-<p>Block encryption:  <input type="button" class="btn btn-medium btn-danger"  onclick="t4(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CBC)">
-<input type="button" class="btn btn-medium btn-danger"  onclick="t4a(document.getElementById('input').value, document.getElementById('password').value)" value="AES (ECB)">
-<input type="button" class="btn btn-medium btn-danger"  onclick="t4b(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CFB)">
-<input type="button" class="btn btn-medium btn-danger"  onclick="t4c(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CTR)">
-<input type="button" class="btn btn-medium btn-danger"  onclick="t4d(document.getElementById('input').value, document.getElementById('password').value)" value="AES (OFB)">
+<p>
+    Block encryption:  <input type="button" class="btn btn-medium btn-danger" onclick="t4(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CBC)">
+    <input type="button" class="btn btn-medium btn-danger" onclick="t4a(document.getElementById('input').value, document.getElementById('password').value)" value="AES (ECB)">
+    <input type="button" class="btn btn-medium btn-danger" onclick="t4b(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CFB)">
+    <input type="button" class="btn btn-medium btn-danger" onclick="t4c(document.getElementById('input').value, document.getElementById('password').value)" value="AES (CTR)">
+    <input type="button" class="btn btn-medium btn-danger" onclick="t4d(document.getElementById('input').value, document.getElementById('password').value)" value="AES (OFB)">
 
-  <input type="button"  class="btn btn-medium btn-danger"  onclick="t6b(document.getElementById('input').value, document.getElementById('password').value)" value="3DES">
-    </p>
+    <input type="button" class="btn btn-medium btn-danger" onclick="t6b(document.getElementById('input').value, document.getElementById('password').value)" value="DES">
+    <!--    <input type="button" class="btn btn-medium btn-danger" onclick="t6b_2(document.getElementById('input').value, document.getElementById('password').value)" value="3DES">
+        -->
+
+
+</p>
 <p>Stream encryption:    <input type="button"  class="btn btn-medium btn-primary"  onclick="t5(document.getElementById('input').value, document.getElementById('password').value)" value="Rabbit">
   <input type="button"  class="btn btn-medium btn-primary"  onclick="t6(document.getElementById('input').value, document.getElementById('password').value)" value="RC4">
   <input type="button"  class="btn btn-medium btn-primary"  onclick="t11(document.getElementById('input').value, document.getElementById('password').value)" value="ChaCha20"> 
