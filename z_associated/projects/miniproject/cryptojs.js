@@ -17,8 +17,8 @@ var AES = require("crypto-js/aes");
 var CryptoJS = require("crypto-js");
 
 var args = process.argv;
-if (args.length>1) message=args[2];
-if (args.length>2) password=args[3];
+if (args.length>2) message=args[2];
+if (args.length>3) password=args[3];
 
 console.log("Message: ",message);
 console.log("Password: ",password);
@@ -31,23 +31,22 @@ console.log("SHA-224: ",SHA224(message).toString());
 console.log("SHA-512: ",SHA512(message).toString());
 console.log("SHA-384: ",SHA384(message).toString());
 console.log("ripemd160: ",RIP(message).toString());
-//    To do:
-//    crypto-js/sha1
-//    crypto-js/sha256
-//    crypto-js/sha224
-//    crypto-js/sha512
-//    crypto-js/sha384
-//    crypto-js/ripemd160
-
 
 console.log("\n--- AES");
-var ciphertext = AES.encrypt(message, password);
- 
-var bytes  = AES.decrypt(ciphertext.toString(), password);
+
+console.log(message,password);
+var ciphertext = CryptoJS.AES.encrypt(message, password,mode=CryptoJS.mode.ECB);
+
+var bytes  = CryptoJS.AES.decrypt(ciphertext.toString(), password,mode=CryptoJS.mode.ECB);
+//var bytes  = CryptoJS.AES.decrypt("U2FsdGVkX187BmuVYneWcRn5sgDat6uHqmyKEa31Vys=", password,mode=CryptoJS.mode.ECB);
+
+
 var plaintext = bytes.toString(CryptoJS.enc.Utf8);
  
-console.log("Cipher: ",ciphertext.toString());
-console.log("Plaintext: ",plaintext);
+console.log("Cipher:\t",ciphertext.toString());
+console.log("Salt:\t",ciphertext.salt.toString());
+console.log("IV:\t",ciphertext.iv.toString());
+console.log("Plaintext:\t",plaintext);
 
 // To do:
 //   crypto-js/tripledes
