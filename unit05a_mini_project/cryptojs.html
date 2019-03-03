@@ -398,6 +398,24 @@
 
 <script type="text/javascript">
 
+    function t9c(message, password) {
+    document.getElementById("key").innerHTML="";
+        var hash = CryptoJS.HmacSHA256(message, password);
+        var output = hash.toString(CryptoJS.enc.Hex);
+
+        document.getElementById("hash").innerHTML = "Type:\t\tHMAC-SHA256";
+        document.getElementById("hash").innerHTML += "\nMessage:\t" + message;
+        document.getElementById("hash").innerHTML += "\nPassword:\t" + password;
+
+        document.getElementById("hash").innerHTML += "\nHex:\t" + output;
+        document.getElementById("hash").innerHTML += "\nBase64:\t" + CryptoJS.enc.Base64.stringify(hash);
+
+    }
+
+</script>
+
+<script type="text/javascript">
+
     function t9(message, password) {
     document.getElementById("key").innerHTML="";
         var hash = CryptoJS.HmacSHA512(message, password);
@@ -413,6 +431,7 @@
     }
 
 </script>
+
 <script type="text/javascript">
 
     function t9a(message, password) {
@@ -994,16 +1013,23 @@
 </p>
 
 
-<p>HMAC:   <input type="button"  class="btn btn-medium btn-success"  onclick="t7(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (MD5)">
-   <input type="button"   class="btn btn-medium btn-success"  onclick="t8(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA1)">
-   <input type="button"   class="btn btn-medium btn-success"  onclick="t9(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA256)">
-       <input type="button"   class="btn btn-medium btn-success"  onclick="t9a(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA3)">
-            <input type="button"   class="btn btn-medium btn-success"  onclick="t9b(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (RIPEMD160)">
-            <input type="button"   class="btn btn-medium btn-success"  onclick="t12(document.getElementById('input').value, document.getElementById('password').value)" value="Poly1305">
-      <input type="button"   class="btn btn-medium btn-success"  onclick="t13(document.getElementById('input').value, document.getElementById('password').value)" value="Poly1305 (Test)">
+           <p>
+                    HMAC:   <input type="button" class="btn btn-medium btn-success" onclick="t7(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (MD5)">
+                    <input type="button" class="btn btn-medium btn-success" onclick="t8(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA1)">
+                    <input type="button" class="btn btn-medium btn-success" onclick="t9c(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA256)">
+
+                    <input type="button" class="btn btn-medium btn-success" onclick="t9(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA512)">
+                    <input type="button" class="btn btn-medium btn-success" onclick="t9a(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (SHA3)">
+                    <input type="button" class="btn btn-medium btn-success" onclick="t9b(document.getElementById('input').value, document.getElementById('password').value)" value="HMAC (RIPEMD160)">
+               <br/>    <input type="button" class="btn btn-medium btn-success" onclick="t12(document.getElementById('input').value, document.getElementById('password').value)" value="Poly1305">
+                    <input type="button" class="btn btn-medium btn-success" onclick="t13(document.getElementById('input').value, document.getElementById('password').value)" value="Poly1305 (Test)">
 
 
-</p>
+                </p>
+      
+
+      
+      
 
    
   
