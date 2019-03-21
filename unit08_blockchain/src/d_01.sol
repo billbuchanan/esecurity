@@ -1,16 +1,16 @@
-pragma solidity ^0.4.0;
+pragma solidity >0.4.0;
 contract test2{
    uint a ;
-   function test2() {
+   constructor () public {
        a = 1;
    }
-   function val() returns(uint){
+   function val() public returns(uint){
        return a;
    }  
 }
 contract test3 is test2{ 
     uint b = a++;
-    function show() returns(uint){
+    function show() public returns(uint){
         return b; 
     }
 }
