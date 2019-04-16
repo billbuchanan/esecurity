@@ -1,3 +1,4 @@
+// Elliptic Curve Demo for Password Hash to ECC Point
 package main
 
 import (
