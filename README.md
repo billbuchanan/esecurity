@@ -113,10 +113,7 @@ git pull
     <td>Coursework Hand-in [<a href="/esecurity/cw" target="_blank">Draft</a>]</td>
 
 </tr>
-
-
-
-    </table>
+</table>
 
 
 
