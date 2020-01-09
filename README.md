@@ -50,31 +50,31 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
     <td bgcolor="#990000" class="table1"><strong>4</strong></td>
     <td bgcolor="#990000" class="table1"><strong>7 Feb 2020 </strong></td>
     <td>Asymmetric (Public) Key <a href="https://github.com/billbuchanan/esecurity/tree/master/unit04_public_key">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab04.pdf" target="_blank">Link</a>]</td>
+    <td>Lab [<a href="https://asecuritysite.com/public/new_lab04.pdf" target="_blank">Link</a>]</td>
 </tr>
             <tr>
     <td bgcolor="#990000" class="table1"><strong>5</strong></td>
     <td bgcolor="#990000" class="table1"><strong>14 Feb 2020 </strong></td>
-    <td>Key Exchange <a href="/esecurity/unit05">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab05.pdf" target="_blank">Link</a>]</td>
+    <td>Key Exchange <a href="https://asecuritysite.com/esecurity/unit05">Unit</a></td>
+    <td>Lab [<a href="https://asecuritysite.com/public/new_lab05.pdf" target="_blank">Link</a>]</td>
 </tr>
                 <tr>
     <td bgcolor="#990000" class="table1"><strong>6</strong></td>
     <td bgcolor="#990000" class="table1"><strong>21 Feb 2020</strong></td>
     <td>Guest lecture</td>
-    <td>Mini-project/Coursework [<a href="/public/lab_mini_project.pdf" target="_blank">Link</a>]</td>
+    <td>Mini-project/Coursework [<a href="https://asecuritysite.com/public/lab_mini_project.pdf" target="_blank">Link</a>]</td>
 </tr>
                     <tr>
     <td bgcolor="#990000" class="table1"><strong>7</strong></td>
     <td bgcolor="#990000" class="table1"><strong>28 Feb 2020 </strong></td>
-    <td>Trust and Digital Certificates <a href="/esecurity/unit06">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab06.pdf" target="_blank">Link</a>]</td>
+    <td>Trust and Digital Certificates <a href="https://asecuritysite.com/esecurity/unit06">Unit</a></td>
+    <td>Lab [<a href="https://asecuritysite.com/public/new_lab06.pdf" target="_blank">Link</a>]</td>
 </tr>
                         <tr>
     <td bgcolor="#990000" class="table1"><strong>8</strong></td>
     <td bgcolor="#990000" class="table1"><strong>6 Mar 2020</strong></td>
-    <td>Tunnelling <a href="/esecurity/unit07">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab07.pdf" target="_blank">Link</a>]</td>
+    <td>Tunnelling <a href="https://asecuritysite.com/esecurity/unit07">Unit</a></td>
+    <td>Lab [<a href="https://asecuritysite.com//public/new_lab07.pdf" target="_blank">Link</a>]</td>
 </tr>
 <tr>
     <td bgcolor="#990000" class="table1"><strong>9</strong></td>
@@ -84,19 +84,19 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
                             <tr>
     <td bgcolor="#990000" class="table1"><strong>10</strong></td>
     <td bgcolor="#990000" class="table1"><strong>20 Mar 2020 </strong></td>
-    <td>Blockchain <a href="/esecurity/unit08">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab08_linux.pdf" target="_blank">Link</a>]</td>
+    <td>Blockchain <a href="https://asecuritysite.com/esecurity/unit08">Unit</a></td>
+    <td>Lab [<a href="https://asecuritysite.com/public/new_lab08_linux.pdf" target="_blank">Link</a>]</td>
 </tr>
                                 <tr>
     <td bgcolor="#990000" class="table1"><strong>11</strong></td>
     <td bgcolor="#990000" class="table1"><strong>27 Mar 2020 </strong></td>
-    <td>Future Cryptography <a href="/esecurity/unit09">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab09.pdf" target="_blank">Link</a>]</td>
+    <td>Future Cryptography <a href="https://asecuritysite.com/esecurity/unit09">Unit</a></td>
+    <td>Lab [<a href="https://asecuritysite.com/public/new_lab09.pdf" target="_blank">Link</a>]</td>
 </tr>
                                 <tr>
                                     <td bgcolor="#990000" class="table1"><strong>12</strong></td>
                                     <td bgcolor="#990000" class="table1"><strong>3 April 2020 </strong></td>
-                                    <td>Tokens, Authorization and Docker <a href="https://asecuritysite.com//esecurity/unit10">Unit</a></td>
+                                    <td>Tokens, Authorization and Docker <a href="https://asecuritysite.com/esecurity/unit10">Unit</a></td>
                                     <td>Lab [<a href="https://asecuritysite.com/public/unit10_tokens.pdf" target="_blank">Link</a>]</td>
                                 </tr>
                                 <tr>
@@ -115,7 +115,7 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
             <tr>
     <td bgcolor="#990000" class="table1"><strong>15</strong></td>
     <td bgcolor="#990000" class="table1"><strong>Week beginning 4 May 2020 (TBC)</strong></td>
-    <td>Coursework Hand-in [<a href="/esecurity/cw" target="_blank">Draft</a>]</td>
+    <td>Coursework Hand-in [<a href="https//asecuritysite.com//esecurity/cw" target="_blank">Draft</a>]</td>
 
 </tr>
 </table>
