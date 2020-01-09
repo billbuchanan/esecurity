@@ -15,7 +15,7 @@ The units involved in the module are:
 
 An introduction video is here:
 
-https://youtu.be/z9DaFxDuxxA
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z9DaFxDuxxA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 If you need a demo of the Ubtuntu setup you can view here:
 
