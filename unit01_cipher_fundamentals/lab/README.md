@@ -1,6 +1,6 @@
 # Lab 1: Cipher Fundamentals
 
-Objective: The key objective of this lab is to be introduced to some of the fundamental principles involved in cryptography, including the usage of Base-64, hexadecimal, the modulus operator some basic operators (such as AND, OR, X-OR, Rotate Right and Rotate Left), and prime numbers. We lab also involves cracking puzzles, and which have been added to get you to think about the methods involved in cipher cracking. You can undertake the additional lab if you want to further develop your cryptography skills.
+Objective: The key objective of this lab is to be introduced to some of the fundamental principles involved in cryptography, including the usage of Base-64, hexadecimal, the modulus operator some basic operators (such as AND, OR, X-OR, Rotate Right and Rotate Left), and prime numbers. This lab also involves cracking puzzles, and which have been added to get you to think about the methods involved in cipher cracking. You can undertake the additional lab if you want to further develop your cryptography skills.
 
 Web link (Weekly activities): https://asecuritysite.com/esecurity/unit01
 
