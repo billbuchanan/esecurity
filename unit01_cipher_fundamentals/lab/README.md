@@ -8,8 +8,10 @@ Go to vsoc.napier.ac.uk and find your folder. Run your Ubuntu instance [demo](ht
 
 ## Introduction
 
-No	Description	Result
-### A.1	Web link (Is prime?): http://asecuritysite.com/Encryption/testprime
+
+### A.1	Web link (Is prime?)
+
+Using: http://asecuritysite.com/Encryption/testprime
 
 Test for the following prime numbers:
 91: [Yes] [No]	
@@ -17,28 +19,31 @@ Test for the following prime numbers:
 1449: [Yes] [No]
 
 
-### A.2	 Web link (gcd): http://asecuritysite.com/Encryption/gcd
+### A.2	Web link (gcd):
+
+Using: http://asecuritysite.com/Encryption/gcd
 
 Determine the GCD for the following:
-	88, 46:
+88, 46:
 
 105, 35: 
 
-### A.3 	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
+### A.3 Web link (Base-64 convertor): 
+
+Using: http://asecuritysite.com/coding/ascii
 
 Determine the Base 64 and Hex values for the following strings:
 
-	Hello: 
-
+Hello: 
 
 hello:
-
 
 HELLO:
 
 
+### A.4	Web link (Base-64 convertor): 
 
-### A.4	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
+Using: http://asecuritysite.com/coding/ascii
 
 Determine the following ASCII strings for these encoded formats:
 
@@ -48,53 +53,63 @@ bGxveWRz
 
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
 
-
 ### A.5	Using Python, what is the result of 53,431 (mod 453)?
 
 In Python, this is: 
 
-print 53431 % 453	
+<pre>
+print 53431 % 453
+</pre>
 
 
 ### A.6	Using Python, what is the results of the following:
 
+<pre>
 print 0x43 | 0x21
 print 0x43 & 0x21
 print 0x43 ^ 0x21
+</pre>
 
 Using a pen and paper, prove that these results are correct.	Results:
 
 
 ### A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
 
+<pre>
 val1=93
 print "Dec:\t",val1
 print "Bin:\t",bin(val1)
 print "Hex:\t",hex(val1)
 print "Oct:\t",oct(val1)
 print "Char:\t",chr(val1)
+</pre>
 Results:
 
 ### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
 
+<pre>
 val=93
 console.log(val.toString(2))
 console.log(val.toString(16))
 console.log(val.toString(8))
 console.log(String.fromCharCode(val))
+</pre>
 
 This program will use node.js. Create a file named a_08.js and then run with:
 
 node a_08.js
-	Results:
+
+Results:
 
 
 ### A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
 
+<pre>
 import base64
-str=”crypto”
+str="crypto"
 print base64.b64encode(str)
-	Result:
+</pre>
+Result:
 
 
 ### A.10	If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
