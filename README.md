@@ -31,25 +31,25 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
 <tr>
     <td bgcolor="#990000" class="table1"><strong>1</strong></td>
     <td bgcolor="#990000" class="table1"><strong>17 Jan 2020 </strong></td>
-    <td>Ciphers and Fundamentals <a href="/unit01/unit00_introduction">Unit</a></td>
+    <td>Ciphers and Fundamentals <a href="https://github.com/billbuchanan/esecurity/tree/master/unit01_cipher_fundamentals">Unit</a></td>
     <td>Lab [<a href="/public/new_lab01.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=v6H7lHblKes" target="_blank">Link</a>]</td>
 </tr>
 <tr>
     <td bgcolor="#990000" class="table1"><strong>2</strong></td>
     <td bgcolor="#990000" class="table1"><strong>24 Jan 2020 </strong></td>
-    <td>Symmetric Key <a href="/esecurity/unit02">Unit</a></td>
+    <td>Symmetric Key <a href="https://github.com/billbuchanan/esecurity/tree/master/unit02_symmetric">Unit</a></td>
     <td>Lab [<a href="/public/new_lab02.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=N3UADaXmOik" target="_blank">Link</a>]</td>
 </tr>
     <tr>
     <td bgcolor="#990000" class="table1"><strong>3</strong></td>
     <td bgcolor="#990000" class="table1"><strong>31 Jan 2020 </strong></td>
-    <td>Hashing and MAC <a href="/esecurity/unit03">Unit</a></td>
+    <td>Hashing and MAC <a href="https://github.com/billbuchanan/esecurity/tree/master/unit03_hashing">Unit</a></td>
     <td>Lab [<a href="/public/new_lab03.pdf" target="_blank">Link</a>]</td>
 </tr>
         <tr>
     <td bgcolor="#990000" class="table1"><strong>4</strong></td>
     <td bgcolor="#990000" class="table1"><strong>7 Feb 2020 </strong></td>
-    <td>Asymmetric (Public) Key <a href="/esecurity/unit04">Unit</a></td>
+    <td>Asymmetric (Public) Key <a href="https://github.com/billbuchanan/esecurity/tree/master/unit04_public_key">Unit</a></td>
     <td>Lab [<a href="/public/new_lab04.pdf" target="_blank">Link</a>]</td>
 </tr>
             <tr>
