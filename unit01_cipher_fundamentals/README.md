@@ -12,9 +12,8 @@ Calculate the time taken to crack a code given a time to try each key, and for t
 
 ## Presentations
 
-* Week 1 Presentation (PDF): here
+* Week 1 Presentation (PDF): [here](https://asecuritysite.com/public/chapter01_ciphers_fundamentals.pdf)
 * Week 1 Presentation (video): [here](https://www.youtube.com/watch?v=zqmjUpJNcJA)
-* Week 1 Presentation (classroom lecture): here
 
 ## Lab
 
@@ -51,17 +50,17 @@ Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
 ## Answers
 
 Q1
-
+<pre>
 test -> 01110100 01100101 01110011 01110100 
 test -> 011101 000110 010101 110011 011101 00 
 test ->  d       G       V       z      d   A  ==
-
+</pre>
 Q2
-
+<pre>
 help -> 01101000 01100101 01101100 01110000 
 help -> 011101 000110 010101 110011 011101 00 
 help ->  a     G        V      s      c    A  ==
-
+</pre>
 Q3
 
 Max time to crack = 1e-9 x 2^32
