@@ -14,6 +14,9 @@ If you need to update the code, go into the esecurity folder, and run:
 
 git pull
 
+The VM for the module can be downloaded from:
+
+https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj
 ## Draft Timetable
 <p>The following is the draft timetable:</p>
 <table width="100%" border="1" cellpadding="0" cellspacing="0">
