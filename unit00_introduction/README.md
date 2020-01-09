@@ -19,5 +19,5 @@ An introduction video is here:
 
 If you need a demo of the Ubtuntu setup you can view here:
 
-https://youtu.be/tIQYpjaELcA
+[![](http://img.youtube.com/vi/tIQYpjaELcA/0.jpg)](http://www.youtube.com/watch?v=tIQYpjaELcA "")
 
