@@ -1,9 +1,5 @@
 # Unit 0: Introduction
 
-This is an introduction to the module and the main site is here:
-
-https://asecuritysite.com/esecurity
-
 The units involved in the module are:
 
 * Ciphers and Fundamentals.  
@@ -17,7 +13,7 @@ The units involved in the module are:
 * Future Cryptography. Future cryptography.
 * Host security.
 
-An introduction is here:
+An introduction video is here:
 
 https://youtu.be/z9DaFxDuxxA
 
