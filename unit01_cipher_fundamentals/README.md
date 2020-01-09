@@ -41,10 +41,10 @@ Calculate the time taken to crack a code given a time to try each key, and for t
 
 ## Tests
 
-Take cipher code challenge: [here](https://asecuritysite.com/challenges/hex)
-Five minute challenge: [here](https://asecuritysite.com/challenges/scramb)
-Test 1 (Caesar): [here](https://asecuritysite.com/tests/tests?sortBy=caesar)
-Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
+* Take cipher code challenge: [here](https://asecuritysite.com/challenges/hex)
+* Five minute challenge: [here](https://asecuritysite.com/challenges/scramb)
+* Test 1 (Caesar): [here](https://asecuritysite.com/tests/tests?sortBy=caesar)
+* Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
 
 
 ## Answers
