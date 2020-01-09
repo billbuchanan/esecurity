@@ -31,7 +31,7 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
 <tr>
     <td bgcolor="#990000" class="table1"><strong>1</strong></td>
     <td bgcolor="#990000" class="table1"><strong>17 Jan 2020 </strong></td>
-    <td>Ciphers and Fundamentals <a href="/esecurity/unit01">Unit</a></td>
+    <td>Ciphers and Fundamentals <a href="/unit01/unit00_introduction">Unit</a></td>
     <td>Lab [<a href="/public/new_lab01.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=v6H7lHblKes" target="_blank">Link</a>]</td>
 </tr>
 <tr>
