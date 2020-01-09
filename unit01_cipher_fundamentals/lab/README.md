@@ -1,27 +1,30 @@
-Lab 1: Cipher Fundamentals
+# Lab 1: Cipher Fundamentals
+
 Objective: The key objective of this lab is to be introduced to some of the fundamental principles involved in cryptography, including the usage of Base-64, hexadecimal, the modulus operator some basic operators (such as AND, OR, X-OR, Rotate Right and Rotate Left), and prime numbers. We lab also involves cracking puzzles, and which have been added to get you to think about the methods involved in cipher cracking. You can undertake the additional lab if you want to further develop your cryptography skills.
 
- Web link (Weekly activities): https://asecuritysite.com/esecurity/unit01
+Web link (Weekly activities): https://asecuritysite.com/esecurity/unit01
 
-Go to vsoc.napier.ac.uk and find your folder. Run your Ubuntu instance (demo).
+Go to vsoc.napier.ac.uk and find your folder. Run your Ubuntu instance [demo](https://youtu.be/v6H7lHblKes). Lab demo:  (Note that you will be using Ubuntu, while the demo shows Kali).
 
-Lab demo: https://youtu.be/v6H7lHblKes (Note that you will be using Ubuntu, while the demo shows Kali).
-A	Introduction
+## Introduction
 
 No	Description	Result
-A.1	 Web link (Is prime?): http://asecuritysite.com/Encryption/testprime
+### A.1	Web link (Is prime?): http://asecuritysite.com/Encryption/testprime
 
 Test for the following prime numbers:
-	91: [Yes] [No]
+91: [Yes] [No]	
 421: [Yes] [No]
 1449: [Yes] [No]
-A.2	 Web link (gcd): http://asecuritysite.com/Encryption/gcd
+
+
+### A.2	 Web link (gcd): http://asecuritysite.com/Encryption/gcd
 
 Determine the GCD for the following:
 	88, 46:
 
 105, 35: 
-A.3 	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
+
+### A.3 	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
 
 Determine the Base 64 and Hex values for the following strings:
 
@@ -34,28 +37,35 @@ hello:
 HELLO:
 
 
-A.4	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
+
+### A.4	 Web link (Base-64 convertor): http://asecuritysite.com/coding/ascii
 
 Determine the following ASCII strings for these encoded formats:
 
-	bGxveWRz
+bGxveWRz
 
 6E6170696572
 
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
-A.5	Using Python, what is the result of 53,431 (mod 453)?
+
+
+### A.5	Using Python, what is the result of 53,431 (mod 453)?
 
 In Python, this is: 
 
 print 53431 % 453	
-A.6	Using Python, what is the results of the following:
+
+
+### A.6	Using Python, what is the results of the following:
 
 print 0x43 | 0x21
 print 0x43 & 0x21
 print 0x43 ^ 0x21
 
 Using a pen and paper, prove that these results are correct.	Results:
-A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
+
+
+### A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
 
 val1=93
 print "Dec:\t",val1
@@ -63,8 +73,9 @@ print "Bin:\t",bin(val1)
 print "Hex:\t",hex(val1)
 print "Oct:\t",oct(val1)
 print "Char:\t",chr(val1)
-	Results:
-A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
+Results:
+
+### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
 
 val=93
 console.log(val.toString(2))
@@ -76,16 +87,23 @@ This program will use node.js. Create a file named a_08.js and then run with:
 
 node a_08.js
 	Results:
-A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
+
+
+### A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
 
 import base64
 str=”crypto”
 print base64.b64encode(str)
 	Result:
-A.10	If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	Observation:
-A.11	Using Python, using a decimal value of 41, determine the result of a shift left by one bit, a shift left by two bits, a right shift by one bit, and a right shift by two bits:
 
- Web link (Bit shift): https://asecuritysite.com/comms/shift
+
+### A.10	If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
+Observation:
+
+
+### A.11	Using Python, using a decimal value of 41, determine the result of a shift left by one bit, a shift left by two bits, a right shift by one bit, and a right shift by two bits:
+
+Web link (Bit shift): https://asecuritysite.com/comms/shift
 	Decimal form:     41
 Shift left (1):	
 Shift left (2):	
@@ -96,7 +114,8 @@ Why would a shift left or shift right operator not be used on its own in cryptog
 
 
 
-A.12	In several cases in cryptography, we try and factorize a value into its factors. An example is 15, and which has factors of 5 and 3. Using the Python program defined in the following link, determine the factors of 432:
+
+### A.12	In several cases in cryptography, we try and factorize a value into its factors. An example is 15, and which has factors of 5 and 3. Using the Python program defined in the following link, determine the factors of 432:
 
 
  Web link (Factorization):
@@ -105,7 +124,8 @@ https://asecuritysite.com/encryption/factors
 Think of two extremely large values and determine their factors.
 
 	
-A.13	Another format we can use for our data is compression, and we can do the compression before or after the encryption process. One of the most popular methods is gzip compress, and which uses the LZ method to reduce the number of bits used. For this we will use node.js. Create a file named a_13.js and  determine what the following Base64 conversions are when they are uncompressed (Hint: they are cities of the World):
+
+### A.13	Another format we can use for our data is compression, and we can do the compression before or after the encryption process. One of the most popular methods is gzip compress, and which uses the LZ method to reduce the number of bits used. For this we will use node.js. Create a file named a_13.js and  determine what the following Base64 conversions are when they are uncompressed (Hint: they are cities of the World):
 
  Web link (Compression):
 https://asecuritysite.com/encryption/gzip
@@ -128,18 +148,22 @@ eJzzSy1XiMwvygYADKUC8A==
 
 
 Note: The code in this example uses Python 2.7. If you are using Python 3, remember and put parenthesis around the print statement string, such as print (hex(val)).
-B	GCD
+
+
+## B	GCD
 GCD is known as the greatest common divisor, or greatest common factor (gcf), and is the largest positive integer that divides into two numbers without a remain-der. For example, the GCD of 9 and 15 is 3. It is used many encryption algorithms, and a sample algorithm to determine the GCD of two values (a and b) is given on:
 
  Web link (GCD):	http://asecuritysite.com/encryption/gcd
 
 No	Description	Result
-B.1	Write a Python program to determine the GCD for the following:
+
+### B.1	Write a Python program to determine the GCD for the following:
 	4105 and 10: 
 
 4539 and 6:
 
-B.2	Two numbers are co-prime if they do not share co-factors, apart from 1, which is gcd(a,b)=1.
+
+### B.2	Two numbers are co-prime if they do not share co-factors, apart from 1, which is gcd(a,b)=1.
 
 Determine if the following values are co-prime:
 	5435 and 634: Yes/No
@@ -147,7 +171,8 @@ Determine if the following values are co-prime:
 5432 and 634: Yes/No
 
 
-C	Modulus and Exponentiation
+
+## C	Modulus and Exponentiation
 The mod operator results in the remainder of an integer divide. For example, 31 divided by 8 is 3 remainder 7, thus 31 mod 8 equals 7. Often in cryptography the mod operation uses a prime number, such as:
 
 Result = valuex mod (prime number)
@@ -165,14 +190,16 @@ C = Me mod p
 to encrypt and decrypt a message (M) using a key of e and a prime number p. 
 
 No	Description	Result
-C.1	What is the result of the following:
+
+### C.1	What is the result of the following:
 
 
 	813 mod 271:
 
 1223 mod 973:
 
-C.2	Implement a Python program which will determine the result of:
+
+### C.2	Implement a Python program which will determine the result of:
 
 Me mod p
 
@@ -182,7 +209,8 @@ Yes/No
 
 
 
-C.3	Now prove the following:
+
+### C.3	Now prove the following:
 (a)	message = 5, e=5, p = 53. Ans: 51
 (b)	message = 4, e=11, p = 79. Ans: 36
 (c)	message = 101, e=7, p = 293. Ans: 176
@@ -199,7 +227,9 @@ print cipher	Have you proven the answers:
 (a)	Yes/No
 (b)	Yes/No
 (c)	Yes/No
-D	Simple prime number test
+
+
+## D	Simple prime number test
 A prime number is a value which only has factors of 1 and itself. Prime numbers are used fairly extensively in cryptography, as computers struggle to factorize them when they are multiplied together.  The simplest test for a prime number is to divide the value from all the integers from 2 to the value divided by 2. If any of the results leaves no remainder, the value is a prime, otherwise it is composite. We can obviously improve on this by getting rid of even numbers which are greater than 2, and also that the highest value to be tested is the square root of the value. 
 
 So, if n = 37, then our maximum value will be  , which, when rounded down is 6. So, we can try: 2, 3, and 5, of which of none of these divide exactly into 37, so it is a prime number. Now let’s try 55, we will then be 2, 3, 5 and 7. In this case 5 does divide exactly in 55, so the value is not prime.
@@ -211,12 +241,14 @@ where k=0 gives 0 and 1, k=1 gives 5 and 7, k=2 gives 11 and 13, k=3 gives 17 an
 
  Web link (Prime Numbers):	http://asecuritysite.com/encryption/isprime
 
-No	Description	Result
-D.1	Using the equation of 6k ± 1. Determine the prime numbers up to 100:
-	Prime numbers:
 
 
-D.2	Implement a Python program which will calculate the prime numbers up to 1000:
+### D.1	Using the equation of 6k ± 1. Determine the prime numbers up to 100:
+Prime numbers:
+
+
+
+### D.2	Implement a Python program which will calculate the prime numbers up to 1000:
 	Define the highest prime number generated:
 
 
@@ -243,8 +275,9 @@ def sieve_for_primes_to(n):
 
 print sieve_for_primes_to(test)
 
-No	Description	Result
-D.3	Implement the Python code given above and determine the highest prime number possible in the following ranges:
+
+
+### D.3	Implement the Python code given above and determine the highest prime number possible in the following ranges:
 	Up to 100:
 
 Up to 1,000:
@@ -260,8 +293,8 @@ The Miller-Rabin Test for Primes is an efficient method in testing for a prime n
 
 Using this determine the following:
 
-No	Description	Result
-D.4	Which of the following numbers are prime numbers:
+
+### D.4	Which of the following numbers are prime numbers:
 	Is 5 prime? Yes/No
 
 Is 7919 prime? Yes/No
@@ -275,7 +308,8 @@ Is 982,451,652 prime? Yes/No
 
 
 
-E	Random numbers
+
+## E	Random numbers
 Within cryptography random numbers are used to generate things like encryption keys. If the generation of these keys could be predicted in some way, it may be possible to guess it. The two main types of random number generators are:
 
 •	Pseudo-Random Number Generators (PRNGs).  Repeats after a given time.  Fast. They are also deterministic and periodic, so that the random number generation will eventually repeat.
@@ -307,7 +341,8 @@ and so on.
  Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
 
 No	Description	Result
-E.1	Implement the Python code given above.
+
+### E.1	Implement the Python code given above.
 
 Using: a=21, seed=35, c=31, and m=100, prove that the sequence gives 66 17 88 79 90  
 	Does it generate this sequence?
@@ -320,51 +355,26 @@ a=22, seed=35, c=31, and m=100.
 
 
 
-E.3	Determine the sequence for:
+
+### E.3	Determine the sequence for:
 
 a=954,365,343, seed=436,241, c=55,119,927, and m=1,000,000.
 	First four numbers of sequence?
 
-E.4	Determine the sequence for:
+
+### E.4	Determine the sequence for:
 
 a=2,175,143, seed=3553, c=10,653, and m=1,000,000. 
 	First four numbers of sequence?
 
-F	What I should have learnt from this lab?
+
+## F	What I should have learnt from this lab?
 The key things learnt:
 
 •	Some fundamental principles around number and character formats, including binary, hexadecimal and Base64.
 •	How to run a Python program and change some of the parameters.
 •	Some fundamentals around prime numbers and mod operations.
 
-Notes
-The code can be downloaded from:
-
-git clone https://github.com/billbuchanan/esecurity
-
-If you need to update the code, go into the esecurity folder, and run:
-
-git pull
-
-To install a Python library use:
-
-pip install libname
-
-To install a Node.js package, use:
-
-npm install libname
-Possible solutions
-Have a look at: https://asecuritysite.com/esecurity/labcode 
-
-Many of the key concepts in cryptography are based on number theory and which is the study of integers, with a special focus on divisibility. The main classifications for numbers are integers, rational numbers, real numbers and complex numbers. In maths we define these as: 
-
-•	Integers can be positive or negative numbers and have no fractional part. They are represented with the ℤ symbol {…-2, -1, 0, +1, +2,…}.  A special case of this is finite cyclic group (ℤp), and which represents the integer values from 0 to p-1, and where p is a prime number. This is cyclic as we take (mod p) of our values.
-•	Rational numbers are fractions (ℚ). 
-•	Real numbers (ℜ) include both integers and rational numbers, and any other number that can be used in a comparison. 
-•	Prime numbers (ℙ) represent the integers which can only be divisible by itself and unity.
-•	Natural numbers (ℕ) represent positive numbers which are integers {1,2…}.
-
-One of the great advantages of using Python is that it automatically casts to big integers.
 
 
 
