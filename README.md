@@ -32,19 +32,19 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
     <td bgcolor="#990000" class="table1"><strong>1</strong></td>
     <td bgcolor="#990000" class="table1"><strong>17 Jan 2020 </strong></td>
     <td>Ciphers and Fundamentals <a href="https://github.com/billbuchanan/esecurity/tree/master/unit01_cipher_fundamentals">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab01.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=v6H7lHblKes" target="_blank">Link</a>]</td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/blob/master/unit01_cipher_fundamentals/lab/new_lab01.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=v6H7lHblKes" target="_blank">Link</a>]</td>
 </tr>
 <tr>
     <td bgcolor="#990000" class="table1"><strong>2</strong></td>
     <td bgcolor="#990000" class="table1"><strong>24 Jan 2020 </strong></td>
     <td>Symmetric Key <a href="https://github.com/billbuchanan/esecurity/tree/master/unit02_symmetric">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab02.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=N3UADaXmOik" target="_blank">Link</a>]</td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/blob/master/unit02_symmetric/lab/new_lab02.pdf" target="_blank">Link</a>] Demo [<a href="https://www.youtube.com/watch?v=N3UADaXmOik" target="_blank">Link</a>]</td>
 </tr>
     <tr>
     <td bgcolor="#990000" class="table1"><strong>3</strong></td>
     <td bgcolor="#990000" class="table1"><strong>31 Jan 2020 </strong></td>
     <td>Hashing and MAC <a href="https://github.com/billbuchanan/esecurity/tree/master/unit03_hashing">Unit</a></td>
-    <td>Lab [<a href="/public/new_lab03.pdf" target="_blank">Link</a>]</td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/blob/master/unit03_hashing/lab/new_lab03.pdf" target="_blank">Link</a>]</td>
 </tr>
         <tr>
     <td bgcolor="#990000" class="table1"><strong>4</strong></td>
