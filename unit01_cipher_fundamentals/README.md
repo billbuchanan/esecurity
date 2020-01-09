@@ -50,26 +50,30 @@ Calculate the time taken to crack a code given a time to try each key, and for t
 ## Answers
 
 Q1
-
+<pre>
 test -> 01110100 01100101 01110011 01110100 
 test -> 011101 000110 010101 110011 011101 00 
 test ->  d       G       V       z      d   A  ==
+</pre>
 
 Q2
-
+<pre>
 help -> 01101000 01100101 01101100 01110000 
 help -> 011101 000110 010101 110011 011101 00 
 help ->  a     G        V      s      c    A  ==
+</pre>
 
 Q3
-
+<pre>
 Max time to crack = 1e-9 x 2^32
 Max time to crack = 4.3 seconds
+</pre>
 
 Q4
-
+<pre>
 Max time to crack = 10e-9 x 2^20
 Max time to crack = 0.01 seconds
+</pre>
 
 Q8: Have a look [here](https://asecuritysite.com/encryption/base58)
 
