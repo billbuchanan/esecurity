@@ -7,12 +7,15 @@ The main module page is at:
 https://asecuritysite.com/esecurity
 
 This repository contains the code and labs for the module. Open up your Ubuntu instance, and downloaded from:
-
-git clone https://github.com/billbuchanan/esecurity
+<pre>
+git clone https://github.com/billbuchanan/esecurity.git
+</pre>
 
 If you need to update the code, go into the esecurity folder, and run:
 
+<pre>
 git pull
+</pre>
 
 The VM for the module can be downloaded [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj)
 
