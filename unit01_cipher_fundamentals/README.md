@@ -5,26 +5,26 @@ The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Pr
 ## What you should know at the end of unit?
 
 * Understand the conversion of characters between hex, decimal and octal. Sample question: Convert "hello" into a hex stream. Related material: [here](https://asecuritysite.com/Coding/ascii). Why are we studying this? Encrypted content is converted into a range of different formats, so we need to understand the process of taking plain text and then converting it into other encoding formats. Encryption keys, ciphertext and digital certificates are examples of binary content which must be represented in a text format.
-* Compute the GCD for values. Sample question: What is the GCD for 42 and 56? Related material: [here]. Why are we studying this? GCD is a fundamental building block used in public key encryption, where we must find two numbers who do not share a common divisor. When we look at public key encryption we will see how GCD is used.
+* Compute the GCD for values. Sample question: What is the GCD for 42 and 56? Related material: [here](https://asecuritysite.com/encryption/gcd). Why are we studying this? GCD is a fundamental building block used in public key encryption, where we must find two numbers who do not share a common divisor. When we look at public key encryption we will see how GCD is used.
 * Compute the MOD for values. Sample question: What is the result of 13 MOD 7? Why are we studying this? Within many of the public key methods we use the MOD operator with a prime number, and where it is difficult to find the value of x for Y=g^x(modp), even though we know Y, g and p.
-* Understand how to manually convert from ASCII to Base-64, and vice-versa. Sample question: What is the Base-64 conversion of “hello”? [here]. Base-64 is used extensively in encryption, and many of the keys and cipher text are transported and stored in a Base-64 format.
+* Understand how to manually convert from ASCII to Base-64, and vice-versa. Sample question: What is the Base-64 conversion of “hello”? [here](https://asecuritysite.com/Coding/ascii). Base-64 is used extensively in encryption, and many of the keys and cipher text are transported and stored in a Base-64 format.
 Calculate the time taken to crack a code given a time to try each key, and for the number of processing elements. Sample question: If it takes 100 years to crack a cipher code, and computing power doubles each year. How long will it take to crack a code after five years? Why are we studying this? We always need to understand the strengths of your encrypted data, especially in the face of GPU based crackers, so we need to understand how quickly it will take to crack our cipher.
 
 ## Presentations
 
-Week 1 Presentation (PDF): here
-Week 1 Presentation (video): here
-Week 1 Presentation (classroom lecture): here
+* Week 1 Presentation (PDF): here
+* Week 1 Presentation (video): [here](https://www.youtube.com/watch?v=zqmjUpJNcJA)
+* Week 1 Presentation (classroom lecture): here
 
 ## Lab
 
-Week 1 Lab (PDF): here [demo]
+* Week 1 Lab (PDF): here [demo]
 
 ## Sample exam questions
 
-1. Using the table [here], what is the Base-64 encoding for "test"?
+1. Using the table [here](https://asecuritysite.com/public/test_table.pdf), what is the Base-64 encoding for "test"?
 
-2. Using the table [here], is the Base-64 encoding for "help"?
+2. Using the table [here](https://asecuritysite.com/public/test_table.pdf), is the Base-64 encoding for "help"?
 
 3. If it takes 1ns to test an encryption key. How long will it take to crack a 32-bit key?
 
@@ -42,14 +42,13 @@ Week 1 Lab (PDF): here [demo]
 
 ## Tests
 
-Take cipher code challenge: here
-Five minute challenge: here
-Test 1 (Caesar): here
-Test 2 (Hex): here
-Test 3 (Base64): here
-Test 4 (Main): here
+Take cipher code challenge: [here](https://asecuritysite.com/challenges/hex)
+Five minute challenge: [here](https://asecuritysite.com/challenges/scramb)
+Test 1 (Caesar): [here](https://asecuritysite.com/tests/tests?sortBy=caesar)
+Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
 
-Answers
+
+## Answers
 
 Q1
 
@@ -73,16 +72,11 @@ Q4
 Max time to crack = 10e-9 x 2^20
 Max time to crack = 0.01 seconds
 
-Q8: Have a look [here]
-Any questions?
-## Main content
-This is Unit 1 and the content is here:
+Q8: Have a look [here](https://asecuritysite.com/encryption/base58)
 
-https://asecuritysite.com/esecurity/unit01
 
-The lecture is here:
 
-https://www.youtube.com/watch?v=zqmjUpJNcJA
+
 
 
 
