@@ -126,5 +126,6 @@ We will be using a Ubuntu machine for the practical elements of the module. The 
 </tr>
 </table>
 
+Any questions, contact us on Slack?
 
 
