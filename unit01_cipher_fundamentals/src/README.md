@@ -1,3 +1,5 @@
+![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
+
 A.6
 <pre>
 print 0x43 | 0x21
