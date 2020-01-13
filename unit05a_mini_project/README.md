@@ -1,3 +1,5 @@
+![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
+
 # Unit 5a: Mini-project
 
 Objective: In this lab we will build a basic infrastructure for integrating and testing cryptograph. 
