@@ -12,7 +12,7 @@ The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Pr
 
 ## Presentations
 
-* Week 1 Presentation (PDF): [here](https://asecuritysite.com/public/chapter01_ciphers_fundamentals.pdf)
+* Week 1 Presentation (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit01_cipher_fundamentals/lecture)
 * Week 1 Presentation (video): [here](https://www.youtube.com/watch?v=zqmjUpJNcJA)
 
 ## Lab
