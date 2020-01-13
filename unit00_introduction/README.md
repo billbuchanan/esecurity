@@ -17,7 +17,7 @@ The units involved in the module are:
 ## Details
 The module uses Slack as the main communication channel. The Slack channel is [here](esecurity2020.slack.com).
 
-## Introduction
+## Module outline
 An introduction video is here:
 
 [![](http://img.youtube.com/vi/z9DaFxDuxxA/0.jpg)](http://www.youtube.com/watch?v=z9DaFxDuxxA "")
@@ -25,6 +25,9 @@ An introduction video is here:
 If you need a demo of the Ubtuntu setup you can view here:
 
 [![](http://img.youtube.com/vi/tIQYpjaELcA/0.jpg)](http://www.youtube.com/watch?v=tIQYpjaELcA "")
+
+## Virtual Machine
+We will be using a Ubuntu machine for the practical elements of the module. The VM can either be sourced on vSoC or can be downloaded from [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj). You can download VMWare Workstation or VMWare Fusion from [here](https://softcentre.soc.napier.ac.uk/users.cgi).
 
 ## Draft Timetable
 <p>The following is the draft timetable:</p>
