@@ -14,8 +14,7 @@ The units involved in the module are:
 * Future Cryptography. Future cryptography.
 * Host security.
 
-## Details
-The module uses Slack as the main communication channel. The Slack channel is [here](esecurity2020.slack.com).
+The module uses Slack as the main communication channel. The Slack channel is [here](esecurity2020.slack.com), and we will have a WebEx session each Monday at 6:30pm.
 
 ## Module outline
 An introduction video is here:
