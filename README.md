@@ -2,7 +2,7 @@
 
 ## Outline details
 
-The main module page is at:
+Some of the associated material will be hosted on this site:
 
 https://asecuritysite.com/esecurity
 
