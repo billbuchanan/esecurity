@@ -3,16 +3,16 @@
 ## Units
 The units involved in the module are:
 
-* 1. Ciphers and Fundamentals.  
-* 2. Symmetric (Secret) Key. AES, ChaCha20.
-* 3. Hashing and MAC. MD5, SHA-1, SHA-256.
-* 4. Asymmetric (Public) Key. RSA and Elliptic Curve.
-* 5. Key Exchange. Diffie-Hellman, ECDH.
-* 6. Trust and Digital Certificates. 
-* 7. Tunnelling. Tunnelling, including SSL/TLS.
-* 8. Cryptocurrencies and Blockchain. Outline of cryptocurrencies, Bitcoins, Ethereum and more.
-* 9. Future Cryptography. Outline of areas such as Homomorphic Encryption, Zero-knowledge proofs and Quantum-robust cryptography.
-* 10. Host security.
+* Ciphers and Fundamentals.  
+* Symmetric (Secret) Key. AES, ChaCha20.
+* Hashing and MAC. MD5, SHA-1, SHA-256.
+* Asymmetric (Public) Key. RSA and Elliptic Curve.
+* Key Exchange. Diffie-Hellman, ECDH.
+* Trust and Digital Certificates. 
+* Tunnelling. Tunnelling, including SSL/TLS.
+* Cryptocurrencies and Blockchain. Outline of cryptocurrencies, Bitcoins, Ethereum and more.
+* Future Cryptography. Outline of areas such as Homomorphic Encryption, Zero-knowledge proofs and Quantum-robust cryptography.
+* Host security.
 
 The module uses Slack as the main communication channel and which can be accessed [here](esecurity2020.slack.com). There is also a WebEx session each Monday at 6:30pm.
 
