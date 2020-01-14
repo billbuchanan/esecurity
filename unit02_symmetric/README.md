@@ -4,6 +4,8 @@
 
 The key concepts involved are defining key entropy; key generators (such as using hashing methods to generate keys based on passphrases); symmetric key methods (AES, Twofish, 3DES, RC4 and ChaCha20); stream or block encryption; symmetric key modes (ECB/CBC/OFB); and salting/IV.
 
+Back-up of content: [here](https://asecuritysite.com/csn11117/unit02)
+
 ## What you should know at the end of unit?
 
 * The differences between a stream cipher and a block cipher.
@@ -14,20 +16,20 @@ The key concepts involved are defining key entropy; key generators (such as usin
 
 ## Presentations
 
-* Week 2 Presentation (PDF) - Symmetric Key Encryption: here
-* Week 2 Presentation (Video) - Symmetric Key Encryption here
-* Week 2 Presentation (Lecture - Video) - Symmetric Key Encryption: here
+* Week 2 Presentation (PDF) - Symmetric Key Encryption: [here](https://asecuritysite.com/public/chapter02_secret.pdf)
+* Week 2 Presentation (Video) - Symmetric Key Encryption [here](https://youtu.be/nLRV34K3xIo)
+* Week 2 Presentation (Lecture - Video) - Symmetric Key Encryption: [here](https://youtu.be/r6TXRmTF5nw)
 
 ## Lab
 
-* Unit 2 Lab (PDF): here
-* Unit 2 Lab (Video): here
+* Unit 2 Lab (PDF): [here](https://asecuritysite.com/public/new_lab02.pdf)
+* Unit 2 Lab (Video): [here](https://youtu.be/N3UADaXmOik)
 
 ## Quick demos
 
-* Introduction to AES: [here]
-* Padding in ciphers: [here]
-* Why EDE in 3DES?: [here]
+* Introduction to AES: [here](https://www.youtube.com/watch?v=rSyvUYbMok8)
+* Padding in ciphers: [here](https://www.youtube.com/watch?v=R3NosHMSi0o)
+* Why EDE in 3DES?: [here](https://www.youtube.com/watch?v=ttayDxqfQkA)
 
 ## Sample exam questions
 The following are sample exam questions for symmetric key:
