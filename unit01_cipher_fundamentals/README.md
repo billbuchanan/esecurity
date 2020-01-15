@@ -45,11 +45,12 @@ https://asecuritysite.com/esecurity/unit01
 
 ## Tests
 
-* Take cipher code challenge: [here](https://asecuritysite.com/challenges/hex)
-* Five minute challenge: [here](https://asecuritysite.com/challenges/scramb)
+* Take fun cipher code challenge: [here](https://asecuritysite.com/challenges/hex). Go see what score you can achieved. If you can get more than 30, you are doing every well. Something over 90 enters a genius level.
+* Five minute challenge: [here](https://asecuritysite.com/challenges/scramb). See if you can solve a scrambled alphabet cipher in just five minutes.
 * Test 1 (Caesar): [here](https://asecuritysite.com/tests/tests?sortBy=caesar)
 * Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
 
+Note: There will be no cipher challenges in the assessments, and these tests are just a bit of fun, and for background.
 
 ## Answers
 
