@@ -1,3 +1,5 @@
+![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
+
 # Analysis of Next Generation Cryptography
 The coursework hand-in date is: **Monday, 8 May 2020, 11:59pm**. There will be a hand-in in Moodle for your submission.
 
