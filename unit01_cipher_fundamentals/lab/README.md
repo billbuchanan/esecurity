@@ -266,15 +266,14 @@ if (len(sys.argv)>1):
 def sieve_for_primes_to(n):
     size = n//2
     sieve = [1]*size
-    limit = int(n**0.5)
+    limit = int(n\*\*0.5)
     for i in range(1,limit):
         if sieve[i]:
-            val = 2*i+1
+            val = 2\*i+1
             tmp = ((size-1) - i)//val 
-            sieve[i+val::val] = [0]*tmp
-    return [2] + [i*2+1 for i, v in enumerate(sieve) if v and i>0]
+            sieve[i+val::val] = [0]\*tmp
+    return [2] + [i\*2+1 for i, v in enumerate(sieve) if v and i>0]
  
-
 print (sieve_for_primes_to(test))
 </pre>
 
@@ -291,13 +290,14 @@ Up to 10,000:
 
 The Miller-Rabin Test for Primes is an efficient method in testing for a prime number. Access the following page and download the Python script. 
 
- Web link (Miller-Radin):	http://asecuritysite.com/encryption/rabin
+Web link (Miller-Radin):	http://asecuritysite.com/encryption/rabin
 
 Using this determine the following:
 
 
-### D.4	Which of the following numbers are prime numbers:
-	Is 5 prime? Yes/No
+### D.4	Prime numbers
+Which of the following numbers are prime numbers:
+Is 5 prime? Yes/No
 
 Is 7919 prime? Yes/No
 
@@ -309,19 +309,17 @@ Is 982,451,652 prime? Yes/No
 
 
 
-
-
 ## E	Random numbers
 Within cryptography random numbers are used to generate things like encryption keys. If the generation of these keys could be predicted in some way, it may be possible to guess it. The two main types of random number generators are:
 
-•	Pseudo-Random Number Generators (PRNGs).  Repeats after a given time.  Fast. They are also deterministic and periodic, so that the random number generation will eventually repeat.
-•	True Random Number Generators (TRNGs). This method is a true random number such as for keystroke analysis.  It is generally slow but is non-deterministic and aperiodic.
+* Pseudo-Random Number Generators (PRNGs).  Repeats after a given time.  Fast. They are also deterministic and periodic, so that the random number generation will eventually repeat.
+* True Random Number Generators (TRNGs). This method is a true random number such as for keystroke analysis.  It is generally slow but is non-deterministic and aperiodic.
 
 Normally simulation and modelling use PRNG, so that the values generated can be repeated each time, while cryptography, lotteries, gambling and games use TRNG, as each value which is selected at random should not repeat or be predictable. In the generation of encryption keys for public key encryption, a user is typically asked to generate some random activity with their mouse pointer. The random number is then generated on this activity.
 
 Computer programs often struggle to generate TRNG, and hardware generators are sometimes used. One method is to generate a random number based on low-level, statistically random "noise" signals. This includes things like thermal noise, and a photoelectric effect.
 
- Web link (Random number):	http://asecuritysite.com/encryption/random
+Web link (Random number):	http://asecuritysite.com/encryption/random
 
 One method of creating a simple random number generator is to use a sequence generator of the form (Linear Congruential Random Numbers):
 
@@ -331,16 +329,19 @@ Where a, c and m are integers, and where X0 is the seed value of the series.
 
 If we take the values of a=21, X0=35, c=31 and m=100 we get a series of:
 
+<pre>
 66 17 88 79 90 21 72 43 34 45 76 27 98 89 0 31 82 53
+</pre>
 
 Using this example, we get:
-
+<pre>
 (21×35+31) mod 100 gives 66
 (21×66+31) mod 100 gives 17
 (21×17+31) mod 100 gives 88
-and so on.
+</pre?
 
- Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
+
+Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
 
 No	Description	Result
 
@@ -350,10 +351,12 @@ Using: a=21, seed=35, c=31, and m=100, prove that the sequence gives 66 17 88 79
 	Does it generate this sequence?
 
 Yes/No
+
 E.2	Determine the sequence for:
 
 a=22, seed=35, c=31, and m=100. 
-	First four numbers of sequence?
+
+First four numbers of sequence?
 
 
 
@@ -361,21 +364,23 @@ a=22, seed=35, c=31, and m=100.
 ### E.3	Determine the sequence for:
 
 a=954,365,343, seed=436,241, c=55,119,927, and m=1,000,000.
-	First four numbers of sequence?
+
+First four numbers of sequence?
 
 
 ### E.4	Determine the sequence for:
 
 a=2,175,143, seed=3553, c=10,653, and m=1,000,000. 
-	First four numbers of sequence?
+
+First four numbers of sequence?
 
 
 ## F	What I should have learnt from this lab?
 The key things learnt:
 
-•	Some fundamental principles around number and character formats, including binary, hexadecimal and Base64.
-•	How to run a Python program and change some of the parameters.
-•	Some fundamentals around prime numbers and mod operations.
+* Some fundamental principles around number and character formats, including binary, hexadecimal and Base64.
+* How to run a Python program and change some of the parameters.
+* Some fundamentals around prime numbers and mod operations.
 
 
 
