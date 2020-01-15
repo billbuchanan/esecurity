@@ -2,7 +2,22 @@
 
 # Unit 1: Cipher Fundamentals
 
-The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Prime Numbers. GCD Large numbers. Random Number Generator . Data Integrity (CRC-32). Frequency Analysis. Key-based encryption. Key sizes. We will crack some ciphers, in order to get you into the way of solving puzzles.
+The key concepts are: 
+
+* Ciphers. 
+* Encoding methods (ASCII, UTF-16, Base64, Hex). 
+* Prime Numbers. 
+* GCD.
+* Large numbers. 
+* Random Number Generators. 
+* Data Integrity (CRC-32). 
+* Frequency Analysis. 
+* Key-based encryption. 
+* Key sizes. 
+
+The associated Web page is here:
+
+https://asecuritysite.com/esecurity/unit01
 
 ## What you should know at the end of unit?
 
@@ -25,29 +40,30 @@ The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Pr
 
 1. Using the table [here](https://asecuritysite.com/public/test_table.pdf), what is the Base-64 encoding for "test"?
 
-2. Using the table [here](https://asecuritysite.com/public/test_table.pdf), is the Base-64 encoding for "help"?
+1. Using the table [here](https://asecuritysite.com/public/test_table.pdf), is the Base-64 encoding for "help"?
 
-3. If it takes 1ns to test an encryption key. How long will it take to crack a 32-bit key?
+1. If it takes 1ns to test an encryption key. How long will it take to crack a 32-bit key?
 
-4. If it takes 10ns to test an encryption key. How long will it take to crack a 20-bit key?
+1. If it takes 10ns to test an encryption key. How long will it take to crack a 20-bit key?
 
-5. Bob tells Alice that she won't be able to view the cipher text, but when she looks at the messages, they seem to be full of printable characters. What format is Bob likely to be using for the encoding of the cipher text, and what would you ask Alice to look for, in order to confirm your guess?
+1. Bob tells Alice that she won't be able to view the cipher text, but when she looks at the messages, they seem to be full of printable characters. What format is Bob likely to be using for the encoding of the cipher text, and what would you ask Alice to look for, in order to confirm your guess?
 
-6. Alice has been reading her crypto books, and she reads that there should be an '=' symbol at the end of the encoding. She observes her encoding of cipher messages to Bob, and sees that some do not have an '=' sign at the end. Is there a problem with her encoder? If not, how often, on average, should she see an '=' sign at the end of her ciphered messages?
+1. Alice has been reading her crypto books, and she reads that there should be an '=' symbol at the end of the encoding. She observes her encoding of cipher messages to Bob, and sees that some do not have an '=' sign at the end. Is there a problem with her encoder? If not, how often, on average, should she see an '=' sign at the end of her ciphered messages?
 
-7. Bob has two numbers which give a GCD of 1. Trent says that this happens because the numbers are prime. Is Trent correct? Explain your answer.
+1. Bob has two numbers which give a GCD of 1. Trent says that this happens because the numbers are prime. Is Trent correct? Explain your answer.
 
-8. Bob deals in Bitcoins and tells Alice that he has a Base-58 ID? Alice says he is crazy, and has only heard of Base-64. What is Base-58 and how does it differ from Base-64?
+1. Bob deals in Bitcoins and tells Alice that he has a Base-58 ID? Alice says he is crazy, and has only heard of Base-64. What is Base-58 and how does it differ from Base-64?
 
-9. Bob encrypted a message in 1980, and it took a million years to crack at the time. Assuming that computing power doubles each year, do you think the message will be safe against cracking for existing computer systems?
+1. Bob encrypted a message in 1980, and it took a million years to crack at the time. Assuming that computing power doubles each year, do you think the message will be safe against cracking for existing computer systems?
 
 ## Tests
 
-* Take cipher code challenge: [here](https://asecuritysite.com/challenges/hex)
-* Five minute challenge: [here](https://asecuritysite.com/challenges/scramb)
+* Take fun cipher code challenge: [here](https://asecuritysite.com/challenges/hex). Go see what score you can achieved. If you can get more than 30, you are doing every well. Something over 90 enters a genius level.
+* Five minute challenge: [here](https://asecuritysite.com/challenges/scramb). See if you can solve a scrambled alphabet cipher in just five minutes.
 * Test 1 (Caesar): [here](https://asecuritysite.com/tests/tests?sortBy=caesar)
 * Test 2 (Hex): [here](https://asecuritysite.com/tests/tests?sortBy=hex01)
 
+Note: There will be no cipher challenges in the assessments, and these tests are just a bit of fun, and for background.
 
 ## Answers
 
