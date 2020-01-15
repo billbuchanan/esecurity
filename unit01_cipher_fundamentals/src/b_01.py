@@ -7,4 +7,4 @@ def gcd(a, b):
 	return a;
 
 g = gcd(54,8)
-print g
+print (g)

@@ -14,4 +14,4 @@ X0=35
 c=31
 m=100  
 res=gen_linear(a,X0,c,m)
-print res
+print (res)
