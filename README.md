@@ -117,7 +117,7 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
             <tr>
     <td bgcolor="#990000" class="table1"><strong>15</strong></td>
     <td bgcolor="#990000" class="table1"><strong>Week beginning 4 May 2020 (TBC)</strong></td>
-    <td>Coursework Hand-in [<a href="https//asecuritysite.com//esecurity/cw" target="_blank">Draft</a>]</td>
+    <td>Coursework Hand-in [<a href="https://asecuritysite.com//esecurity/cw" target="_blank">Draft</a>]</td>
 
 </tr>
 </table>
