@@ -2,7 +2,20 @@
 
 # Unit 1: Cipher Fundamentals
 
-The key concepts are: Ciphers. Encoding methods (ASCII, UTF-16, Base64, Hex). Prime Numbers. GCD Large numbers. Random Number Generator . Data Integrity (CRC-32). Frequency Analysis. Key-based encryption. Key sizes. We will crack some ciphers, in order to get you into the way of solving puzzles. The associated Web page is here:
+The key concepts are: 
+
+* Ciphers. 
+* Encoding methods (ASCII, UTF-16, Base64, Hex). 
+* Prime Numbers. 
+* GCD.
+* Large numbers. 
+* Random Number Generators. 
+* Data Integrity (CRC-32). 
+* Frequency Analysis. 
+* Key-based encryption. 
+* Key sizes. 
+
+The associated Web page is here:
 
 https://asecuritysite.com/esecurity/unit01
 
