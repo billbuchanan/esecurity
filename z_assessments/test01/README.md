@@ -1,8 +1,7 @@
 # Test 1
-There will be four main questions in the exam: Symmetric Key (Unit 2), Hashing (Unit 3), Public Key (Unit 4), and Key Exchange (Unit 5).
+There will be four main questions in the exam: Symmetric Key (Unit 2), Hashing (Unit 3), Public Key (Unit 4), and Key Exchange (Unit 5). An outline is [here](https://www.youtube.com/watch?v=Oj3T2UO1WDw&feature=emb_title).
 
 ## 1. Symmetric Key
-
 Key principles: Salting, AES, ECB, CBC, Key entropy.
 
 * Computing power increases each year. Outline the challenge this gives when protecting encrypted data. [Ref: Symmetric Key]
@@ -33,7 +32,11 @@ Key principles: Hashing, Hashing Formats, Time to crack, operation of converting
 * If it takes 10ns to test an encryption key. How long will it take to crack a 20-bit key? [Ref: Hashing]
 * It was stated in the recent Yahoo hack that:
 <pre>
-    "We have confirmed, based on a recent investigation, that a copy of certain user account information was stolen from our networks in late 2014 by what we believe is a state-sponsored actor," Lord wrote. "The account information may have included names, e-mail addresses, telephone numbers, dates of birth, hashed passwords (the  vast majority with Bcrypt), and, in some cases, encrypted or unencrypted security questions and answers."
+"We have confirmed, based on a recent investigation, that a copy of certain user account information 
+was stolen from our networks in late 2014 by what we believe is a state-sponsored actor," Lord wrote. 
+"The account information may have included names, e-mail addresses, telephone numbers, dates of birth, 
+hashed passwords (the  vast majority with Bcrypt), and, in some cases, encrypted or unencrypted security 
+questions and answers."
 </pre>
 * Do you think the vast majority of the hashed passwords will be cracked? Do you think they had good practice in place for hashed passwords? [Ref: Hashing]
 * You are working with a security consultant, and he says that you don't need to check the hashing of passwords, as it should work without testing. You disagree with him and decide to test your hashing method. Initially you must find test vectors for MD5, SHA-1 and SHA-256. Can you find three test vectors, and test them against an on-line calculator? [Ref: Hashing]
