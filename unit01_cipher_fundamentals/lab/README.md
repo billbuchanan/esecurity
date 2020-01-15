@@ -123,9 +123,13 @@ Using Python, using a decimal value of 41, determine the result of a shift left 
 Web link (Bit shift): https://asecuritysite.com/comms/shift
 
 Decimal form:     41
+
 Shift left (1):	
+
 Shift left (2):	
+
 Shift right(1):	
+
 Shift right(2):
 
 Why would a shift left or shift right operator not be used on its own in cryptography?
