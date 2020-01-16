@@ -106,7 +106,7 @@ Sample questions:
 * How are Range Proofs used to preserve privacy, and how are they used in cryptocurrency applications?
 * Bob the Chip Designer wants to use AES for the design of a new RFID tag, but Alice says he should use ChaCha20. Who is right?
 
-10. Tokenization, Authorization and Docker
+## 10. Tokenization, Authorization and Docker
 
 [10. Tokenization, Authorization and Docker]
 
