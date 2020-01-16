@@ -11,7 +11,7 @@ Learning Outlines:
 
 * Define how PKI is used to secure communications, and how digital certificates would be used in this.
 * Understand the signing process involved within the trust infrastructrue.
- * Understand the basics of the Code Signing Request (CSR).
+* Understand the basics of the Code Signing Request (CSR).
 
 Sample questions:
 
