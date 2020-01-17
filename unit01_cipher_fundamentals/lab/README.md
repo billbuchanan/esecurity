@@ -53,7 +53,8 @@ bGxveWRz
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
 </pre>
 
-### A.5	Using Python, what is the result of 53,431 (mod 453)?
+### A.5	The mod operatpor
+Using Python, what is the result of 53,431 (mod 453)?
 
 In Python, this is: 
 
@@ -62,7 +63,8 @@ print (53431 % 453)
 ```
 
 
-### A.6	Using Python, what is the results of the following:
+### A.6	Bitwise operations
+Using Python, what is the results of the following:
 
 ```python
 print (0x43 | 0x21)
@@ -70,10 +72,11 @@ print (0x43 & 0x21)
 print (0x43 ^ 0x21)
 ```
 
-Using a pen and paper, prove that these results are correct.	Results:
+In this case, "|" does a bitwise OR, "&" does a bitwise AND, and "^" does a bitwise X-OR. Using a pen and paper, prove that these results are correct.	Results:
 
 
-### A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
+### A.7	Hex, Oct, Char and Binary
+Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
 
 ```python
 val1=93
@@ -86,7 +89,8 @@ print ("Char:\t",chr(val1))
 
 Results:
 
-### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
+### A.8	Node.js
+JavaScript is often used in cryptography. Using node.js, repeat A.7.
 
 ```node
 val=93
@@ -103,7 +107,8 @@ node a_08.js
 Results:
 
 
-### A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
+### A.9	Base64
+Using Python, what is the Base-64 conversion for the string of “crypto”?
 
 ```python
 import base64
