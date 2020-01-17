@@ -105,11 +105,12 @@ Results:
 
 ### A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
 
-<pre>
+```python
 import base64
 str="crypto"
 print (base64.b64encode(str))
-</pre>
+```
+
 Result:
 
 
