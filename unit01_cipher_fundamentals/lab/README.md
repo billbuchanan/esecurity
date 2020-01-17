@@ -53,47 +53,52 @@ bGxveWRz
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
 </pre>
 
-### A.5	Using Python, what is the result of 53,431 (mod 453)?
+### A.5	The mod operatpor
+Using Python, what is the result of 53,431 (mod 453)?
 
 In Python, this is: 
 
-<pre>
+```python
 print (53431 % 453)
-</pre>
+```
 
 
-### A.6	Using Python, what is the results of the following:
+### A.6	Bitwise operations
+Using Python, what is the results of the following:
 
-<pre>
+```python
 print (0x43 | 0x21)
 print (0x43 & 0x21)
 print (0x43 ^ 0x21)
-</pre>
+```
 
-Using a pen and paper, prove that these results are correct.	Results:
+In this case, "|" does a bitwise OR, "&" does a bitwise AND, and "^" does a bitwise X-OR. Using a pen and paper, prove that these results are correct.	Results:
 
 
-### A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
+### A.7	Hex, Oct, Char and Binary
+Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
 
-<pre>
+```python
 val1=93
 print ("Dec:\t",val1)
 print ("Bin:\t",bin(val1))
 print ("Hex:\t",hex(val1))
 print ("Oct:\t",oct(val1))
 print ("Char:\t",chr(val1))
-</pre>
+```
+
 Results:
 
-### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
+### A.8	Node.js
+JavaScript is often used in cryptography. Using node.js, repeat A.7.
 
-<pre>
+```node
 val=93
 console.log(val.toString(2))
 console.log(val.toString(16))
 console.log(val.toString(8))
 console.log(String.fromCharCode(val))
-</pre>
+```
 
 This program will use node.js. Create a file named a_08.js and then run with:
 
@@ -102,18 +107,20 @@ node a_08.js
 Results:
 
 
-### A.9	Using Python, what is the Base-64 conversion for the string of “crypto”?
+### A.9	Base64
+Using Python, what is the Base-64 conversion for the string of “crypto”?
 
-<pre>
+```python
 import base64
 str="crypto"
 print (base64.b64encode(str))
-</pre>
+```
+
 Result:
 
 
 ### A.10 Base64
-If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
+If we use a string of "crypto1", what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
 Observation:
 
 
