@@ -198,15 +198,15 @@ No	Description	Result
 ### C.1	What is the result of the following:
 
 
-813 mod 271:
-1223 mod 973:
+8<sup>13</sup> mod 271:
+12<sup>23</sup> mod 973:
 
 
 ### C.2	Implement a Python program which will determine the result of:
 
 M<sup>e</sup> mod p
 
-The program should check that p is a prime number.	Is the result of 85 mod 269 equal to 219?
+The program should check that p is a prime number.	Is the result of 8<sup>5</sup> mod 269 equal to 219?
 
 Yes/No
 
@@ -219,14 +219,14 @@ Now prove the following:
 
 An outline of the Python 2.7 code is:
 
-<pre>
+```
 message = raw_input('Enter message: ')
 e =  raw_input('Enter exponent: ') 
 p = raw_input('Enter prime ')
 
 cipher = (int(message) ** int(e)) % int(p)
 print (cipher)	
-</pre
+```
 
 Note: In Python 3.x, we using input() instead of raw_input().
 
@@ -259,7 +259,7 @@ Prime numbers:
 
 A prime sieve creates all the prime numbers up to a given limit. It progressively removes composite numbers until it only has prime numbers left, and it is the most efficient way to generate a range of prime numbers. The following provides a fast method to determine the prime numbers up to a give value (test):
 
-<pre>
+```
 import sys
 
 test=1000
@@ -279,7 +279,7 @@ def sieve_for_primes_to(n):
     return [2] + [i\*2+1 for i, v in enumerate(sieve) if v and i>0]
  
 print (sieve_for_primes_to(test))
-</pre>
+```
 
 
 ### D.3	Implement the Python code given above and determine the highest prime number possible in the following ranges:
