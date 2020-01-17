@@ -219,7 +219,7 @@ Now prove the following:
 
 An outline of the Python 2.7 code is:
 
-```
+```python
 message = raw_input('Enter message: ')
 e =  raw_input('Enter exponent: ') 
 p = raw_input('Enter prime ')
@@ -259,7 +259,7 @@ Prime numbers:
 
 A prime sieve creates all the prime numbers up to a given limit. It progressively removes composite numbers until it only has prime numbers left, and it is the most efficient way to generate a range of prime numbers. The following provides a fast method to determine the prime numbers up to a give value (test):
 
-```
+```python
 import sys
 
 test=1000
