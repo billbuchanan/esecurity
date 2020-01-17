@@ -88,13 +88,13 @@ Results:
 
 ### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
 
-<pre>
+```node
 val=93
 console.log(val.toString(2))
 console.log(val.toString(16))
 console.log(val.toString(8))
 console.log(String.fromCharCode(val))
-</pre>
+```
 
 This program will use node.js. Create a file named a_08.js and then run with:
 
