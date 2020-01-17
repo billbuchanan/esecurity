@@ -115,7 +115,7 @@ Result:
 
 
 ### A.10 Base64
-If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
+If we use a string of "crypto1", what do you observe from the Base64 conversion compared to the result in the previous question (A.9)?	
 Observation:
 
 
