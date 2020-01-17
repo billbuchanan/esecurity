@@ -57,32 +57,33 @@ bGxveWRz
 
 In Python, this is: 
 
-<pre>
+```python
 print (53431 % 453)
-</pre>
+```
 
 
 ### A.6	Using Python, what is the results of the following:
 
-<pre>
+```python
 print (0x43 | 0x21)
 print (0x43 & 0x21)
 print (0x43 ^ 0x21)
-</pre>
+```
 
 Using a pen and paper, prove that these results are correct.	Results:
 
 
 ### A.7	Using Python, what is the hex, octal, character, and binary equivalents of the value of 93:
 
-<pre>
+```python
 val1=93
 print ("Dec:\t",val1)
 print ("Bin:\t",bin(val1))
 print ("Hex:\t",hex(val1))
 print ("Oct:\t",oct(val1))
 print ("Char:\t",chr(val1))
-</pre>
+```
+
 Results:
 
 ### A.8	JavaScript is often used in cryptography. Using node.js, repeat A.7.
