@@ -15,7 +15,9 @@ Using: http://asecuritysite.com/Encryption/testprime
 
 Test for the following prime numbers:
 91: [Yes] [No]	
+
 421: [Yes] [No]
+
 1449: [Yes] [No]
 
 
@@ -47,11 +49,11 @@ Using: http://asecuritysite.com/coding/ascii
 
 Determine the following ASCII strings for these encoded formats:
 
-<pre>
+```python
 bGxveWRz
 6E6170696572
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
-</pre>
+```
 
 ### A.5	The mod operatpor
 Using Python, what is the result of 53,431 (mod 453)?
@@ -157,13 +159,11 @@ Web link (Compression): https://asecuritysite.com/encryption/gzip
 
 Take a string of “abc” and compress it, and now keep building up the string with the same sequence (such as “abcabc…”). What do you observe from the length of the compression string if you use a random characters of the same length as an input:
 	
-<pre>
+```python
 eJzzyc9Lyc8DAAgpAms=
 eJxzSi3KycwDAAfXAl0=
 eJzzSy1XiMwvygYADKUC8A==
-</pre>
-
-
+```
 
 ## B	GCD
 GCD is known as the greatest common divisor, or greatest common factor (gcf), and is the largest positive integer that divides into two numbers without a remain-der. For example, the GCD of 9 and 15 is 3. It is used many encryption algorithms, and a sample algorithm to determine the GCD of two values (a and b) is given on:
