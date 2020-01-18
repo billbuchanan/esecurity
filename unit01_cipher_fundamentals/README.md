@@ -31,6 +31,7 @@ https://asecuritysite.com/esecurity/unit01
 
 * Week 1 Presentation (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit01_cipher_fundamentals/lecture)
 * Week 1 Presentation (video): [here](https://www.youtube.com/watch?v=zqmjUpJNcJA)
+* Week 1 Lecture (vide): [here](https://youtu.be/3hkRjzl8B8w)
 
 ## Lab
 
