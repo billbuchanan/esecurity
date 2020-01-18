@@ -170,8 +170,6 @@ GCD is known as the greatest common divisor, or greatest common factor (gcf), an
 
 Web link (GCD):	http://asecuritysite.com/encryption/gcd
 
-No	Description	Result
-
 ### B.1	Write a Python program to determine the GCD for the following:
 
 4105 and 10: 
@@ -347,8 +345,6 @@ Using this example, we get:
 
 
 Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
-
-No	Description	Result
 
 ### E.1	Implement the Python code given above.
 
