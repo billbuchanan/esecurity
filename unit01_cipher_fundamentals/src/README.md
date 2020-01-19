@@ -1,37 +1,37 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
 
 A.6
-<pre>
+```python
 print 0x43 | 0x21
 print 0x43 & 0x21
 print 0x43 ^ 0x21
-</pre>
+```
 
 A.7
-<pre>
+```python
 val1=93
 print "Dec:\t",val1
 print "Bin:\t",bin(val1)
 print "Hex:\t",hex(val1)
 print "Oct:\t",oct(val1)
 print "Char:\t",chr(val1)
-</pre>
+```
 A.8
-<pre>
+```python
 val=93
 console.log(val.toString(2))
 console.log(val.toString(16))
 console.log(val.toString(8))
 console.log(String.fromCharCode(val))
-</pre>
+```
 A.9
-<pre>
+```python
 import base64
 str=”crypto”
 print base64.b64encode(val)
-</pre>
+```
 A.10
-<pre>
+```python
 import sys
 
 val1="00110101"
@@ -56,9 +56,9 @@ print "Shift right (1):\t",res,"\t",bin(res)[2:10].rjust(8,'0')
 
 res=(dec >> 2) & 0xff
 print "Shift right (2):\t",res,"\t",bin(res)[2:10].rjust(8,'0')
-</pre>
+```
 B.1
-<pre>
+```python
 def gcd(a, b):
     
 	while( b != 0 ):
@@ -69,18 +69,18 @@ def gcd(a, b):
 
 g = gcd(54,8)
 print g
-</pre>
+```
 C.3
-<pre>
+```python
 message = raw_input('Enter message: ')
 e =  raw_input('Enter exponent: ') 
 p = raw_input('Enter prime ')
 
 cipher = (int(message) ** int(e)) % int(p)
 print cipher
-</pre>
+```
 D.1
-<pre>
+```python
 import math
 
 def get_if_prime(val):
@@ -114,9 +114,9 @@ if (res==True):
 	print str(val)+" is prime"
 else:	
 	print str(val)+" is not prime"
-</pre>
+```
 D.2
-<pre>
+```python
 import sys
 
 test=1000
@@ -136,4 +136,4 @@ def sieve_for_primes_to(n):
     return [2] + [i*2+1 for i, v in enumerate(sieve) if v and i>0]
  
 print sieve_for_primes_to(test)
-</pre>
+```
