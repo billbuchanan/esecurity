@@ -27,7 +27,7 @@ console.log(String.fromCharCode(val))
 A.9
 ```python
 import base64
-str=”crypto”
+str="crypto"
 print base64.b64encode(val)
 ```
 A.10
@@ -71,6 +71,7 @@ g = gcd(54,8)
 print g
 ```
 C.3
+
 ```python
 message = raw_input('Enter message: ')
 e =  raw_input('Enter exponent: ') 
