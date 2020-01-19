@@ -15,7 +15,9 @@ Using: http://asecuritysite.com/Encryption/testprime
 
 Test for the following prime numbers:
 91: [Yes] [No]	
+
 421: [Yes] [No]
+
 1449: [Yes] [No]
 
 
@@ -47,11 +49,11 @@ Using: http://asecuritysite.com/coding/ascii
 
 Determine the following ASCII strings for these encoded formats:
 
-<pre>
+```python
 bGxveWRz
 6E6170696572
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
-</pre>
+```
 
 ### A.5	The mod operatpor
 Using Python, what is the result of 53,431 (mod 453)?
@@ -157,24 +159,21 @@ Web link (Compression): https://asecuritysite.com/encryption/gzip
 
 Take a string of “abc” and compress it, and now keep building up the string with the same sequence (such as “abcabc…”). What do you observe from the length of the compression string if you use a random characters of the same length as an input:
 	
-<pre>
+```python
 eJzzyc9Lyc8DAAgpAms=
 eJxzSi3KycwDAAfXAl0=
 eJzzSy1XiMwvygYADKUC8A==
-</pre>
-
-
+```
 
 ## B	GCD
 GCD is known as the greatest common divisor, or greatest common factor (gcf), and is the largest positive integer that divides into two numbers without a remain-der. For example, the GCD of 9 and 15 is 3. It is used many encryption algorithms, and a sample algorithm to determine the GCD of two values (a and b) is given on:
 
 Web link (GCD):	http://asecuritysite.com/encryption/gcd
 
-No	Description	Result
-
 ### B.1	Write a Python program to determine the GCD for the following:
 
 4105 and 10: 
+
 4539 and 6:
 
 ### B.2	Two numbers are co-prime if they do not share co-factors, apart from 1, which is gcd(a,b)=1.
@@ -186,7 +185,7 @@ Determine if the following values are co-prime:
 ## C	Modulus and Exponentiation
 The mod operator results in the remainder of an integer divide. For example, 31 divided by 8 is 3 remainder 7, thus 31 mod 8 equals 7. Often in cryptography the mod operation uses a prime number, such as:
 
-Result = valuex mod (prime number)
+Result = value<sup>x</sup> mod (prime number)
 
 For example, if we have a prime number of 269, and a value of 8 with an x value of 5, the result of this operation will be:
 
@@ -200,12 +199,11 @@ C = M<sup>e</sup> mod p
 
 to encrypt and decrypt a message (M) using a key of e and a prime number p. 
 
-No	Description	Result
-
 ### C.1	What is the result of the following:
 
 
 8<sup>13</sup> mod 271:
+
 12<sup>23</sup> mod 973:
 
 
@@ -220,9 +218,9 @@ Yes/No
 
 ### C.3	Proving
 Now prove the following:
-(a)	message = 5, e=5, p = 53. Ans: 51
-(b)	message = 4, e=11, p = 79. Ans: 36
-(c)	message = 101, e=7, p = 293. Ans: 176
+* message = 5, e=5, p = 53. Ans: 51
+* message = 4, e=11, p = 79. Ans: 36
+* message = 101, e=7, p = 293. Ans: 176
 
 An outline of the Python 2.7 code is:
 
@@ -236,12 +234,6 @@ print (cipher)
 ```
 
 Note: In Python 3.x, we using input() instead of raw_input().
-
-Have you proven the answers:
-
-(a)	Yes/No
-(b)	Yes/No
-(c)	Yes/No
 
 ## D	Simple prime number test
 A prime number is a value which only has factors of 1 and itself. Prime numbers are used fairly extensively in cryptography, as computers struggle to factorize them when they are multiplied together.  The simplest test for a prime number is to divide the value from all the integers from 2 to the value divided by 2. If any of the results leaves no remainder, the value is a prime, otherwise it is composite. We can obviously improve on this by getting rid of even numbers which are greater than 2, and also that the highest value to be tested is the square root of the value. 
@@ -353,8 +345,6 @@ Using this example, we get:
 
 
 Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
-
-No	Description	Result
 
 ### E.1	Implement the Python code given above.
 
