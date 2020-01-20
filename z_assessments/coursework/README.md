@@ -19,18 +19,18 @@ There are many different methods involved in each of these areas, so while your 
 ## Tasks
 You should pick one of the areas defined, and then:
 
-* Perform a literature review around the required application area. This will involve using sources such as Google Scholar and outlining some of the key research in the area.
-* Produce a basic prototype of your application area. This might involve gathering code from GitHub sources, and/or creating your own code. Make sure you keep the references to any code you have used.
-* Evaluate the performance/security of the system. This will involve both the validation of your implemented code – such as using test vectors – and also the evaluation of the method(s) using one or more experiments. If you are building you own code, this will be more of a validation test.
+* **Perform a literature review around the required application area**. This will involve using sources such as Google Scholar and outlining some of the key research in the area.
+* **Produce a basic prototype of your application area**. This might involve gathering code from GitHub sources, and/or creating your own code. Make sure you keep the references to any code you have used.
+* **Evaluate the performance/security of the system**. This will involve both the validation of your implemented code – such as using test vectors – and also the evaluation of the method(s) using one or more experiments. If you are building you own code, this will be more of a validation test.
 
 ## Structure
 The coursework should have up to 15 pages, and will include the sections of:
 
-* Introduction. This will involve an outline of the area you are addressing and in defining the key aim of the coursework.
-* Literature Review. This will involve an outline literature review of your selected area, with integrated references.
-* Implementation. This will implement one or more of the methods you have outlined in the literature review, and which demonstrate the operation of the area you have selected. The report will perhaps include a few snippets of key elements of code, with an outline of their operation.
-* Evaluation. This will outline the validation and evaluation methods you have implemented with some results of the key aspects of the methods (or of your application).
-* Conclusions. This will include your key findings, and pointers to future work.
+* **Introduction**. This will involve an outline of the area you are addressing and in defining the key aim of the coursework.
+* **Literature Review**. This will involve an outline literature review of your selected area, with integrated references.
+* **Implementation**. This will implement one or more of the methods you have outlined in the literature review, and which demonstrate the operation of the area you have selected. The report will perhaps include a few snippets of key elements of code, with an outline of their operation.
+* **Evaluation**. This will outline the validation and evaluation methods you have implemented with some results of the key aspects of the methods (or of your application).
+* **Conclusions**. This will include your key findings, and pointers to future work.
 
 ## Marking schedule
 
