@@ -7,12 +7,12 @@ The coursework hand-in date is: **Monday, 8 May 2020, 11:59pm**. There will be a
 
 You are requested to investigate, build a prototype, and evaluate one of the following:
 
-* Zero-knowledge proof (ZKP) methods. This involves using cryptography to allow users to prove shared knowledge without having to reveal the original information. This might involve passing knowledge of a password, without actually revealing the password.
-* Homomorphic encryption. This involves processing encrypted data and can be partial homomorphic encryption (where a few mathematical methods can be implemented) or full homomorphic encryption.
-* Light-weight cryptography. This involves cryptography methods that supports encryption which are suitable for IoT devices. This is normally opmitized in terms of reducing processing requirements, memory utilization and energy drain.
-* Quantum-robust cryptography. Quantum computers are likely to crack existing public key methods, and thus we need to move toward public key methods which are quantum robust.
-* Key Distribution Centres. The complexity of handling keys is an increasing challenge for many companies. Within a KDC, we can implement methods which will generate encryption keys for users. This topic will involve investigating possible methods that could be used.
-* Blockchain integration. Many applications are moving towards storing data on a blockchain and in using smart contracts. This area will investigate new areas of improving the security and/or performance of blockchain related methods.
+* **Zero-knowledge proof (ZKP) methods**. This involves using cryptography to allow users to prove shared knowledge without having to reveal the original information. This might involve passing knowledge of a password, without actually revealing the password.
+* **Homomorphic encryption**. This involves processing encrypted data and can be partial homomorphic encryption (where a few mathematical methods can be implemented) or full homomorphic encryption.
+* **Light-weight cryptography**. This involves cryptography methods that supports encryption which are suitable for IoT devices. This is normally opmitized in terms of reducing processing requirements, memory utilization and energy drain.
+* **Quantum-robust cryptography**. Quantum computers are likely to crack existing public key methods, and thus we need to move toward public key methods which are quantum robust.
+* **Key Distribution Centres**. The complexity of handling keys is an increasing challenge for many companies. Within a KDC, we can implement methods which will generate encryption keys for users. This topic will involve investigating possible methods that could be used.
+* **Blockchain integration**. Many applications are moving towards storing data on a blockchain and in using smart contracts. This area will investigate new areas of improving the security and/or performance of blockchain related methods.
 
 There are many different methods involved in each of these areas, so while your literature review might have a relatively wide scope, you might want to focus in on one or more methods for your implementation and evaluation. You may also pick another related area, but this would have to be approved by your tutor.
 
@@ -40,7 +40,7 @@ The marking schedule is:
 * Quality and clarity of the implementation. 25%.
 * Level of innovation applied. 20%.
 * Quality of the evaluation or application. 20%.
- * Overall presentation and use of references. 15%.
+* Overall presentation and use of references. 15%.
 
 ## Submission of coursework
 
