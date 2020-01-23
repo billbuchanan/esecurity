@@ -1,12 +1,15 @@
+<!---
 B.4
 ```python
 print (chars//16+1)*32
 ```
-
+--->
+<!---
 C.4
 ```python
 print (chars//16+1)*16
 ```
+--->
 
 Commands in Section A:
 
