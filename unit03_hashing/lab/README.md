@@ -1,8 +1,6 @@
 # Lab 3: Hashing
 Objective: The key objective of this lab is to understand the range of hashing methods used, analyse the strength of each of the methods, and in the usage of salting. Overall the most popular hashing methods are: MD5 (128-bit); SHA-1 (160-bit); SHA-256 (256-bit); SHA-3 (256-bit), bcrypt (192-bit) and PBKDF2 (256-bit). The methods of bcrypt, scrypt and PBKDF2 use a number of rounds, and which significantly reduce the hashing rate. This makes the hashing processes much slower, and thus makes the cracking of hashed passwords more difficult. We will also investigate the key hash cracking tools such as hashcat and John The Ripper.
 
-Web link (Weekly activities): https://asecuritysite.com/esecurity/unit03
-
 Open up your Ubuntu instance within vsoc.napier.ac.uk and conduct this lab.
 
 Demo: [here](https://youtu.be/rnTLr6iUbf0)
@@ -12,18 +10,19 @@ If required, you can check the hashing methods here: https://asecuritysite.com/e
 ## A	Hashing
 In this section we will look at some fundamental hashing methods.
 
-No	Description	Result
-A.1	Using (either on your Windows desktop or on Ubuntu):
+### A.1	
+Using (either on your Windows desktop or on Ubuntu):
 
- Web link (Hashing):
-http://asecuritysite.com/encryption/md5
+Web link (Hashing): http://asecuritysite.com/encryption/md5
 
 Match the hash signatures with their words (“Falkirk”, “Edinburgh”, “Glasgow” and “Stirling”).
 
+<pre>
 03CF54D8CE19777B12732B8C50B3B66F
 D586293D554981ED611AB7B01316D2D5
 48E935332AADEC763F2C82CDB4601A25
 EE19033300A54DF2FA41DB9881B4B723
+</pre>
 	
 03CF5: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 
@@ -33,13 +32,12 @@ D5862: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 
 EE190: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 
-A.2	Repeat Part 1, but now use openssl, such as:
+### A.2	
+Repeat Part 1, but now use openssl, such as:
 
+<pre>
 echo -n 'Falkirk' | openssl md5
-
-
-
-
+</pre>
 
 03CF5: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 
@@ -50,8 +48,9 @@ D5862: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 EE190: Is it [Falkirk][Edinburgh][Glasgow][Stirling]?
 
 
+### A.3	
 
-A.3	Using:
+Using:
 
 Web link (Hashing): http://asecuritysite.com/encryption/md5
 
@@ -70,13 +69,15 @@ SHA-512 hex chars:
 How does the number of hex characters relate to the length of the hash signature:
 
 
-A.4	For the following /etc/shadow file, determine the matching password:
-
+### A.4	
+For the following /etc/shadow file, determine the matching password:
+<pre>
 bill:$apr1$waZS/8Tm$jDZmiZBct/c2hysERcZ3m1
 mike:$apr1$mKfrJquI$Kx0CL9krmqhCu0SHKqp5Q0
 fred:$apr1$Jbe/hCIb$/k3A4kjpJyC06BUUaPRKs0
 ian:$apr1$0GyPhsLi$jTTzW0HNS4Cl5ZEoyFLjB.
 jane: $1$rqOIRBBN$R2pOQH9egTTVN1Nlst2U7.
+</pre>
 
 [Hint: openssl passwd -apr1 -salt ZaZS/8TF napier]
 	The passwords are password, napier, inkwell and Ankle123.
@@ -91,24 +92,30 @@ Ian’s password:
 
 Jane’s password:
 
-A.5	From Ubuntu, download the following:
+### A.5	
 
- Web link (Files):
-http://asecuritysite.com/files02.zip
+From Ubuntu, download the following:
+
+Web link (Files): http://asecuritysite.com/files02.zip
 
 and the files should have the following MD5 signatures:
-
+<pre>
 MD5(1.txt)= 5d41402abc4b2a76b9719d911017c592
 MD5(2.txt)= 69faab6268350295550de7d587bc323d
 MD5(3.txt)= fea0f1f6fede90bd0a925b4194deac11
-MD5(4.txt)= d89b56f81cd7b82856231e662429bcf2	Which file(s) have been modified?
-A.6	From Ubuntu, download the following ZIP file:
+MD5(4.txt)= d89b56f81cd7b82856231e662429bcf2	
+</pre>
 
- Web link (PS Files):
-http://asecuritysite.com/letters.zip
+Which file(s) have been modified?
+
+### A.6	
+From Ubuntu, download the following ZIP file:
+
+Web link (PS Files): http://asecuritysite.com/letters.zip
 
 On your Ubuntu instance, you should be able to view the files by double clicking on them in the file explorer (as you should have a PostScript viewer installed).
-	Do the files have different contents?
+
+Do the files have different contents?
 
 
 
@@ -116,29 +123,34 @@ Now determine the MD5 signature for them. What can you observe from the result?
 
 
 
-
-
 ## B	Hash Cracking (Hashcat)
-No	Description	Result
-B.1	Run the hashcat benchmark (eg hashcat –b -m 0), and complete the following:
 
-	Hash rate for MD5:
+### B.1	
+Run the hashcat benchmark (eg hashcat –b -m 0), and complete the following:
+
+Hash rate for MD5:
 Hash rate for SHA-1:
 Hash rate for SHA-256:
 Hash rate for APR1:
 
-B.2	On Ubuntu, next create a word file (words) with the words of “napier”, “password” “Ankle123” and “inkwell”
+### B.2	
+On Ubuntu, next create a word file (words) with the words of “napier”, “password” “Ankle123” and “inkwell”
 
 Using hashcat crack the following MD5 signatures (hash1):
 
+<pre>
 232DD5D7274E0D662F36C575A3BD634C
 5F4DCC3B5AA765D61D8327DEB882CF99
 6D5875265D1979BDAD1C8A8F383C5FF5
 04013F78ACCFEC9B673005FC6F20698D
+</pre?
 
-Command used:  hashcat –m 0 hash1 words	
-232DD...634C 
-Is it [napier][password][Ankle123][inkwell]?
+Command used:  
+<pre>
+hashcat –m 0 hash1 words
+</pre>
+
+232DD...634C  Is it [napier][password][Ankle123][inkwell]?
 
 5F4DC...CF99 Is it [napier][password][Ankle123][inkwell]?
 
@@ -146,14 +158,17 @@ Is it [napier][password][Ankle123][inkwell]?
 
 04013...698D Is it [napier][password][Ankle123][inkwell]?
 
-B.3	Using the method used in the first part of this tutorial, find crack the following for names of fruits (the fruits are all in lowercase):
-
+### B.3	
+Using the method used in the first part of this tutorial, find crack the following for names of fruits (the fruits are all in lowercase):
+<pre>
 FE01D67A002DFA0F3AC084298142ECCD
 1F3870BE274F6C49B3E31A0C6728957F
 72B302BF297A228A75730123EFEF7C41
 8893DC16B1B2534BAB7B03727145A2BB
 889560D93572D538078CE1578567B91A
-	FE01D:
+</pre>
+
+FE01D:
 
 1F387:
 
