@@ -14,6 +14,7 @@ OpenSSL is a standard tool that we used in encryption. It supports many of the s
 ### A.1	
 
 Using: 
+
 * openssl list-cipher-commands
 * openssl version
 
@@ -181,7 +182,7 @@ Web link (Cipher code): http://asecuritysite.com/cipher01.zip
 
 The code should be:
 
-
+```python
 from Crypto.Cipher import AES
 import hashlib
 import sys
@@ -216,14 +217,18 @@ print "  decrypt: "+plaintext
 
 
 plaintext=val
+```
 
 
 Now update the code so that you can enter a string and the program will show the cipher text. The format will be something like:
 
+<pre>
 python cipher01.py hello mykey
+</pre>
 
 where “hello” is the plain text, and “mykey” is the key.  A possible integration is:
 
+```python
 import sys
 
 if (len(sys.argv)>1):
@@ -231,7 +236,7 @@ if (len(sys.argv)>1):
 
 if (len(sys.argv)>2):
 	password=sys.argv[2]
-
+```	
 
 Now determine the cipher text for the following (the first example has already been completed):
 
@@ -260,8 +265,10 @@ Message	Key	CMS Cipher
 
 Now modify the code so that the user can enter the values from the keyboard, such as with:
 
+```python
 cipher=raw_input('Enter cipher:')
 password=raw_input('Enter password:')
+```
 
 ## E	Python Coding (Decrypting)
 Now modify your coding for 256-bit AES ECB encryption, so that you can enter the cipher text, and an encryption key, and the code will decrypt to provide the result. You should use CMS for padding. With this, determine the plaintext for the following (note, all the plain text values are countries around the World):
@@ -316,11 +323,13 @@ Output when we use “hello1”:
 
 Now catch the exception with an exception handler:
 
+```python
 try:
 	plaintext = Padding.removePadding(plaintext,mode='CMS')
 	print "  decrypt: "+plaintext
 except:
 	print("Error!")
+```
 
 Now implement a Python program which will try various keys for a cipher text input, and show the decrypted text. The keys tried should be:
 
@@ -338,6 +347,7 @@ The Chacha20 cipher is a stream cipher which uses a 256-bit key and a 64-bit non
 
 ### G.1	We can use node.js to implement ChaCha20:
 
+```javascript
 var chacha20 = require("chacha20");
 var crypto = require('crypto');
 
@@ -359,6 +369,7 @@ var ciphertext = chacha20.encrypt(key, nonce, new Buffer.from(plaintext));
 console.log("Ciphertext:\t",ciphertext.toString("hex"));
 console.log("Decipher\t",chacha20.decrypt(key, 
 nonce, ciphertext).toString());
+```
 
 If we use a key of “qwerty”, can you find the well-known fruits (in lower case) of the following ChaCha20 cipher streams:
 
@@ -391,6 +402,7 @@ How many bits will the salt use? You may have to look at the node.js documentati
 
 ### G.2	RC4 is a standard stream cipher and can be used for light-weight cryptography. It can have a variable key size. The following is a node.js implementation:
 
+```javascript
 // RC4
 
 var crypto = require('crypto');
@@ -412,6 +424,7 @@ console.log("Ciphertext:\t",ciphertext);
 var decipher = crypto.createDecipheriv('rc4', key,'' );
 var text = decipher.update( ciphertext, 'hex','utf8');
 console.log("Decipher:\t",text);
+```
 
 For a password of “napier”, find out the fruits used for these RC4 cipher streams:
 
@@ -439,6 +452,7 @@ How might we change the program to implement RC4 with a 128-bit key?
 ## H	Node.js for encryption
 Node.js can be used as a back-end encryption method. In the following we use the crypto module (which can be installed with “npm crypto”, if it has not been installed). The following defines a message, a passphrase and the encryption method.
 
+```javascript
 var crypto = require("crypto");
 
 
@@ -523,10 +537,13 @@ console.log("\nEncrypted:\t" + encText);
 var decText = decryptText(algorithm, key, iv, encText, "base64");
 
 console.log("\nDecrypted:\t" + decText);
+```
 
 Save the file as “h_01.js” and run the program with:
 
+<pre>
 node h_01.js
+</pre>
 
 Now complete the following table:
 
