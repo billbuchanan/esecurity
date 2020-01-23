@@ -25,20 +25,25 @@ Outline five encryption methods that are supported:
 Outline the version of OpenSSL: 
 
 
-###  A.2	Using openssl and the command in the form:
-
+###  A.2	
+Using openssl and the command in the form:
+<pre>
 openssl prime –hex 1111
+</pre>
 
 Check if the following are prime numbers:
 
-42 [Yes][No]
-1421 [Yes][No]
+* 42 [Yes][No]
+* 1421 [Yes][No]
 
-### A.3	Now create a file named myfile.txt (either use Notepad or another editor).
+### A.3	
+Now create a file named myfile.txt (using nano).
 
 Next encrypt with aes-256-cbc 
 
+<pre>
 openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin
+</pre>
 
 and enter your password.
 
@@ -50,7 +55,8 @@ cat encrypted.bin
 
 Is it easy to write out or transmit the output: [Yes][No]
 
-### A.4	Now repeat the previous command and add the –base64 option.
+### A.4	
+Now repeat the previous command and add the –base64 option.
 
 <pre>
 openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
@@ -58,11 +64,14 @@ openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
 
 Use following command to view the output file:
 
+<pre>
 cat encrypted.bin
+</pre>
 
 Is it easy to write out or transmit the output: [Yes][No]
 
-### A.5	Now Repeat the previous command and observe the encrypted output.
+### A.5	
+Now Repeat the previous command and observe the encrypted output.
 
 <pre>
 openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
@@ -70,20 +79,22 @@ openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
 
 Has the output changed? [Yes][No]
 
+
 Why has it changed?
 
 
+### A.6	
+Now let’s decrypt the encrypted file with the correct format:
 
-### A.6	Now let’s decrypt the encrypted file with the correct format:
-
- 
+<pre> 
 openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64	Has the output been decrypted correctly?
-
+</pre>
 
 What happens when you use the wrong password?
 
 
-### A.7 	Now encrypt a file with Blowfish and see if you can decrypt it.
+### A.7 	
+Now encrypt a file with Blowfish and see if you can decrypt it.
 
 
 Did you manage to decrypt the file? [Yes][No]
@@ -133,20 +144,20 @@ How many Base-64 characters would be used (remember 6 bits are used to represent
 Base-64 characters: 
 
 ## C	Padding (DES)
-In the first part of this lab we will investigate padding blocks:
+In the first part of this lab we will investigate padding blocks.
 
-
-### C.1	With DES which uses a 64-bit key, what is the normal block size (in bytes):
+### C.1	
+With DES which uses a 64-bit key, what is the normal block size (in bytes):
 
 Block size (bytes):
 
 Number of hex characters for block size:
 
 
-### C.2	Go to:
+### C.2	
+Go to:
 
- Web link (DES Padding):
-http://asecuritysite.com/encryption/padding_des
+Web link (DES Padding): http://asecuritysite.com/encryption/padding_des
 
 Using 64-bit DES key encryption, and a message of “kettle” and a password of “oxtail”, determine the cipher using the differing padding methods.
 
