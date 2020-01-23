@@ -49,11 +49,11 @@ Using: http://asecuritysite.com/coding/ascii
 
 Determine the following ASCII strings for these encoded formats:
 
-```python
+<pre>
 bGxveWRz
 6E6170696572
 01000001 01101110 01101011 01101100 01100101 00110001 00110010 00110011
-```
+</pre>
 
 ### A.5	The mod operatpor
 Using Python, what is the result of 53,431 (mod 453)?
