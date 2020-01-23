@@ -57,16 +57,16 @@ ucextehnuoqgDcqmRwIDAQAB
 Alice sends him the following ciphered message:
 <pre>
 uW6FQth0pKaWc3haoqxbjIA7q2rF+G0Kx3z9ZDPZGU3NmBfzpD9ByU1ZBtbgKC8ATVZzwj15AeteOnbjO3EHQC4A5Nu0xKTWpqpngYRGGmzMGtblW3wBlNQYovDsRUGt+cJK7RD0PKn6PMNqK5EQKCD6394K/gasQ9zA6fKn3f0=
-<pre>
+</pre>
 
 What is the message? You might find some interesting code [here].
 
 2. Bob uses the following parameters for his public key:
 <pre>
-    RSA Encryption parameters. Public key: [e,N].
-    e: 65537
-    N: 498702132445864856509611776937010471
-    Cipher: 96708304500902540927682601709667939
+RSA Encryption parameters. Public key: [e,N].
+e: 65537
+N: 498702132445864856509611776937010471
+Cipher: 96708304500902540927682601709667939
 </pre>
 
 Can you crack the cipher and find the value, if you know we are using using 60 bit primes [example]?
