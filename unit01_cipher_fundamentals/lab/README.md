@@ -103,8 +103,9 @@ console.log(String.fromCharCode(val))
 ```
 
 This program will use node.js. Create a file named a_08.js and then run with:
-
+<pre>
 node a_08.js
+</pre>
 
 Results:
 
@@ -159,11 +160,11 @@ Web link (Compression): https://asecuritysite.com/encryption/gzip
 
 Take a string of “abc” and compress it, and now keep building up the string with the same sequence (such as “abcabc…”). What do you observe from the length of the compression string if you use a random characters of the same length as an input:
 	
-```python
+<pre>
 eJzzyc9Lyc8DAAgpAms=
 eJxzSi3KycwDAAfXAl0=
 eJzzSy1XiMwvygYADKUC8A==
-```
+</pre>
 
 ## B	GCD
 GCD is known as the greatest common divisor, or greatest common factor (gcf), and is the largest positive integer that divides into two numbers without a remain-der. For example, the GCD of 9 and 15 is 3. It is used many encryption algorithms, and a sample algorithm to determine the GCD of two values (a and b) is given on:
@@ -211,7 +212,7 @@ to encrypt and decrypt a message (M) using a key of e and a prime number p.
 
 M<sup>e</sup> mod p
 
-The program should check that p is a prime number.	Is the result of 8<sup>5</sup> mod 269 equal to 219?
+The program should check that p is a prime number.Is the  result of 8<sup>5</sup> mod 269 equal to 219?
 
 Yes/No
 
@@ -341,19 +342,20 @@ Using this example, we get:
 (21×35+31) mod 100 gives 66
 (21×66+31) mod 100 gives 17
 (21×17+31) mod 100 gives 88
-</pre?
+</pre>
 
 
 Web link (Linear congruential):	http://asecuritysite.com/encryption/linear
 
-### E.1	Implement the Python code given above.
+### E.1	
+Implement the Python code given above.
 
 Using: a=21, seed=35, c=31, and m=100, prove that the sequence gives 66 17 88 79 90  
 	Does it generate this sequence?
 
 Yes/No
 
-E.2	Determine the sequence for:
+### E.2	Determine the sequence for:
 
 a=22, seed=35, c=31, and m=100. 
 
@@ -362,14 +364,16 @@ First four numbers of sequence?
 
 
 
-### E.3	Determine the sequence for:
+### E.3	
+Determine the sequence for:
 
 a=954,365,343, seed=436,241, c=55,119,927, and m=1,000,000.
 
 First four numbers of sequence?
 
 
-### E.4	Determine the sequence for:
+### E.4	
+Determine the sequence for:
 
 a=2,175,143, seed=3553, c=10,653, and m=1,000,000. 
 
