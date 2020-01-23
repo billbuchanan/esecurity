@@ -32,18 +32,13 @@ The key concepts are: MD2. MD4. MD5. SHA-1. Salting. Collisions. Murmur and FNV.
 
 ## Lab
 
-* Unit 3 Lab (PDF): here
-* Unit 3 Lab (video): here
-* Unit 3 Lab Part 2 (video): here
+* Unit 3 Lab (PDF): [here](https://asecuritysite.com/public/new_lab03.pdf)
+* Unit 3 Lab (video): [here](https://www.youtube.com/watch?v=rnTLr6iUbf0)
+* Unit 3 Lab Part 2 (video): [here](https://www.youtube.com/watch?v=FKO6Pjsbp3g)
 
 ## Tests
 
-* Test (Hash Encryption): here
-
-## Important points
-
-* BCrypt, PBKDF2 and Scrypt are slow hashing methods, which also have salt, and are highly recommended for password storage.
-    The strength of the encryption implementation is measured by key entropy. Anything less than 72 bits is likely to be weak.
+* Test (Hash Encryption): [here](https://asecuritysite.com/tests/tests?sortBy=cryptobook03)
 
 ## Sample Exam Questions
 
@@ -72,27 +67,26 @@ The following are some sample questions for hashing:
   * Where would I find this info? Have a look here.
 * A password is defined as [a-zA-Z0-9]. For a four character password, show that there are 14,776,336 different passwords.
   * Where would I find this info? Have a look here.
+* You are working with a security consultant, and he says that you don't need to check the hashing of passwords, as it should work without testing. You disagree with him, and decide to test your hashing method. Initially you must find test vectors for MD5, SHA-1 and SHA-256. Can you find three test vectors, and test them against an on-line calculator?
+* At a security presentation a researcher gives a demonstration of Scrypt. In the presentation he shows a demonstration with a password of "password" and fixed salt of "NaCl". For each run he runs the hashing function, the hashed value changes, but, each time, the computation took longer. Which parameter is the researcher likely to be changing, and why does that parameter exist? Can the researcher select any value for the parameter? [Example]
+* There has been a major data breach within your company, and you are to appear on Sky News to report it. Your company has used PBKDF2 to hash its passwords. How do you explain to your customers that their passwords are unlikely to be breached?
 * It was stated in the recent Yahoo hack that:
 
-    "We have confirmed, based on a recent investigation, that a copy of certain user account information was stolen from our networks in late 2014 by what we believe is a state-sponsored actor," Lord wrote. "The account information may have included names, e-mail addresses, telephone numbers, dates of birth, hashed passwords (the vast majority with bcrypt), and, in some cases, encrypted or unencrypted security questions and answers."
+"We have confirmed, based on a recent investigation, that a copy of certain user account information was stolen from our networks in late 2014 by what we believe is a state-sponsored actor," Lord wrote. "The account information may have included names, e-mail addresses, telephone numbers, dates of birth, hashed passwords (the vast majority with bcrypt), and, in some cases, encrypted or unencrypted security questions and answers."
 
 Do you think the vast majority of the hashed passwords will be cracked? Do you think they had good practice in place for hashed passwords?
 
-* You are working with a security consultant, and he says that you don't need to check the hashing of passwords, as it should work without testing. You disagree with him, and decide to test your hashing method. Initially you must find test vectors for MD5, SHA-1 and SHA-256. Can you find three test vectors, and test them against an on-line calculator?
 
-* At a security presentation a researcher gives a demonstration of Scrypt. In the presentation he shows a demonstration with a password of "password" and fixed salt of "NaCl". For each run he runs the hashing function, the hashed value changes, but, each time, the computation took longer. Which parameter is the researcher likely to be changing, and why does that parameter exist? Can the researcher select any value for the parameter? [Example]
-* There has been a major data breach within your company, and you are to appear on Sky News to report it. Your company has used PBKDF2 to hash its passwords. How do you explain to your customers that their passwords are unlikely to be breached?
 
 ## Addendum
 
 In the lecture, the slide at the end of Unit 2 (Symmetric Key) should be (for an eight character password and with [a-z]):
 
 ## Important points
-
-    BCrypt, PBKDF2 and Scrypt are slow hashing methods, which also have salt, and are highly recommended for password storage.
-    The strength of the encryption implementation is measured by key entropy. Anything less than 72 bits is likely to be weak.
+* [BCrypt](https://asecuritysite.com/encryption/bcrypt), [PBKDF2](https://asecuritysite.com/encryption/PBKDF2_2) and [Scrypt](https://asecuritysite.com/encryption/Scrypt) are slow hashing methods, which also have salt, and are highly recommended for password storage.
+* The strength of the encryption implementation is measured by key entropy. Anything less than 72 bits is likely to be weak.
 
 ## Interested in knowing more?
 
-Hashcat with 8xGPUs in Cloud: here
+Hashcat with 8xGPUs in Cloud: [here](https://youtu.be/He_bbEkjF8o)
 
