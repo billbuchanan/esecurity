@@ -188,7 +188,8 @@ Number of hex characters:
 
 “foxtrotanteatercastle”:
 
-### C.4	With 64-bit DES, for n characters in a string, how would you generalise the calculation of the number of hex characters in the cipher text.
+### C.4	
+With 64-bit DES, for n characters in a string, how would you generalise the calculation of the number of hex characters in the cipher text.
 
 How many Base-64 characters would be used (remember 6 bits are used to represent a Base-64 character):	Hex characters:
 
@@ -328,7 +329,7 @@ irwjGCAu+mmdNeu6Hq6ciw==	“changeme”
 	
 
 
-PS … remember to add “import base64”.
+PS … remember to add "import base64".
 
 ## F	Catching exceptions
 If we try “1jDmCTD1IfbXbyyHgAyrdg==” with a passphrase of “hello”, we should get a country. What happens when we try the wrong passphrase?
