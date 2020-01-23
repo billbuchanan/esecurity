@@ -4,7 +4,9 @@
 
 The key concepts involved are defining key entropy; key generators (such as using hashing methods to generate keys based on passphrases); symmetric key methods (AES, Twofish, 3DES, RC4 and ChaCha20); stream or block encryption; symmetric key modes (ECB/CBC/OFB); and salting/IV.
 
+<!---
 Back-up of content: [here](https://asecuritysite.com/csn11117/unit02)
+-->
 
 ## What you should know at the end of unit?
 
@@ -56,6 +58,7 @@ openssl enc -e -[OPTION1] -in test.txt -pass pass:password -nosalt -[OPTION2]
 </pre>
 
 The following are encrypted with aes-256-cbc or 3-DES and have a password of "napier", "123456" or "password". Decode them:
+
 * U2FsdGVkX18K9Dy9I/CewpNH2svvjyhNG3Bod77+uYo=
 * U2FsdGVkX18pmUpnI7iopG3gsHVQPT1zyRwjlvAJ+aI=
 * U2FsdGVkX19XlsCN50CFxZlBcCplPs9/
@@ -66,7 +69,9 @@ openssl enc -d -aes-256-cbc -in test.txt -pass pass:123456 -base64
 </pre>
 ## Addendum
 In the lecture, the slide at the end of Unit 2 (Symmetric Key) should be (for an eight character password and with [a-z]):
-Interested in knowing more?
+
+
+## Interested in knowing more?
 
 * Padding and block methods: [here](https://medium.com/coinmonks/block-sizes-and-padding-in-crypto-5b6d2565370e?source=friends_link&sk=35549deef72e3a0531ed4cf57091f9f9)
 * Which encryption process encrypts on both sides? [here](https://medium.com/asecuritysite-when-bob-met-alice/which-encryption-process-encrypts-on-either-side-6bb4f0824334?source=friends_link&sk=59c37130b1282c692fe17e01fe251721)
