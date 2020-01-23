@@ -72,16 +72,9 @@ In the lecture, the slide at the end of Unit 2 (Symmetric Key) should be (for an
 
 ![](https://github.com/billbuchanan/esecurity/blob/master/z_associated/unit02_update.png)
 
-## Interested in knowing more?
-
-* Padding and block methods: [here](https://medium.com/coinmonks/block-sizes-and-padding-in-crypto-5b6d2565370e?source=friends_link&sk=35549deef72e3a0531ed4cf57091f9f9)
-* Which encryption process encrypts on both sides? [here](https://medium.com/asecuritysite-when-bob-met-alice/which-encryption-process-encrypts-on-either-side-6bb4f0824334?source=friends_link&sk=59c37130b1282c692fe17e01fe251721)
 
 ## Tests
 
 * Test (Symmetric Key Encryption): [here](https://asecuritysite.com/tests/tests?sortBy=cryptobook02)
 
 Note: There will be no multiple choice questions in the tests.
-
-
-
