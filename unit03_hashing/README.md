@@ -2,7 +2,7 @@
 
 # Unit 3: Hashing and MAC
 
-The key concepts involved are defining key entropy; key generators (such as using hashing methods to generate keys based on passphrases); symmetric key methods (AES, Twofish, 3DES, RC4 and ChaCha20); stream or block encryption; symmetric key modes (ECB/CBC/OFB); and salting/IV.
+The key concepts are: MD2. MD4. MD5. SHA-1. Salting. Collisions. Murmur and FNV. Bloom Filter. LM Hash. SHA-3. Bcrypt. PBKDF2. Open SSL Hash passwords. One Time Passwords. Timed One Time Password (TOTP). Hashed One Time Password (HOTP). HMAC.
 
 ## What you should know at the end of unit?
 
