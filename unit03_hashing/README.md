@@ -82,6 +82,8 @@ Do you think the vast majority of the hashed passwords will be cracked? Do you t
 
 In the lecture, the slide at the end of Unit 2 (Symmetric Key) should be (for an eight character password and with [a-z]):
 
+![](https://asecuritysite.com/public/unit02_update.png)
+
 ## Important points
 * [BCrypt](https://asecuritysite.com/encryption/bcrypt), [PBKDF2](https://asecuritysite.com/encryption/PBKDF2_2) and [Scrypt](https://asecuritysite.com/encryption/Scrypt) are slow hashing methods, which also have salt, and are highly recommended for password storage.
 * The strength of the encryption implementation is measured by key entropy. Anything less than 72 bits is likely to be weak.
