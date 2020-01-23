@@ -13,18 +13,18 @@ The key concepts are: Basics, RSA, Elliptic Curve and ElGamal.
 * Explain the operation of PGP.
 * Understands how the private key is used to check the identity of the sender, and how public key is used to preserve the privacy of the message.
 * Explain how the e and d values are determined within the RSA method.
-  * Where would I find this info? There are some examples here.
+  * Where would I find this info? There are some examples [here](https://asecuritysite.com/log/rsa_examples.pdf).
 
 ## Presentations
 
-* Week 4 Presentation (PDF) - Public Key Encryption: here
-* Week 4 Presentation (video) - Public Key Encryption: here
-* Week 4 Presentation (lecture video) - Public Key Encryption: here
+* Week 4 Presentation (PDF) - Public Key Encryption: [here](https://asecuritysite.com/public/chapter04_public_msc.pdf)
+* Week 4 Presentation (video) - Public Key Encryption: [here](https://youtu.be/QEYqkxuzoTg)
+* Week 4 Presentation (lecture video) - Public Key Encryption: [here](https://youtu.be/_GPSNaTiUbI)
 
 ## Lab
 
-* Week 4 Lab (PDF): here
-* Week 4 Lab (Demo): here
+* Week 4 Lab (PDF): [here](https://asecuritysite.com/public/new_lab04.pdf)
+* Week 4 Lab (Demo): [here](https://youtu.be/6T9bFA2nl3c)
 
 ## Public key challenge
 
@@ -59,7 +59,7 @@ Alice sends him the following ciphered message:
 uW6FQth0pKaWc3haoqxbjIA7q2rF+G0Kx3z9ZDPZGU3NmBfzpD9ByU1ZBtbgKC8ATVZzwj15AeteOnbjO3EHQC4A5Nu0xKTWpqpngYRGGmzMGtblW3wBlNQYovDsRUGt+cJK7RD0PKn6PMNqK5EQKCD6394K/gasQ9zA6fKn3f0=
 </pre>
 
-What is the message? You might find some interesting code [here].
+What is the message? You might find some interesting code [here](https://asecuritysite.com/encryption/rsa_example).
 
 2. Bob uses the following parameters for his public key:
 <pre>
@@ -69,7 +69,7 @@ N: 498702132445864856509611776937010471
 Cipher: 96708304500902540927682601709667939
 </pre>
 
-Can you crack the cipher and find the value, if you know we are using using 60 bit primes [example]?
+Can you crack the cipher and find the value, if you know we are using using 60 bit primes [example](https://medium.com/asecuritysite-when-bob-met-alice/cracking-rsa-a-challenge-generator-2b64c4edb3e7)?
 
 ## Sample Exam Questions
 
@@ -81,19 +81,19 @@ The following are sample questions for public key:
 * Bob tells Alice that she should send her private key in order that he should encrypt something for her. Outline the main problem caused by this.
 * Security professionals say that RSA keys of over 1,024 bits are secure. What is the core protection against the RSA method being cracked for keys of 1,024 bits and more.
 * Bob says he has had a look at a few RSA public keys and he says that the ones he looked at where all the same. Is he right? If so, what makes public keys different?
-* Research: Netscape had to comply with an export embargo on the size of the keys which can be used for RSA. Which major vulnerabilities have resulted?
+* Research: Netscape had to comply with an export [embargo](https://en.wikipedia.org/wiki/Export_of_cryptography_from_the_United_States) on the size of the keys which can be used for RSA. Which major vulnerabilities have resulted?
 * Bob and Alice get into a debate about the size of the d and e values in the RSA encryption key. Bob says that, in real-life keys, the length of the e value in (e,n) is normally about the same size as the d value (d,n). Alice disagrees. Who is correct?
-  * Where would I find this info? Have a look at some practical examples: Here
+  * Where would I find this info? Have a look at some practical examples: [Here](https://asecuritysite.com/encryption/rsa2)
 
 ## Examples
 
-RSA Examples: [here]
+RSA Examples: [here](https://asecuritysite.com/public/rsa_examples.pdf)
 
 ## Quick demos
 
-* Introduction to RSA: [here]
-* Introduction to Elliptic Curve: [here]
-* Picking the Generator Value (G): [here]
+* Introduction to RSA: [here](https://www.youtube.com/watch?v=pHES8eNor6k)
+* Introduction to Elliptic Curve: [here](https://youtu.be/_CwIWk6XDmg)
+* Picking the Generator Value (G): [here](https://www.youtube.com/watch?v=-TjSuch3VGU)
 
 
 
