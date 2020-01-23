@@ -14,7 +14,7 @@ Back-up of content: [here](https://asecuritysite.com/csn11117/unit02)
 * How salting is used to change the cipher blocks.
 * Use openssl to perform practical operations.
 * Understand the encoding formats used for cipher text and keys.
-* Define the importance difference between cipher block modes, such as between ECB and CBC.
+* Define the difference between cipher block modes, such as between ECB and CBC.
 
 ## Presentations
 
