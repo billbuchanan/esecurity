@@ -80,7 +80,8 @@ jane: $1$rqOIRBBN$R2pOQH9egTTVN1Nlst2U7.
 </pre>
 
 [Hint: openssl passwd -apr1 -salt ZaZS/8TF napier]
-	The passwords are password, napier, inkwell and Ankle123.
+
+The passwords are password, napier, inkwell and Ankle123.
 
 Bill’s password:
 
@@ -283,7 +284,8 @@ Fred:
 
 Bert:
 
-### C.2	On Ubuntu, and using John the Ripper, the following pwdump passwords (they are names of major Scottish cities/towns):
+### C.2	
+On Ubuntu, and using John the Ripper, the following pwdump passwords (they are names of major Scottish cities/towns):
 <pre>
 Admin:500:629E2BA1C0338CE0AAD3B435B51404EE:9408CB400B20ABA3DFEC054D2B6EE5A1:::
 fred:501:33E58ABB4D723E5EE72C57EF50F76A05:4DFC4E7AA65D71FD4E06D061871C05F2:::
