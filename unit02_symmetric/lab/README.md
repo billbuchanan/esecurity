@@ -84,11 +84,13 @@ Why has it changed?
 
 
 ### A.6	
-Now let’s decrypt the encrypted file with the correct format:
+Now let's decrypt the encrypted file with the correct format:
 
 <pre> 
-openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64	Has the output been decrypted correctly?
+openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64	
 </pre>
+Has the output been decrypted correctly?
+
 
 What happens when you use the wrong password?
 
