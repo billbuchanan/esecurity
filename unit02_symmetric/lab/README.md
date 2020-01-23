@@ -107,20 +107,22 @@ Web link (Padding): http://asecuritysite.com/encryption/padding
 In the first part of this tutorial we will investigate padding blocks:
 
 
-### B.1	With AES which uses a 256-bit key, what is the normal block size (in bytes).
-	Block size (bytes):
+### B.1	
+With AES which uses a 256-bit key, what is the normal block size (in bytes).
+
+Block size (bytes):
 
 Number of hex characters for block size:
 
 
-### B.2	Go to:
-
-Web link (AES Padding): http://asecuritysite.com/encryption/padding
+### B.2	
+Go to: Web link (AES Padding): http://asecuritysite.com/encryption/padding
 
 Using 256-bit AES encryption, and a message of “kettle” and a password of “oxtail”, determine the cipher using the differing padding methods (you only need to show the first six hex characters).
 
 If you like, copy and paste the Python code from the page, and run it on your Kali instance.
-	CMS: 
+
+CMS: 
 
 Null:
 
@@ -155,9 +157,7 @@ Number of hex characters for block size:
 
 
 ### C.2	
-Go to:
-
-Web link (DES Padding): http://asecuritysite.com/encryption/padding_des
+Go to: Web link (DES Padding): http://asecuritysite.com/encryption/padding_des
 
 Using 64-bit DES key encryption, and a message of “kettle” and a password of “oxtail”, determine the cipher using the differing padding methods.
 
@@ -169,8 +169,11 @@ Null:
 
 Space:
 
-### C.3	For the following words, estimate how many hex characters will be used for the 64-bit key DES encryption:
-	Number of hex characters:
+### C.3	
+
+For the following words, estimate how many hex characters will be used for the 64-bit key DES encryption:
+
+Number of hex characters:
 
 “fox”:
 
