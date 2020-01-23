@@ -130,7 +130,8 @@ Null:
 
 Space:
 
-### B.3	For the following words, estimate how many hex characters will be used for the 256-bit AES encryption:
+### B.3	
+For the following words, estimate how many hex characters will be used for the 256-bit AES encryption:
 
 Number of hex characters:
 
@@ -142,7 +143,8 @@ Number of hex characters:
 
 “foxtrotanteatercastle”:
 
-### B.4	With 256-bit AES, for n characters in a string, how would you generalise the calculation of the number of hex characters in the cipher text.
+### B.4	
+With 256-bit AES, for n characters in a string, how would you generalise the calculation of the number of hex characters in the cipher text.
 
 How many Base-64 characters would be used (remember 6 bits are used to represent a Base-64 character):	Hex characters:
 
