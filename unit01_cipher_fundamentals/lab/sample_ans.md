@@ -1,34 +1,38 @@
 A.6
-
+```python
 print 0x43 | 0x21
 print 0x43 & 0x21
 print 0x43 ^ 0x21
+```
 
 A.7
-
+```python
 val1=93
 print "Dec:\t",val1
 print "Bin:\t",bin(val1)
 print "Hex:\t",hex(val1)
 print "Oct:\t",oct(val1)
 print "Char:\t",chr(val1)
+```
 
 A.8
-
+```python
 val=93
 console.log(val.toString(2))
 console.log(val.toString(16))
 console.log(val.toString(8))
 console.log(String.fromCharCode(val))
+```
 
 A.9
-
+```python
 import base64
 str=”crypto”
 print base64.b64encode(val)
+```
 
 A.10
-
+```python
 import sys
 
 val1="00110101"
@@ -53,9 +57,10 @@ print "Shift right (1):\t",res,"\t",bin(res)[2:10].rjust(8,'0')
 
 res=(dec >> 2) & 0xff
 print "Shift right (2):\t",res,"\t",bin(res)[2:10].rjust(8,'0')
+```
 
 B.1
-
+```python
 def gcd(a, b):
     
 	while( b != 0 ):
@@ -66,18 +71,20 @@ def gcd(a, b):
 
 g = gcd(54,8)
 print g
+```
 
 C.3
-
+```python
 message = raw_input('Enter message: ')
 e =  raw_input('Enter exponent: ') 
 p = raw_input('Enter prime ')
 
 cipher = (int(message) ** int(e)) % int(p)
 print cipher
+```
 
 D.1
-
+```python
 import math
 
 def get_if_prime(val):
@@ -111,9 +118,10 @@ if (res==True):
 	print str(val)+" is prime"
 else:	
 	print str(val)+" is not prime"
+```
 
 D.2
-
+```python
 import sys
 
 test=1000
@@ -133,3 +141,4 @@ def sieve_for_primes_to(n):
     return [2] + [i*2+1 for i, v in enumerate(sieve) if v and i>0]
  
 print sieve_for_primes_to(test)
+```
