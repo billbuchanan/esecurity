@@ -36,7 +36,8 @@ Back-up of content: [here](https://asecuritysite.com/csn11117/unit02)
 ## Sample exam questions
 The following are sample exam questions for symmetric key:
 
-* Explain the differences between stream and block ciphers, and why salt is required within the encryption process. Where would I find this info? Have a look at the penguin in Unit 2 (Slide 15 and on), and here's an outline of the problem with ECB in this related [article](https://medium.com/asecuritysite-when-bob-met-alice/when-is-high-grade-encryption-not-high-grade-when-its-ecb-e1509ec56930?source=friends_link&sk=31ec28f1c2be74a81e53c67e71d5b259).
+* Explain the differences between stream and block ciphers, and why salt is required within the encryption process. 
+ * Where would I find this info? Have a look at the penguin in Unit 2 (Slide 15 and on), and here's an outline of the problem with ECB in this related [article](https://medium.com/asecuritysite-when-bob-met-alice/when-is-high-grade-encryption-not-high-grade-when-its-ecb-e1509ec56930?source=friends_link&sk=31ec28f1c2be74a81e53c67e71d5b259).
 * What are the possible advantages of using stream ciphers over block ciphers?
 * Bob encrypts his data using secret key encryption and sends it to Alice. Every time he produces the cipher text it changes, and he is worried that Alice will not be able to decipher the cipher text. He encrypts "Hello" and gets a different cipher stream each time. Why does the cipher text change, and why is she still able to decrypt it, even though it changes each time?
 * AES uses an S-box to scramble the bits. How are the S-boxes for the encryption and decryption process linked?
@@ -48,7 +49,8 @@ The following are sample exam questions for symmetric key:
 * With block encryption, how do we know where the ciphered data actually ends? Does it just use an end-of-file character or a NULL character?
 * Alice says she is confused that Bob is sending her the same message as a cipher, but every time the cipher text changes. Apart from using the shared encryption key, what does Alice use to decipher the cipher text?
 * Bob tells Alice that she won't be able to view the cipher text, but when she looks at the messages, they seem to be full of printable characters. What format is Bob likely to be using for the encoding of the cipher text, and what would you ask Alice to look for, in order to confirm your guess?
-* Which of these is correct for CMS padding: "68656c6c6f3132330808080808080808", "68656c6c6f3132330909090909090909", and "68656c6c6f3132330A0A0A0A0A0A0A0A". Where would I find information on this? Look [here](https://asecuritysite.com/encryption/padding).
+* Which of these is correct for CMS padding: "68656c6c6f3132330808080808080808", "68656c6c6f3132330909090909090909", and "68656c6c6f3132330A0A0A0A0A0A0A0A". 
+ * Where would I find information on this? Look [here](https://asecuritysite.com/encryption/padding).
 * Bob wants to cipher "edinburgh" with the key of "hello123" for a 256-bit AES key, and his encoding gives him "6564696e6275726768". What will be the padding that will be added?
 * Eve says she thinks she can determine the number of characters within some ciphered plain-text. Is she correct? If so, how many plain-text characters were there in this ciphered message: "6920776f756c64206c696b6520746f2074616b65206120627265616b04040404".
 * RC4 is a stream cipher, which is one of the recommended ciphers for IoT devices. Bob says that it has an infinitely long encryption key, and that his devices will not be able to cope with this size of key. How would you convince him that IoT devices will be able to cope with RC4?
