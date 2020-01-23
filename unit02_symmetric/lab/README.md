@@ -131,7 +131,8 @@ Null:
 Space:
 
 ### B.3	For the following words, estimate how many hex characters will be used for the 256-bit AES encryption:
-	Number of hex characters:
+
+Number of hex characters:
 
 “fox”:
 
