@@ -70,6 +70,7 @@ openssl enc -d -aes-256-cbc -in test.txt -pass pass:123456 -base64
 ## Addendum
 In the lecture, the slide at the end of Unit 2 (Symmetric Key) should be (for an eight character password and with [a-z]):
 
+![](https://github.com/billbuchanan/esecurity/blob/master/z_associated/unit02_update.png)
 
 ## Interested in knowing more?
 
