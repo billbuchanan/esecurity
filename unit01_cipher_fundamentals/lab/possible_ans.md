@@ -6,7 +6,7 @@ print (chars//16+1)*32
 C.4
 ```python
 print (chars//16+1)*16
-```p
+```
 
 Commands in Section A:
 
