@@ -88,6 +88,8 @@ napier@napier-virtual-machine:~$ nano myfile.txt
 napier@napier-virtual-machine:~$ openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin
 enter aes-256-cbc encryption password: napier
 Verifying - enter aes-256-cbc encryption password: 
+napier@napier-virtual-machine:~$ cat encrypted.bin 
+Salted__��kBֿ��O�;�|`�"����ե
 napier@napier-virtual-machine:~$ openssl enc -d -aes-256-cbc -in encrypted.binenter aes-256-cbc decryption password:
 Hello
 </pre>
