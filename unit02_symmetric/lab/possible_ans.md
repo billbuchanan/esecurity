@@ -21,6 +21,8 @@ Commands in Section A:
 * openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64
 
 A.7
+We can use the -bf-cbc option for Blowfish:
+
 <pre>
 openssl enc -bf-cbc -in myfile.txt -out encrypted1.bin 
 openssl enc -d -bf-cbc -pass pass:password -in encrypted1.bin 
