@@ -37,7 +37,7 @@ Back-up of content: [here](https://asecuritysite.com/csn11117/unit02)
 The following are sample exam questions for symmetric key:
 
 * Explain the differences between stream and block ciphers, and why salt is required within the encryption process. 
-  * **Where would I find this info?** Have a look at the penguin in Unit 2 (Slide 15 and on), and here's an outline of the problem with ECB in this related [article](https://medium.com/asecuritysite-when-bob-met-alice/when-is-high-grade-encryption-not-high-grade-when-its-ecb-e1509ec56930?source=friends_link&sk=31ec28f1c2be74a81e53c67e71d5b259).
+  * **Where would I find this info?** Have a look at the penguin in [Unit 2](https://asecuritysite.com/public/chapter02_secret.pdf) (Slide 31), and here's an outline of the problem with ECB in this related [article](https://medium.com/asecuritysite-when-bob-met-alice/when-is-high-grade-encryption-not-high-grade-when-its-ecb-e1509ec56930?source=friends_link&sk=31ec28f1c2be74a81e53c67e71d5b259).
 * What are the possible advantages of using stream ciphers over block ciphers?
 * Bob encrypts his data using secret key encryption and sends it to Alice. Every time he produces the cipher text it changes, and he is worried that Alice will not be able to decipher the cipher text. He encrypts "Hello" and gets a different cipher stream each time. Why does the cipher text change, and why is she still able to decrypt it, even though it changes each time?
 * AES uses an S-box to scramble the bits. How are the S-boxes for the encryption and decryption process linked?
