@@ -82,6 +82,16 @@ napier@napier-virtual-machine:~$ openssl version
 OpenSSL 1.0.2g  1 Mar 2016
 </pre>
 
+## A.3
+<pre>
+napier@napier-virtual-machine:~$ nano myfile.txt
+napier@napier-virtual-machine:~$ openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin
+enter aes-256-cbc encryption password: napier
+Verifying - enter aes-256-cbc encryption password: 
+napier@napier-virtual-machine:~$ openssl enc -d -aes-256-cbc -in encrypted.binenter aes-256-cbc decryption password:
+Hello
+</pre>
+
 ## A.7
 We can use the -bf-cbc option for Blowfish:
 
