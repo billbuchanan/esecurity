@@ -20,6 +20,21 @@ Commands in Section A:
 * openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
 * openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64
 
+A.7
+<pre>
+openssl enc -bf-cbc -in myfile.txt -out encrypted1.bin 
+openssl enc -d -bf-cbc -pass pass:password -in encrypted1.bin 
+</pre>
+
+A sample run is:
+<pre>
+$ openssl enc -bf-cbc -in myfile.txt -out encrypted1.bin 
+enter bf-cbc encryption password: password
+Verifying - enter bf-cbc encryption password: password
+$ openssl enc -d -bf-cbc -pass pass:password -in encrypted1.bin 
+Hello
+</pre>
+
 B.2
 
 ```python
