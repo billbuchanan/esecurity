@@ -19,6 +19,68 @@ Commands in Section A:
 * openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin
 * openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
 * openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64
+## A.1
+<pre>
+$ openssl list-cipher-commands
+aes-128-cbc
+aes-128-ecb
+aes-192-cbc
+aes-192-ecb
+aes-256-cbc
+aes-256-ecb
+base64
+bf
+bf-cbc
+bf-cfb
+bf-ecb
+bf-ofb
+camellia-128-cbc
+camellia-128-ecb
+camellia-192-cbc
+camellia-192-ecb
+camellia-256-cbc
+camellia-256-ecb
+cast
+cast-cbc
+cast5-cbc
+cast5-cfb
+cast5-ecb
+cast5-ofb
+des
+des-cbc
+des-cfb
+des-ecb
+des-ede
+des-ede-cbc
+des-ede-cfb
+des-ede-ofb
+des-ede3
+des-ede3-cbc
+des-ede3-cfb
+des-ede3-ofb
+des-ofb
+des3
+desx
+rc2
+rc2-40-cbc
+rc2-64-cbc
+rc2-cbc
+rc2-cfb
+rc2-ecb
+rc2-ofb
+rc4
+rc4-40
+seed
+seed-cbc
+seed-cfb
+seed-ecb
+seed-ofb
+</pre>
+And:
+<pre>
+napier@napier-virtual-machine:~$ openssl version
+OpenSSL 1.0.2g  1 Mar 2016
+</pre>
 
 ## A.7
 We can use the -bf-cbc option for Blowfish:
