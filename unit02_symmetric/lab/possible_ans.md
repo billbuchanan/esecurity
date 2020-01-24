@@ -355,7 +355,6 @@ plaintext=val
 ```
 A sample run is:
 
-</pre>
 <pre>
 napier@napier-virtual-machine:~$ python d2.py hello hello123
 After padding (CMS): 68656c6c6f030303
@@ -374,6 +373,7 @@ After padding (CMS): 4166726963610202
 Cipher (ECB): 6e11929fe6a3c081
   decrypt: Africa
 </pre>
+
 ## E.1
 Answers:
 * germany
