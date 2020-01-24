@@ -281,17 +281,33 @@ plaintext=val
 
 
 ## F.1
-A sample code for Section F is:
+Plaintext: norway
+
+Key: changeme
+
+A sample code is:
 
 ```python
+from Crypto.Cipher import AES
+import hashlib
+import sys
+import binascii
+import Padding
+import base64
+
+def decrypt(ciphertext,key, mode):
+	encobj = AES.new(key,mode)
+	return(encobj.decrypt(ciphertext))
+
 pw = ["hello","ankle","changeme","123456"]
+
+c='1jDmCTD1IfbXbyyHgAyrdg=='
 
 for password in pw:
 
 	try:
 		key = hashlib.sha256(password).digest()
-		cipherhex = base64.decodestring(cipher).encode('hex')
-
+		cipherhex = base64.b64decode(c).encode('hex')
 		ciphertext = binascii.unhexlify(cipherhex)
 
 		print "Cipher (ECB): "+binascii.hexlify(bytearray(ciphertext))
@@ -299,7 +315,7 @@ for password in pw:
 		plaintext = decrypt(ciphertext,key,AES.MODE_ECB)
 		plaintext = Padding.removePadding(plaintext,mode='CMS')
 		print "  decrypt: "+plaintext
-		print "  Key found"+password
+		print "  Key found: "+password
 
 	except:	
 		print(".")
