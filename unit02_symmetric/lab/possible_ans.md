@@ -321,6 +321,8 @@ console.log("Decipher\t",chacha20.decrypt(key,nonce, ciphertext).toString());
 ## G.2
 Answers:
 (1) e47a2bfe646a - orange
+(2) ea783afc66 - apple
+(3) e96924f16d6e - banana
 
 ```javascript
 var chacha20 = require("chacha20");
@@ -336,7 +338,9 @@ nonce.fill(0);
 
 console.log( key);
 
-var ciphertext="e47a2bfe646a"
+var ciphertext="e96924f16d6e" 
+// var ciphertext="ea783afc66"
+// var ciphertext="e47a2bfe646a"
 
 console.log("Ciphertext:\t",ciphertext);
 
