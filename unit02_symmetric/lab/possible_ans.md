@@ -321,6 +321,30 @@ console.log("Ciphertext:\t",ciphertext);
 
 console.log("Decipher\t",chacha20.decrypt(key,nonce, new Buffer(ciphertext,"hex")).toString());
 ```
+## G.2
+Answers:
+* 8d1cc8bdf6da - orange
+* 911adbb2e6dda57cdaad - strawberry
+* 8907deba - kiwi
+
+```javascript
+// RC4
+
+var crypto = require('crypto');
+
+var keyname="napier";
+
+var key = crypto.createHash('sha256').update(keyname).digest();
+
+var cipher = crypto.createCipheriv('rc4', key,'' );
+var ciphertext = '8d1cc8bdf6da'
+console.log("Ciphertext:\t",ciphertext);
+
+
+var decipher = crypto.createDecipheriv('rc4', key,'' );
+var text = decipher.update( new Buffer(ciphertext,"hex"), 'hex','utf8');
+console.log("Decipher:\t",text);
+```
 
 ## Sample answers
 
