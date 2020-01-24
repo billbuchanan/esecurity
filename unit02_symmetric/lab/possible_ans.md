@@ -374,6 +374,54 @@ Cipher (ECB): 6e11929fe6a3c081
   decrypt: Africa
 </pre>
 
+## D.3
+Answer:
+* /vA6BD+ZXu8j6KrTHi1Y+w== - italy
+
+```python
+from Crypto.Cipher import AES
+import hashlib
+import sys
+import binascii
+import Padding
+import base64
+
+val='fox'
+password='hello'
+cipher=''
+
+import sys
+
+if (len(sys.argv)>1):
+	cipher=(sys.argv[1])
+if (len(sys.argv)>2):
+	password=(sys.argv[2])
+
+plaintext=val
+
+def encrypt(plaintext,key, mode):
+	encobj = AES.new(key,mode)
+	return(encobj.encrypt(plaintext))
+
+def decrypt(ciphertext,key, mode):
+	encobj = AES.new(key,mode)
+	return(encobj.decrypt(ciphertext))
+
+key = hashlib.sha256(password).digest()
+
+cipher='/vA6BD+ZXu8j6KrTHi1Y+w=='
+
+ciphertext = base64.b64decode(cipher)
+plaintext = decrypt(ciphertext,key,AES.MODE_ECB)
+print plaintext
+plaintext = Padding.removePadding(plaintext,mode='CMS')
+print "  decrypt: "+plaintext
+
+
+plaintext=val
+```
+
+
 ## E.1
 Answers:
 * germany
