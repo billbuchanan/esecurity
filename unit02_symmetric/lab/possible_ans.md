@@ -284,6 +284,12 @@ print "  decrypt: "+plaintext
 plaintext=val
 ```
 ## E.1
+Answers:
+* germany
+* france
+* england
+* scotland
+
 Possible solution for E.1:
 
 ```python
@@ -328,6 +334,12 @@ print "  decrypt: "+plaintext
 plaintext=val
 ```
 ## E.2
+Answers:
+* germany
+* france
+* england
+* scotland
+
 DES uses a 64-bit key, of which we have use 56 bits for the actual key. We thus need to truncate our SHA-256 generated key, down to a 64-bit key. We can do that in Python with [:8]. A possible solution for E.2:
 
 ```python
