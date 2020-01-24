@@ -90,7 +90,20 @@ enter aes-256-cbc encryption password: napier
 Verifying - enter aes-256-cbc encryption password: 
 napier@napier-virtual-machine:~$ cat encrypted.bin 
 Salted__��kBֿ��O�;�|`�"����ե
-napier@napier-virtual-machine:~$ openssl enc -d -aes-256-cbc -in encrypted.binenter aes-256-cbc decryption password:
+napier@napier-virtual-machine:~$ openssl enc -d -aes-256-cbc -in encrypted.bin
+enter aes-256-cbc decryption password: napier
+Hello
+</pre>
+
+## A.4
+<pre>
+napier@napier-virtual-machine:~$ openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin -base64
+enter aes-256-cbc encryption password:
+Verifying - enter aes-256-cbc encryption password:
+napier@napier-virtual-machine:~$ cat encrypted.bin 
+U2FsdGVkX18Z7N1ZzT9+up7rmoTInUto8HAflAvIEPE=
+napier@napier-virtual-machine:~$ openssl enc -d -aes-256-cbc -in encrypted.bin -base64
+enter aes-256-cbc decryption password: napier
 Hello
 </pre>
 
