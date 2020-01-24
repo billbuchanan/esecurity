@@ -20,7 +20,7 @@ Commands in Section A:
 * openssl enc -aes-256-cbc -in myfile.txt -out encrypted.bin –base64
 * openssl enc -d -aes-256-cbc -in encrypted.bin -pass pass:napier -base64
 
-A.7
+## A.7
 We can use the -bf-cbc option for Blowfish:
 
 <pre>
@@ -37,7 +37,7 @@ $ openssl enc -d -bf-cbc -pass pass:password -in encrypted1.bin
 Hello
 </pre>
 
-B.2
+##  B.2
 You may need to install "Crypto" with:
 <pre>
 pip install pycrypto
@@ -121,7 +121,7 @@ plaintext = Padding.removePadding(plaintext,mode='Random')
 print "  decrypt: "+plaintext
 ```
 
-C.2
+## C.2
 
 ```python
 from Crypto.Cipher import DES
@@ -159,7 +159,7 @@ plaintext = Padding.removePadding(plaintext,mode='CMS')
 print "  decrypt: "+plaintext
 ```
 
-D.1
+## D.1
 ```python
 from Crypto.Cipher import AES
 import hashlib
@@ -196,7 +196,7 @@ print "  decrypt: "+plaintext
 
 plaintext=val
 ```
-
+## E.1
 Possible solution for E.1:
 
 ```python
@@ -240,7 +240,7 @@ print "  decrypt: "+plaintext
 
 plaintext=val
 ```
-
+## E.2
 A possible solution for E.2:
 
 ```python
@@ -280,7 +280,7 @@ plaintext=val
 ```
 
 
-F.1
+## F.1
 
 ```python
 try:
@@ -290,7 +290,8 @@ except:
 	print("Error!")
 ```
 
-G.1 Node.js code:
+## G.1 
+Node.js code:
 
 ```javascript
     var Chacha20KeySize = 32;
@@ -490,6 +491,7 @@ plaintext = Padding.removePadding(plaintext,mode='CMS')
 print "  decrypt: "+plaintext
 ```
 
+# F.1
 A sample code for Section F is:
 
 ```python
