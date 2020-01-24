@@ -1,5 +1,7 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
 
-The lecture is here:
+## Presentations
 
-https://www.youtube.com/watch?v=nLRV34K3xIo
+* Week 2 Presentation (PDF) - Symmetric Key Encryption: [here](https://asecuritysite.com/public/chapter02_secret.pdf)
+* Week 2 Presentation (Video) - Symmetric Key Encryption [here](https://youtu.be/nLRV34K3xIo)
+* Week 2 Presentation (Lecture - Video) - Symmetric Key Encryption: [here](https://youtu.be/r6TXRmTF5nw). This will be updated with the 2020 lecture.
