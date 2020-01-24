@@ -38,6 +38,14 @@ Hello
 </pre>
 
 B.2
+You may need to install "Crypto" with:
+<pre>
+pip install pycrypto
+</pre>
+And Padding with:
+<pre>
+pip install padding
+</pre>
 
 ```python
 from Crypto.Cipher import AES
