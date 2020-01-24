@@ -273,9 +273,10 @@ Message	Key	CMS Cipher
 Now copy your code and modify it so that it implements 64-bit DES and complete the table (Ref to: http://asecuritysite.com/encryption/padding_des):
 
 
-Message	Key	CMS Cipher
-“hello”	“hello123”
-	8f770898ddb9fb38
+Message		Key		CMS Cipher
+
+“hello”		“hello123” 	8f770898ddb9fb38
+
 “inkwell”	“orange”
 	
 “security”	“qwerty”
@@ -293,9 +294,9 @@ password=raw_input('Enter password:')
 ## E	Python Coding (Decrypting)
 Now modify your coding for 256-bit AES ECB encryption, so that you can enter the cipher text, and an encryption key, and the code will decrypt to provide the result. You should use CMS for padding. With this, determine the plaintext for the following (note, all the plain text values are countries around the World):
 
-CMS Cipher (256-bit AES ECB)	Key	Plain text
-b436bd84d16db330359edebf49725c62
-	“hello”
+CMS Cipher (256-bit AES ECB)		Key		Plain text
+
+b436bd84d16db330359edebf49725c62	“hello”
 	
 4bb2eb68fccd6187ef8738c40de12a6b	“ankle”
 	
@@ -307,18 +308,20 @@ d8f11e13d25771e83898efdbad0e522c	“123456”
 Now modify your coding for 64-bit DES ECB encryption, so that you can enter the cipher text, and an encryption key, and the code will decrypt to provide the result. You should use CMS for padding. With this, determine the plaintext for the following (note, all the plain text values are countries around the World):
 
 CMS Cipher (64-bit DES ECB)	Key	Plain text
-f37ee42f2267458d	“hello”
+
+f37ee42f2267458d		“hello”
 	
-67b7d1162394b868	“ankle”
+67b7d1162394b868		“ankle”
 	
-ac9feb702ba2ecc0	“changeme”
+ac9feb702ba2ecc0		“changeme”
 	
-de89513fbd17d0dc	“123456”
+de89513fbd17d0dc		“123456”
 	
 
 Now update your program, so that it takes a cipher string in Base-64 and converts it to a hex string and then decrypts it. From this now decrypt the following Base-64 encoded cipher streams (which should give countries of the World):
 
 CMS Cipher (256-bit AES ECB)	Key	Plain text
+
 /vA6BD+ZXu8j6KrTHi1Y+w==	“hello”
 	
 nitTRpxMhGlaRkuyXWYxtA==	“ankle”
