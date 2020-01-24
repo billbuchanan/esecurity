@@ -392,10 +392,11 @@ nonce, ciphertext).toString());
 ```
 
 If we use a key of “qwerty”, can you find the well-known fruits (in lower case) of the following ChaCha20 cipher streams:
-
+<pre>
 e47a2bfe646a
 ea783afc66
 e96924f16d6e
+</pre>
 
 What are the fruits?
 
@@ -420,7 +421,8 @@ How many bits will the salt use? You may have to look at the node.js documentati
  
 
 
-### G.2	RC4 is a standard stream cipher and can be used for light-weight cryptography. It can have a variable key size. The following is a node.js implementation:
+### G.2	
+RC4 is a standard stream cipher and can be used for light-weight cryptography. It can have a variable key size. The following is a node.js implementation:
 
 ```javascript
 // RC4
@@ -447,10 +449,11 @@ console.log("Decipher:\t",text);
 ```
 
 For a password of “napier”, find out the fruits used for these RC4 cipher streams:
-
+<pre>
 8d1cc8bdf6da
 911adbb2e6dda57cdaad
 8907deba
+</pre>
 
 What are the fruits?
 
