@@ -281,14 +281,29 @@ plaintext=val
 
 
 ## F.1
+A sample code for Section F is:
 
 ```python
-try:
-	plaintext = Padding.removePadding(plaintext,mode='CMS')
-	print "  decrypt: "+plaintext
-except:
-	print("Error!")
-```
+pw = ["hello","ankle","changeme","123456"]
+
+for password in pw:
+
+	try:
+		key = hashlib.sha256(password).digest()
+		cipherhex = base64.decodestring(cipher).encode('hex')
+
+		ciphertext = binascii.unhexlify(cipherhex)
+
+		print "Cipher (ECB): "+binascii.hexlify(bytearray(ciphertext))
+
+		plaintext = decrypt(ciphertext,key,AES.MODE_ECB)
+		plaintext = Padding.removePadding(plaintext,mode='CMS')
+		print "  decrypt: "+plaintext
+		print "  Key found"+password
+
+	except:	
+		print(".")
+ ```
 
 
 ## G.1
@@ -386,27 +401,4 @@ plaintext = Padding.removePadding(plaintext,mode='CMS')
 print "  decrypt: "+plaintext
 ```
 
-# F.1
-A sample code for Section F is:
 
-```python
-pw = ["hello","ankle","changeme","123456"]
-
-for password in pw:
-
-	try:
-		key = hashlib.sha256(password).digest()
-		cipherhex = base64.decodestring(cipher).encode('hex')
-
-		ciphertext = binascii.unhexlify(cipherhex)
-
-		print "Cipher (ECB): "+binascii.hexlify(bytearray(ciphertext))
-
-		plaintext = decrypt(ciphertext,key,AES.MODE_ECB)
-		plaintext = Padding.removePadding(plaintext,mode='CMS')
-		print "  decrypt: "+plaintext
-		print "  Key found"+password
-
-	except:	
-		print(".")
- ```
