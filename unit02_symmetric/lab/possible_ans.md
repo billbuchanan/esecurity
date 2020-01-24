@@ -318,7 +318,32 @@ console.log("Ciphertext:\t",ciphertext.toString("hex"));
 console.log("Decipher\t",chacha20.decrypt(key,nonce, ciphertext).toString());
 ```    
 
-Sample answers
+## G.2
+Answers:
+(1) e47a2bfe646a - orange
+
+```javascript
+var chacha20 = require("chacha20");
+var crypto = require('crypto');
+
+var keyname="qwerty";
+
+var key = crypto.createHash('sha256').update(keyname).digest();
+
+var nonce = new Buffer.alloc(8);
+
+nonce.fill(0);
+
+console.log( key);
+
+var ciphertext="e47a2bfe646a"
+
+console.log("Ciphertext:\t",ciphertext);
+
+console.log("Decipher\t",chacha20.decrypt(key,nonce, new Buffer(ciphertext,"hex")).toString());
+```
+
+## Sample answers
 
 A possible answer for Section E is:
 
