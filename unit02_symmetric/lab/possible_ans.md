@@ -241,7 +241,7 @@ print "  decrypt: "+plaintext
 plaintext=val
 ```
 ## E.2
-A possible solution for E.2:
+DES uses a 64-bit key, of which we have use 56 bits for the actual key. We thus need to truncate our SHA-256 generated key, down to a 64-bit key. We can do that in Python with [:8]. A possible solution for E.2:
 
 ```python
 from Crypto.Cipher import DES
