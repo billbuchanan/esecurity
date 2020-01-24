@@ -241,6 +241,45 @@ print "  decrypt: "+plaintext
 plaintext=val
 ```
 
+A possible solution for E.2:
+
+```python
+from Crypto.Cipher import DES
+import hashlib
+import sys
+import binascii
+import Padding
+
+val='fox'
+password='hello'
+cipher=''
+
+import sys
+
+def encrypt(plaintext,key, mode):
+	encobj = DES.new(key,mode)
+	return(encobj.encrypt(plaintext))
+
+def decrypt(ciphertext,key, mode):
+	encobj = DES.new(key,mode)
+	return(encobj.decrypt(ciphertext))
+
+key = hashlib.sha256(password).digest()
+
+
+ciphertext=binascii.unhexlify("f37ee42f2267458d")
+
+plaintext = decrypt(ciphertext,key[:8],DES.MODE_ECB)
+print plaintext
+
+plaintext = Padding.removePadding(plaintext,mode='CMS')
+print "  decrypt: "+plaintext
+
+
+plaintext=val
+```
+
+
 F.1
 
 ```python
