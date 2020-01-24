@@ -257,6 +257,12 @@ import Padding
 val='hello'
 password='hello'
 
+if (len(sys.argv)>1):
+	val=sys.argv[1]
+
+if (len(sys.argv)>2):
+	password=sys.argv[2]
+
 plaintext=val
 
 def encrypt(plaintext,key, mode):
@@ -283,6 +289,25 @@ print "  decrypt: "+plaintext
 
 plaintext=val
 ```
+A sample run is:
+<pre>
+napier@napier-virtual-machine:~$ python d1.py hello hello123
+After padding (CMS): 68656c6c6f0b0b0b0b0b0b0b0b0b0b0b
+Cipher (ECB): 0a7ec77951291795bac6690c9e7f4c0d
+  decrypt: hello
+napier@napier-virtual-machine:~$ python d1.py inkwell orange
+After padding (CMS): 696e6b77656c6c090909090909090909
+Cipher (ECB): 484299ceec1ad83b1ce848b0a9733c8d
+  decrypt: inkwell
+napier@napier-virtual-machine:~$ python d1.py security qwerty
+After padding (CMS): 73656375726974790808080808080808
+Cipher (ECB): 6be35165e2c9a624de4f401692fe7161
+  decrypt: security
+napier@napier-virtual-machine:~$ python d1.py Africa changme
+After padding (CMS): 4166726963610a0a0a0a0a0a0a0a0a0a
+Cipher (ECB): ab453ac52cd3b1a61b35d6e85e4568f8
+  decrypt: Africa
+</pre>
 ## E.1
 Answers:
 * germany
