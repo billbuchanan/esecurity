@@ -3,9 +3,7 @@
 # Lab 2: Symmetric Key
 Objective: The key objective of this lab is to understand the range of symmetric key methods used within symmetric key encryption. We will introduce block ciphers, stream ciphers and padding. The key tools used include OpenSSL, Python and JavaScript. Overall Python 2.7 has been used for the sample examples, but it should be easy to convert these to Python 3.x.
 
-Web link (Weekly activities): https://asecuritysite.com/esecurity/unit02
-
-Demo: [here](https://youtu.be/N3UADaXmOik) 
+Lab Demo: [here](https://youtu.be/N3UADaXmOik) 
 
 ## A	OpenSSL
 OpenSSL is a standard tool that we used in encryption. It supports many of the standard symmetric key methods, including AES, 3DES and ChaCha20.
