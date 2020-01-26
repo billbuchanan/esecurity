@@ -122,7 +122,7 @@ Go to: Web link (AES Padding): http://asecuritysite.com/encryption/padding
 
 Using 256-bit AES encryption, and a message of “kettle” and a password of “oxtail”, determine the cipher using the differing padding methods (you only need to show the first six hex characters).
 
-If you like, copy and paste the Python code from the page, and run it on your Kali instance.
+If you like, copy and paste the Python code from the page, and run it on your Ubuntu instance.
 
 CMS: 
 
@@ -166,7 +166,7 @@ Go to: Web link (DES Padding): http://asecuritysite.com/encryption/padding_des
 
 Using 64-bit DES key encryption, and a message of “kettle” and a password of “oxtail”, determine the cipher using the differing padding methods.
 
-If you like, copy and paste the Python code from the page, and run it on your Kali instance.
+If you like, copy and paste the Python code from the page, and run it on your Ubuntu instance.
 
 CMS: 
 
@@ -359,8 +359,9 @@ Now implement a Python program which will try various keys for a cipher text inp
 ["hello","ankle","changeme","123456"]
 
 Run the program and try to crack:
-
-“1jDmCTD1IfbXbyyHgAyrdg==”
+<pre>
+1jDmCTD1IfbXbyyHgAyrdg==
+</pre>
 
 What is the password:
 
@@ -394,7 +395,7 @@ console.log("Decipher\t",chacha20.decrypt(key,
 nonce, ciphertext).toString());
 ```
 
-If we use a key of “qwerty”, can you find the well-known fruits (in lower case) of the following ChaCha20 cipher streams:
+If we use a key of "qwerty", can you find the well-known fruits (in lower case) of the following ChaCha20 cipher streams:
 <pre>
 e47a2bfe646a
 ea783afc66
@@ -451,7 +452,8 @@ var text = decipher.update( ciphertext, 'hex','utf8');
 console.log("Decipher:\t",text);
 ```
 
-For a password of “napier”, find out the fruits used for these RC4 cipher streams:
+For a password of "napier", find out the fruits used for these RC4 cipher streams:
+
 <pre>
 8d1cc8bdf6da
 911adbb2e6dda57cdaad
@@ -565,7 +567,7 @@ var decText = decryptText(algorithm, key, iv, encText, "base64");
 console.log("\nDecrypted:\t" + decText);
 ```
 
-Save the file as “h_01.js” and run the program with:
+Save the file as "h_01.js" and run the program with:
 
 <pre>
 node h_01.js
@@ -574,6 +576,7 @@ node h_01.js
 Now complete the following table:
 
 Text	Pass phrase	Type	Ciphertext and salt (just define first four characters of each)
+
 This is a test	hello	Aes128	
 
 France	Qwerty123	Aes192	
@@ -584,12 +587,13 @@ Germany	Testing123	Aes256
 
 Now reset the IV (the salt value) to an empty string (“”), and complete the table:
 
-Text	Pass phrase	Type	Ciphertext
-This is a test	hello	Aes128	
+Text		Pass phrase	Type	Ciphertext
 
-France	Qwerty123	Aes192	
+This is a test	hello		Aes128	
 
-Germany	Testing123	Aes256	
+France		Qwerty123	Aes192	
+
+Germany		Testing123	Aes256	
 
 
 Does the ciphertext change when we have a fixed IV value?
@@ -616,7 +620,9 @@ Using an Internet search, list ten other encryption algorithms which can be used
 
 3.	The following cipher text is 256-bit AES ECB for a number of spaces (0x20):
 
+<pre>
 c3f791fad9f9392116b2d12c8f6c4b3dc3f791fad9f9392116b2d12c8f6c4b3dc3f791fad9f9392116b2d12c8f6c4b3dc3f791fad9f9392116b2d12c8f6c4b3da3c788929dd8a9022bf04ebf1c98a4e4
+</pre>
 
 What can you observe from the cipher text:
 
@@ -644,7 +650,8 @@ The key things learnt:
 •	How to encrypt and decrypt with symmetric key encryption, and where we use a passphrase to generate the encryption key.
 •	How padding is used within the encryption and decryption processes.
 •	The core difference between a block cipher and a stream cipher.
-Notes
+
+## Notes
 The code can be downloaded from:
 
 git clone https://github.com/billbuchanan/esecurity
@@ -660,6 +667,7 @@ pip install libname
 To install a Node.js package, use:
 
 npm install libname
-Possible solutions
-Have a look at: https://asecuritysite.com/esecurity/labcode 
+
+## Possible solutions
+Have a look at: https://github.com/billbuchanan/esecurity/blob/master/unit02_symmetric/lab/possible_ans.md
 
