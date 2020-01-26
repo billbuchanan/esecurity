@@ -1,4 +1,6 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
+# 2. Symmetric Key Encryption
+
 ## Outline
 The key concepts involved in this unit are:
 
@@ -17,7 +19,7 @@ The key concepts involved in this unit are:
 * Week 2 Presentation (Lecture - Video) - Symmetric Key Encryption: [here](https://youtu.be/CCOt8Xk3ZVU). Recorded on Friday 24 Jan 2020.
 
 
-#Videos
+## Videos
 The voice over lecture is here:
 
 [![](http://img.youtube.com/vi/nLRV34K3xIo/0.jpg)](https://www.youtube.com/watch?v=nLRV34K3xIo "")
