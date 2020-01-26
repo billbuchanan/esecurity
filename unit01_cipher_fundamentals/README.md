@@ -15,10 +15,6 @@ The key concepts are:
 * Key-based encryption. 
 * Key sizes. 
 
-The associated Web page is here:
-
-https://asecuritysite.com/esecurity/unit01
-
 ## What you should know at the end of unit?
 
 * **Understand the conversion of characters between hex, decimal and octal**. Sample question: Convert "hello" into a hex stream. Related material: [here](https://asecuritysite.com/Coding/ascii). 
