@@ -10,8 +10,8 @@ Go to **vsoc.napier.ac.uk** and find your folder. Run your Ubuntu instance [demo
 Note: Some of the code in this example uses Python 2.7. If you are using Python 3, remember and put parenthesis around the print statement string, such as print (hex(val)).
 
 ### A.1	Is prime?
-
 Using: http://asecuritysite.com/Encryption/testprime
+
 
 Test for the following prime numbers:
 91: [Yes] [No]	
@@ -270,13 +270,13 @@ if (len(sys.argv)>1):
 def sieve_for_primes_to(n):
     size = n//2
     sieve = [1]*size
-    limit = int(n\*\*0.5)
+    limit = int(n**0.5)
     for i in range(1,limit):
         if sieve[i]:
-            val = 2\*i+1
+            val = 2*i+1
             tmp = ((size-1) - i)//val 
-            sieve[i+val::val] = [0]\*tmp
-    return [2] + [i\*2+1 for i, v in enumerate(sieve) if v and i>0]
+            sieve[i+val::val] = [0]*tmp
+    return [2] + [i*2+1 for i, v in enumerate(sieve) if v and i>0]
  
 print (sieve_for_primes_to(test))
 ```
