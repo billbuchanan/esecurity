@@ -142,3 +142,12 @@ def sieve_for_primes_to(n):
  
 print sieve_for_primes_to(test)
 ```
+This works because we start with all the odd numbers up to the square root of the limit of the numbers we are looking for. If we have 100, then the size will be 50. We start off with odd numbers (as 2 is the only even prime):
+
+<pre>
+3 5 7 9 11 13 15 17 19 21 23 25 27 29 .. 99
+</pre>
+In the first time round we have i equal to 1, and we will jump 3 each time and mark them as not prime:
+<pre>
+3 5 7 <s9</s> 11 13 <s>15</s> 17 19 <s>21</s> 23 25 27 <s>29</s> .. 99
+</pre>
