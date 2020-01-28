@@ -377,8 +377,8 @@ var keyname="test";
 var plaintext = "testing";
 
 var args = process.argv;
-if (args.length>1) plaintext=args[2];
-if (args.length>2) keyname=args[3];
+if (args.length>2) plaintext=args[2];
+if (args.length>3) keyname=args[3];
 
 var key = crypto.createHash('sha256').update(keyname).digest();
 
