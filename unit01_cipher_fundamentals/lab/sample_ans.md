@@ -149,23 +149,19 @@ This works because we start with all the odd numbers up to the square root of th
 </pre>
 In the first time round we have i equal to 1, and we will jump 3 each time and mark them as not prime:
 <pre>
-3 5 7 <s>9</s> 11 13 <s>15</s> 17 19 <s>21</s> 23 25 <s>27</s> 29 31 <s>33</s> 35 .. 97 <s>99</s>
+<b>3</b> 5 7 <s>9</s> 11 13 <s>15</s> 17 19 <s>21</s> 23 25 <s>27</s> 29 31 <s>33</s> 35 .. 97 <s>99</s>
 </pre>
 In the next time round, we will jump 5, starting at 5:
 <pre>
-3 5 7 X 11 13 <s>X</s> 17 19 X 23 <s>25</s> X 29 31 X <s>35</s> .. 97, X
-</pre>
-In the next time round, we will jump 5, starting at 5:
-<pre>
-3 5 7 X 11 13 <s>X</s> 17 19 X 23 <s>X</s> X 29 31 X <s>X</s> .. 97 X
+3 <b>5</b> 7 X 11 13 <s>X</s> 17 19 X 23 <s>25</s> X 29 31 X <s>35</s> .. 97, X
 </pre>
 In the next time round, we will jump 7, starting at 7:
 <pre>
-3 5 7 X 11 13 X 17 19 <s>X</s> 23 X X 29 31 X <s>X</s> .. 97 99
+3 5 <b>7</b> X 11 13 X 17 19 <s>X</s> 23 X X 29 31 X <s>X</s> .. 97 99
 </pre>
-In the next time round, we will jump 9, starting at 7:
+In the next time round, we will jump 9, starting at 9:
 <pre>
-3 5 7 X 11 13 X 17 19 X 23 X <s>X</s> 29 31 X X .. 97 99
+3 5 7 <b>X</b> 11 13 X 17 19 X 23 X <s>X</s> 29 31 X X .. 97 99
 </pre>
 In the end we stop at 19, and with a jump of 19, and add the value of 2 to the discovered prime numbers:
 <pre>
