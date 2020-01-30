@@ -29,12 +29,28 @@ napier - jane: $1$rqOIRBBN$R2pOQH9egTTVN1Nlst2U7. Use: openssl passwd -1 -salt r
 
 
 ## A.5
+The hash values are:
 <pre>
-2.txt
+$ cat 1.txt | openssl md5
+(stdin)= 5d41402abc4b2a76b9719d911017c592
+$ cat 2.txt | openssl md5
+(stdin)= e3fc91b12a36c2334ebb5b66caa2d75b
+$ cat 3.txt | openssl md5
+(stdin)= fea0f1f6fede90bd0a925b4194deac11
+$ cat 4.txt | openssl md5
+(stdin)= d89b56f81cd7b82856231e662429bcf2
 </pre>
 
+We can see that **2.txt** has been modified.
+
 ## A.6
-The files have the same MD5 signature, but are different in their content.
+The files have the same MD5 signature, but are different in their content:
+<pre>
+$ cat letter_of_rec.ps | openssl md5
+(stdin)= a25f7f0b29ee0b3968c860738533a4b9
+$ cat order.ps | openssl md5
+(stdin)= a25f7f0b29ee0b3968c860738533a4b9
+</pre>
 
 ## B.2
 <pre>
