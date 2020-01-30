@@ -862,8 +862,31 @@ Session completed
 
 ## C.3
 <pre>
-TIGER
-SNAKE
-ELEPHANT
+Bert: TIGER
+Fred: SNAKE
+Admin: ELEPHANT
+</pre>
+A sample run is:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ cat animals 
+tiger
+cat
+snake
+gorilla
+elephant
+napier@napier-virtual-machine:~/steg/python/lsb$ cat hash7
+fred:500:5A8BB08EFF0D416AAAD3B435B51404EE:85A2ED1CA59D0479B1E3406972AB1928:::
+bert:501:C6E4266FEBEBD6A8AAD3B435B51404EE:0B9957E8BED733E0350C703AC1CDA822:::
+admin:502:333CB006680FAF0A417EAF50CFAC29C3:D2EDBC29463C40E76297119421D2A707:::	
+napier@napier-virtual-machine:~/steg/python/lsb$ john --wordlist=animals hash7
+Loaded 4 password hashes with no different salts (LM [DES 128/128 SSE2-16])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+ELEPHAN          (admin:1)
+TIGER            (bert)
+SNAKE            (fred)
+3g 0:00:00:00 100% 300.0g/s 500.0p/s 500.0c/s 2000C/s TIGER..ELEPHAN
+Warning: passwords printed above might be partial
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
 </pre>
 
