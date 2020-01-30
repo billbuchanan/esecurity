@@ -422,6 +422,8 @@ Stopped: Thu Jan 30 16:16:55 2020
 A sample run is:
 <pre>
 $ nano nthash
+$ cat nthash
+0333c27eb4b9401d91fef02a9f74840e
 $ hashcat -m 1000 nthash mywords.txt 
 hashcat (v5.1.0-42-g471a8cc) starting...
 
