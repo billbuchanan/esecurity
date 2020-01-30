@@ -346,6 +346,78 @@ Started: Thu Jan 30 16:11:51 2020
 Stopped: Thu Jan 30 16:11:53 2020
 </pre>
 
+## B.4
+The word is "help". Here is a sample run:
+<pre>
+$ nano mywords.txt
+$ nano file.txt
+$ cat mywords.txt 
+hello
+goodbye
+help
+nowhere
+$ cat file.txt 
+106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fdca46d60b539b7
+$ hashcat -m 1400 file.txt mywords.txt 
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Dictionary cache built:
+* Filename..: mywords.txt
+* Passwords.: 4
+* Bytes.....: 27
+* Keyspace..: 4
+* Runtime...: 0 secs
+
+Approaching final keyspace - workload adjusted.  
+
+106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fdca46d60b539b7:help
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: SHA2-256
+Hash.Target......: 106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fd...b539b7
+Time.Started.....: Thu Jan 30 16:16:54 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:16:54 2020 (0 secs)
+Guess.Base.......: File (mywords.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    10317 H/s (0.00ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 4/4 (100.00%)
+Rejected.........: 0/4 (0.00%)
+Restore.Point....: 0/4 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: hello -> nowhere
+
+Started: Thu Jan 30 16:16:53 2020
+Stopped: Thu Jan 30 16:16:55 2020
+</pre>
 ## B.6
 <pre>
 celtic
