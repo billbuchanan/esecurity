@@ -160,11 +160,93 @@ Stopped: Thu Jan 30 16:01:18 2020
 This is only 14.4 kH/s, and which is much slower than the other methods.
 
 ## B.2
+Answers:
 <pre>
 napier
 password
 Ankle123
 inkwell
+</pre>
+Here is a sample run:
+<pre>
+$ nano words
+$ nano hash1
+$ cat words
+napier
+password
+Ankle123
+inkwell
+$ cat hash1
+232DD5D7274E0D662F36C575A3BD634C
+5F4DCC3B5AA765D61D8327DEB882CF99
+6D5875265D1979BDAD1C8A8F383C5FF5
+04013F78ACCFEC9B673005FC6F20698D
+$ hashcat -m 0 hash1 words
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 4 digests; 4 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Dictionary cache built:
+* Filename..: words
+* Passwords.: 4
+* Bytes.....: 33
+* Keyspace..: 4
+* Runtime...: 0 secs
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+232dd5d7274e0d662f36c575a3bd634c:napier          
+5f4dcc3b5aa765d61d8327deb882cf99:password        
+6d5875265d1979bdad1c8a8f383c5ff5:Ankle123        
+04013f78accfec9b673005fc6f20698d:inkwell         
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: MD5
+Hash.Target......: hash1
+Time.Started.....: Thu Jan 30 16:06:47 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:06:47 2020 (0 secs)
+Guess.Base.......: File (words)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:     9512 H/s (0.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 4/4 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 4/4 (100.00%)
+Rejected.........: 0/4 (0.00%)
+Restore.Point....: 0/4 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: napier -> inkwell
+
+Started: Thu Jan 30 16:06:46 2020
+Stopped: Thu Jan 30 16:06:48 2020
 </pre>
 
 ## B.3 
