@@ -944,5 +944,25 @@ APR1:$apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
 APR1:$apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
 </pre>
 
-
+## F.1
+Answers for "changeme":
+<pre>
+SHA1:$sha1$480000$8sFt66rZ$dNfLzeD4O48TgFqDKd0zBYc4SJ5a
+SHA256:$5$rounds=535000$8sFt66rZ$yNCVBp7NMi3UNzMEIoGoGnQZ.HMGaUETwiQNCBi/cl5
+SHA512:$6$rounds=656000$8sFt66rZ$B/.Msj2UuS3qH.Qxsy.RL82oni6MV75LZ8olN6eCw6.LSHCCcJ4IGnzdX9Qv299whMbpz4rR9e7A9Ab0L3ZA0/
+</pre>
+<pre>
+$ nano sha1.py
+$ cat sha1.py
+import passlib.hash;
+salt="8sFt66rZ"
+string="changeme"
+print "SHA1:"+passlib.hash.sha1_crypt.encrypt(string, salt=salt)
+print "SHA256:"+passlib.hash.sha256_crypt.encrypt(string, salt=salt)
+print "SHA512:"+passlib.hash.sha512_crypt.encrypt(string, salt=salt)
+$ python sha1.py
+SHA1:$sha1$480000$8sFt66rZ$dNfLzeD4O48TgFqDKd0zBYc4SJ5a
+SHA256:$5$rounds=535000$8sFt66rZ$yNCVBp7NMi3UNzMEIoGoGnQZ.HMGaUETwiQNCBi/cl5
+SHA512:$6$rounds=656000$8sFt66rZ$B/.Msj2UuS3qH.Qxsy.RL82oni6MV75LZ8olN6eCw6.LSHCCcJ4IGnzdX9Qv299whMbpz4rR9e7A9Ab0L3ZA0/
+</pre>
 
