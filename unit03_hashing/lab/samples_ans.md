@@ -590,6 +590,135 @@ hair
 face
 eye
 </pre>
+A sample run is:
+<pre>
+$ nano face
+$ cat face
+4dc2159bba05da394c3b94c6f54354db1f1f43b321ac4bbdfc2f658237858c70
+0282d9b79f42c74c1550b20ff2dd16aafc3fe5d8ae9a00b2f66996d0ae882775
+47c215b5f70eb9c9b4bcb2c027007d6cf38a899f40d1d1da6922e49308b15b69
+$ hashcat -a 3 -m 1400 face ?l?l?l?l?l?l?l?l --increment
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 3 digests; 3 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+Session..........: hashcat                       
+Status...........: Exhausted
+Hash.Type........: SHA2-256
+Hash.Target......: face
+Time.Started.....: Thu Jan 30 16:48:55 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:48:55 2020 (0 secs)
+Guess.Mask.......: ?l [1]
+Guess.Queue......: 1/8 (12.50%)
+Speed.#1.........:    68915 H/s (0.00ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Recovered........: 0/3 (0.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 26/26 (100.00%)
+Rejected.........: 0/26 (0.00%)
+Restore.Point....: 1/1 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
+Candidates.#1....: s -> x
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+Session..........: hashcat                       
+Status...........: Exhausted
+Hash.Type........: SHA2-256
+Hash.Target......: face
+Time.Started.....: Thu Jan 30 16:48:56 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:48:56 2020 (0 secs)
+Guess.Mask.......: ?l?l [2]
+Guess.Queue......: 2/8 (25.00%)
+Speed.#1.........:  1527.7 kH/s (0.06ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Recovered........: 0/3 (0.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 676/676 (100.00%)
+Rejected.........: 0/676 (0.00%)
+Restore.Point....: 26/26 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
+Candidates.#1....: sa -> xq
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+47c215b5f70eb9c9b4bcb2c027007d6cf38a899f40d1d1da6922e49308b15b69:eye
+                                                 
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: SHA2-256
+Hash.Target......: face
+Time.Started.....: Thu Jan 30 16:48:56 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:48:56 2020 (0 secs)
+Guess.Mask.......: ?l?l?l [3]
+Guess.Queue......: 3/8 (37.50%)
+Speed.#1.........: 10092.9 kH/s (1.36ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Recovered........: 1/3 (33.33%) Digests, 0/1 (0.00%) Salts
+Progress.........: 17576/17576 (100.00%)
+Rejected.........: 0/17576 (0.00%)
+Restore.Point....: 676/676 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
+Candidates.#1....: sar -> xqx
+
+0282d9b79f42c74c1550b20ff2dd16aafc3fe5d8ae9a00b2f66996d0ae882775:face
+4dc2159bba05da394c3b94c6f54354db1f1f43b321ac4bbdfc2f658237858c70:hair
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: SHA2-256
+Hash.Target......: face
+Time.Started.....: Thu Jan 30 16:48:56 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:48:56 2020 (0 secs)
+Guess.Mask.......: ?l?l?l?l [4]
+Guess.Queue......: 4/8 (50.00%)
+Speed.#1.........: 22926.1 kH/s (2.09ms) @ Accel:1024 Loops:26 Thr:1 Vec:8
+Recovered........: 3/3 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 212992/456976 (46.61%)
+Rejected.........: 0/212992 (0.00%)
+Restore.Point....: 6144/17576 (34.96%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-26 Iteration:0-26
+Candidates.#1....: snts -> xolc
+
+Started: Thu Jan 30 16:48:54 2020
+Stopped: Thu Jan 30 16:48:57 2020
+</pre>
 
 ## B.8
 <pre>
