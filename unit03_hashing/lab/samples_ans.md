@@ -938,7 +938,7 @@ print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
 string="password"
 print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
 
-$ python apr1.py 
+$ <strong style="color: blue;">python apr1.py </strong>
 APR1:$apr1$PkWj6gM4$V2w1yci/N1HCLzcqo3jiZ/
 APR1:$apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
 APR1:$apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
