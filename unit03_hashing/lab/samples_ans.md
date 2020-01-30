@@ -590,6 +590,11 @@ hair
 face
 eye
 </pre>
+a->z: 26
+aa->zz: 676
+aaa->zzz:  17576
+aaaa->zzzz:456976
+
 A sample run is:
 <pre>
 $ nano face
