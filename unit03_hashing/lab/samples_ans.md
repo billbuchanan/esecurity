@@ -966,3 +966,44 @@ SHA256:$5$rounds=535000$8sFt66rZ$yNCVBp7NMi3UNzMEIoGoGnQZ.HMGaUETwiQNCBi/cl5
 SHA512:$6$rounds=656000$8sFt66rZ$B/.Msj2UuS3qH.Qxsy.RL82oni6MV75LZ8olN6eCw6.LSHCCcJ4IGnzdX9Qv299whMbpz4rR9e7A9Ab0L3ZA0/
 </pre>
 
+## G.1
+Answers:
+<pre>
+$pbkdf2$131000$WkR6UEU0NUM$qS7S53GV52Ha3Qq1SUna.XlrS1U
+$pbkdf2-sha256$29000$WkR6UEU0NUM$gWsN0JM2s94YGo0W9On0Mz6yFvRMCFRE1Ms4dXIpCE4
+
+$pbkdf2$131000$WkR6UEU0NUM$Ax363Np0kPa.8vfjSkepDqEMFYg
+$pbkdf2-sha256$29000$WkR6UEU0NUM$GHyI8vXC/POt8bfLR35D.9uLvLtPCoBiUDa1O00Ef28
+
+$pbkdf2$131000$WkR6UEU0NUM$.L1L.AVXTBSsc0FuHRQz4PNMVXc
+$pbkdf2-sha256$29000$WkR6UEU0NUM$pd1VbFkOA/VwbhJZhJ.25kHPsKVXika2XsuKYoudcug
+</pre>
+<pre>
+$ nano pb.py
+$ cat pb.py 
+import hashlib;
+import passlib.hash;
+import sys;
+
+
+salt="ZDzPE45C"
+string="password"
+
+if (len(sys.argv)>1):
+	string=sys.argv[1]
+
+if (len(sys.argv)>2):
+	salt=sys.argv[2]
+
+print "PBKDF2 (SHA1):"+passlib.hash.pbkdf2_sha1.encrypt(string, salt=salt)
+print "PBKDF2 (SHA256):"+passlib.hash.pbkdf2_sha256.encrypt(string, salt=salt)
+$ python pb.py changeme ZDzPE45C
+PBKDF2 (SHA1):$pbkdf2$131000$WkR6UEU0NUM$qS7S53GV52Ha3Qq1SUna.XlrS1U
+PBKDF2 (SHA256):$pbkdf2-sha256$29000$WkR6UEU0NUM$gWsN0JM2s94YGo0W9On0Mz6yFvRMCFRE1Ms4dXIpCE4
+$ python pb.py 123456 ZDzPE45C
+PBKDF2 (SHA1):$pbkdf2$131000$WkR6UEU0NUM$Ax363Np0kPa.8vfjSkepDqEMFYg
+PBKDF2 (SHA256):$pbkdf2-sha256$29000$WkR6UEU0NUM$GHyI8vXC/POt8bfLR35D.9uLvLtPCoBiUDa1O00Ef28
+$ python pb.py password ZDzPE45C
+PBKDF2 (SHA1):$pbkdf2$131000$WkR6UEU0NUM$.L1L.AVXTBSsc0FuHRQz4PNMVXc
+PBKDF2 (SHA256):$pbkdf2-sha256$29000$WkR6UEU0NUM$pd1VbFkOA/VwbhJZhJ.25kHPsKVXika2XsuKYoudcug
+</pre>
