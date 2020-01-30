@@ -347,7 +347,11 @@ NT Hash:066ddfd4ef0e9cd7c256fe77191ef43c
 Web link (LM Hash):	http://asecuritysite.com/encryption/lmhash
 
  
-###D.1	Create a Python script to determine the LM hash and NTLM hash of the following words:	“Napier”
+### D.1	
+
+Create a Python script to determine the LM hash and NTLM hash of the following words:	
+
+“Napier”
 
 “Foxtrot”
 
@@ -355,11 +359,13 @@ Web link (LM Hash):	http://asecuritysite.com/encryption/lmhash
 ## E	APR1
 The Apache-defined APR1 format addresses the problems of brute forcing an MD5 hash, and basically iterates over the hash value 1,000 times. This considerably slows an intruder as they try to crack the hashed value. The resulting hashed string contains “$apr1$” to identify it and uses a 32-bit salt value.  We can use both htpassword and Openssl to compute the hashed string (where “bill” is the user and “hello” is the password):
 
+<pre>
 # htpasswd -nbm bill hello
 bill:$apr1$PkWj6gM4$XGWpADBVPyypjL/cL0XMc1
 
 # openssl passwd -apr1 -salt PkWj6gM4 hello
 $apr1$PkWj6gM4$XGWpADBVPyypjL/cL0XMc1
+</pre>
 
 We can also create a simple Python program with the passlib library, and add the same salt as the example above:
 ```python
@@ -432,7 +438,9 @@ PBKDF2 (Password-Based Key Derivation Function 2) is defined in RFC 2898 and gen
 
 PBKDF2 is used in WPA-2 and TrueCrypt. Its main focus is to produced a hashed version of a password and includes a salt value to reduce the opportunity for a rainbow table attack. It generally uses over 1,000 iterations in order to slow down the creation of the hash, so that it can overcome brute force attacks. The generalise format for PBKDF2 is:
 
+<pre>
 DK = PBKDF2(Password, Salt, MInterations, dkLen)
+</pre>
 
 where Password is the pass phrase, Salt is the salt, MInterations is the number of iterations, and dklen is the length of the derived hash.In WPA-2, the IEEE 802.11i standard defines that the pre-shared key is defined by:
 
@@ -450,6 +458,7 @@ byte[] result = passwordDerive.GenerateDerivedKey(16,
 which has a key length of 16 bytes (128 bits - dklen), uses a salt byte array, and 1000 iterations of the hash (Minterations). The resulting hash value will have 32 hexadecimal characters (16 bytes).
 
 Web link (PBKDF2): 	http://www.asecuritysite.com/encryption/PBKDF2
+
 ```python
 import hashlib;
 import passlib.hash;
@@ -489,7 +498,7 @@ Overall it uses a 128-bit salt value, which requires 22 Base-64 characters. It c
 $2a$06$NkYh0RCM8pNWPaYvRLgN9.LbJw4gcnWCOQYIom0P08UEZRQQjbfpy
 </pre>
 
-As illustrated in Figure 1, the first part is "$2a$" (or "$2b$"), and then followed by the number of rounds used. In this case is it 6 rounds which is 2^6 iterations (where each additional round doubles the hash time). The 128-bit (22 character) salt values comes after this, and then finally there is a 184-bit hash code (which is 31 characters). 
+As illustrated in Figure 1, the first part is "$2a$" (or "$2b$"), and then followed by the number of rounds used. In this case is it 6 rounds which is 2<sup>6</sup> iterations (where each additional round doubles the hash time). The 128-bit (22 character) salt values comes after this, and then finally there is a 184-bit hash code (which is 31 characters). 
 
 The slowness of bcrypt is highlighted with an AWS EC2 server benchmark using hashcat:
 
