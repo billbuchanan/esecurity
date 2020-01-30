@@ -792,8 +792,8 @@ Stopped: Thu Jan 30 17:00:39 2020
 
 ## C.1
 <pre>
-APPLE
-ORANGE
+bert: APPLE
+fred: ORANGE
 </pre>
 A sample run is:
 <pre>
@@ -832,9 +832,22 @@ bert:ORANGE:501:10EAF413723CBB15AAD3B435B51404EE:CA8E025E9893E8CE3D2CBF847FC5681
 
 ## C.2
 <pre>
-DUNDEE
-ABERDEEN
-PERTH
+bert: DUNDEE
+fred: ABERDEEN
+Admin: PERTH
+</pre>
+A sample run:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ john --wordlist=cities hash6
+Loaded 4 password hashes with no different salts (LM [DES 128/128 SSE2-16])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+PERTH            (bert)
+ABERDEE          (fred:1)
+DUNDEE           (Admin)
+3g 0:00:00:00 100% 300.0g/s 500.0p/s 500.0c/s 2000C/s DUNDEE..GLASGOW
+Warning: passwords printed above might be partial
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
 </pre>
 
 ## C.3
