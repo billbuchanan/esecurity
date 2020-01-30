@@ -730,6 +730,65 @@ Stopped: Thu Jan 30 16:48:57 2020
 passwordW
 passowrd5
 </pre>
+A sample run is:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ hashcat -a 3 -m 0 file.txt password?d
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 2 digests; 2 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Brute-Force
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+db0edd04aaac4506f7edab03ac855d56:password5       
+                                                 
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: MD5
+Hash.Target......: file.txt
+Time.Started.....: Thu Jan 30 17:00:38 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 17:00:38 2020 (0 secs)
+Guess.Mask.......: password?d [9]
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    23640 H/s (0.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 1/2 (50.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 10/10 (100.00%)
+Rejected.........: 0/10 (0.00%)
+Restore.Point....: 10/10 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: password1 -> password6
+
+Started: Thu Jan 30 17:00:36 2020
+Stopped: Thu Jan 30 17:00:39 2020
+</pre>
 
 ## C.1
 <pre>
