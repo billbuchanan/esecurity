@@ -19,7 +19,7 @@ SHA-256: 128 hex characters (384 bits)
 
 ## A.4
 <pre>
-napier - bill:$apr1$waZS/8Tm$jDZmiZBct/c2hysERcZ3m1 Use: openssl passwd -apr1 -salt waZS/8Tm napier
+napier - bill:$apr1$waZS/8Tm$jDZmiZBct/c2hysERcZ3m1 Use: <span style="color:red;">openssl passwd -apr1 -salt waZS/8Tm napier</span>
 Ankle123 - mike:$apr1$mKfrJquI$Kx0CL9krmqhCu0SHKqp5Q0 Use: openssl passwd -apr1 -salt mKfrJquI Ankle123
 inkwell - fred:$apr1$Jbe/hCIb$/k3A4kjpJyC06BUUaPRKs0 Use: openssl passwd -apr1 -salt Jbe/hCIb inkwell
 password - ian:$apr1$0GyPhsLi$jTTzW0HNS4Cl5ZEoyFLjB. Use: openssl passwd -apr1 -salt 0GyPhsLi password
@@ -909,7 +909,7 @@ print "NT Hash:"+passlib.hash.nthash.encrypt(string)
 string="Foxtrot"
 print "LM Hash:"+passlib.hash.lmhash.encrypt(string)
 print "NT Hash:"+passlib.hash.nthash.encrypt(string)
-napier@napier-virtual-machine:~/steg/python/lsb$ python d1.py
+$ python d1.py
 LM Hash:12b9c54f6fe0ec80aad3b435b51404ee
 NT Hash:3ca6cef4b84985b6e3cd7b24843ea7d1
 LM Hash:82121098b60f69f5aad3b435b51404ee
