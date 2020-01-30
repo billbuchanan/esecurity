@@ -238,14 +238,14 @@ Using this style of command (look at the hash type and perhaps this is a SHA-256
 
 Words:
 
-Number of tests for each:
+Number of tests for each sequence tried:
 
 
 What happens when you take the “--increment” flag away?
 
 
 
-B.8	
+## B.8	
 We can focus on given letters, such as where we add a letter or a digit at the end:
 <pre>
 hashcat -a 3 -m 1000 file.txt password?l
@@ -383,8 +383,8 @@ APR1:$apr1$PkWj6gM4$XGWpADBVPyypjL/cL0XMc1
 
 Refer to: http://asecuritysite.com/encryption/apr1
 
-### E.1	Create a Python script to create the APR1 hash for the following:
-
+### E.1	
+Create a Python script to create the APR1 hash for the following:
 
 Prove them against on-line APR1 generator (or from the page given above).	
 
