@@ -260,15 +260,15 @@ peach
 </pre>
 Here is a sample run:
 <pre>
-napier@napier-virtual-machine:~/steg/python/lsb$ nano hash2
-napier@napier-virtual-machine:~/steg/python/lsb$ nano fruits
-napier@napier-virtual-machine:~/steg/python/lsb$ cat hash2
+$ nano hash2
+$ nano fruits
+$ cat hash2
 FE01D67A002DFA0F3AC084298142ECCD
 1F3870BE274F6C49B3E31A0C6728957F
 72B302BF297A228A75730123EFEF7C41
 8893DC16B1B2534BAB7B03727145A2BB
 889560D93572D538078CE1578567B91A
-napier@napier-virtual-machine:~/steg/python/lsb$ cat fruits 
+$ cat fruits 
 apple
 orange
 kiwi
@@ -277,7 +277,7 @@ grape
 banana
 pear
 peach
-napier@napier-virtual-machine:~/steg/python/lsb$ hashcat -m 0 hash2 fruits 
+$ hashcat -m 0 hash2 fruits 
 hashcat (v5.1.0-42-g471a8cc) starting...
 
 OpenCL Platform #1: Intel(R) Corporation
