@@ -84,11 +84,6 @@ $ hashcat --help
 $ hashcat -b -m 0
 hashcat (v5.1.0-42-g471a8cc) starting in benchmark mode...
 
-Benchmarking uses hand-optimized kernel code by default.
-You can use it in your cracking session by setting the -O option.
-Note: Using optimized kernel code limits the maximum supported password length.
-To disable the optimized kernel code in benchmark mode, use the -w option.
-
 OpenCL Platform #1: Intel(R) Corporation
 ========================================
 * Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
