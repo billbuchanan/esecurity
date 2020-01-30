@@ -795,6 +795,40 @@ Stopped: Thu Jan 30 17:00:39 2020
 APPLE
 ORANGE
 </pre>
+A sample run is:
+<pre>
+$ rm -r ~/.john/
+$ nano fruits 
+$ cat pwdump 
+fred:500:E79E56A8E5C6F8FEAAD3B435B51404EE:5EBE7DFA074DA8EE8AEF1FAA2BBDE876:::
+bert:501:10EAF413723CBB15AAD3B435B51404EE:CA8E025E9893E8CE3D2CBF847FC56814:::	
+$ cat fruits 
+apple
+orange
+kiwi
+lemon
+grape
+banana
+pear
+peach
+$ john --wordlist=fruits pwdump
+Created directory: /home/napier/.john
+Loaded 2 password hashes with no different salts (LM [DES 128/128 SSE2-16])
+Press 'q' or Ctrl-C to abort, almost any other key for status
+ORANGE           (bert)
+APPLE            (fred)
+2g 0:00:00:00 100% 200.0g/s 800.0p/s 800.0c/s 1600C/s APPLE..PEACH
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+$ john --show
+Password files required, but none specified
+napier@napier-virtual-machine:~/steg/python/lsb$ john --show pwdump
+fred:APPLE:500:E79E56A8E5C6F8FEAAD3B435B51404EE:5EBE7DFA074DA8EE8AEF1FAA2BBDE876:::
+bert:ORANGE:501:10EAF413723CBB15AAD3B435B51404EE:CA8E025E9893E8CE3D2CBF847FC56814:::	
+
+2 password hashes cracked, 0 left
+
+</pre>
 
 ## C.2
 <pre>
