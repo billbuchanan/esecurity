@@ -890,3 +890,28 @@ Use the "--show" option to display all of the cracked passwords reliably
 Session completed
 </pre>
 
+## D.1
+Answers:
+<pre>
+LM Hash:12b9c54f6fe0ec80aad3b435b51404ee
+NT Hash:3ca6cef4b84985b6e3cd7b24843ea7d1
+LM Hash:82121098b60f69f5aad3b435b51404ee
+NT Hash:828f0524d3fffd8632ee97253183fef3
+</pre>
+A sample run is here:
+<pre>
+$ nano d1.py
+$ cat d1.py
+import passlib.hash;
+string="Napier"
+print "LM Hash:"+passlib.hash.lmhash.encrypt(string)
+print "NT Hash:"+passlib.hash.nthash.encrypt(string)
+string="Foxtrot"
+print "LM Hash:"+passlib.hash.lmhash.encrypt(string)
+print "NT Hash:"+passlib.hash.nthash.encrypt(string)
+napier@napier-virtual-machine:~/steg/python/lsb$ python d1.py
+LM Hash:12b9c54f6fe0ec80aad3b435b51404ee
+NT Hash:3ca6cef4b84985b6e3cd7b24843ea7d1
+LM Hash:82121098b60f69f5aad3b435b51404ee
+NT Hash:828f0524d3fffd8632ee97253183fef3
+</pre>
