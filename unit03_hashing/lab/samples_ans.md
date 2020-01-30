@@ -84,14 +84,6 @@ $ hashcat --help
 $ hashcat -b -m 0
 hashcat (v5.1.0-42-g471a8cc) starting in benchmark mode...
 
-OpenCL Platform #1: Intel(R) Corporation
-========================================
-* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
-
-Benchmark relevant options:
-===========================
-* --optimized-kernel-enable
-
 Hashmode: 0 - MD5
 
 Speed.#1.........:   189.9 MH/s (10.87ms) @ Accel:1024 Loops:1024 Thr:1 Vec:8
@@ -102,7 +94,7 @@ Stopped: Thu Jan 30 15:56:12 2020
 This gives 189 MH/s. For SHA-1:
 <pre>
 $ hashcat -b -m 100
-hashcat (v5.1.0-42-g471a8cc) starting in benchmark mode...
+hashcat (v5.1.0-42-g471a8cc) starting in benchmark mode ...
 
 OpenCL Platform #1: Intel(R) Corporation
 ========================================
