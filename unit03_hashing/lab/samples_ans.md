@@ -19,7 +19,7 @@ SHA-256: 128 hex characters (384 bits)
 
 ## A.4
 <pre>
-napier - bill:$apr1$waZS/8Tm$jDZmiZBct/c2hysERcZ3m1 Use: <span style="color:red;">openssl passwd -apr1 -salt waZS/8Tm napier</span>
+napier - bill:$apr1$waZS/8Tm$jDZmiZBct/c2hysERcZ3m1 Use: openssl passwd -apr1 -salt waZS/8Tm napier
 Ankle123 - mike:$apr1$mKfrJquI$Kx0CL9krmqhCu0SHKqp5Q0 Use: openssl passwd -apr1 -salt mKfrJquI Ankle123
 inkwell - fred:$apr1$Jbe/hCIb$/k3A4kjpJyC06BUUaPRKs0 Use: openssl passwd -apr1 -salt Jbe/hCIb inkwell
 password - ian:$apr1$0GyPhsLi$jTTzW0HNS4Cl5ZEoyFLjB. Use: openssl passwd -apr1 -salt 0GyPhsLi password
@@ -915,3 +915,32 @@ NT Hash:3ca6cef4b84985b6e3cd7b24843ea7d1
 LM Hash:82121098b60f69f5aad3b435b51404ee
 NT Hash:828f0524d3fffd8632ee97253183fef3
 </pre>
+
+## E.1
+Answers:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ nano apr1.py
+changeme - $apr1$PkWj6gM4$V2w1yci/N1HCLzcqo3jiZ/
+123456 - $apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
+password - $apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
+</pre>
+The following is a sample run:
+<pre>
+$ nano apr1.py
+$ cat apr1.py
+import passlib.hash;
+
+salt="PkWj6gM4"
+string="changeme"
+print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
+string="123456"
+print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
+string="password"
+print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
+
+$ python apr1.py 
+APR1:$apr1$PkWj6gM4$V2w1yci/N1HCLzcqo3jiZ/
+APR1:$apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
+APR1:$apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
+</pre>
+
