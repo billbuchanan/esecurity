@@ -838,7 +838,17 @@ Admin: PERTH
 </pre>
 A sample run:
 <pre>
-napier@napier-virtual-machine:~/steg/python/lsb$ john --wordlist=cities hash6
+$ cat cities
+DUNDEE
+ABERDEEN
+PERTH
+EDINBURGH
+GLASGOW
+$ cat hash6
+Admin:500:629E2BA1C0338CE0AAD3B435B51404EE:9408CB400B20ABA3DFEC054D2B6EE5A1:::
+fred:501:33E58ABB4D723E5EE72C57EF50F76A05:4DFC4E7AA65D71FD4E06D061871C05F2:::
+bert:502:BC2B6A869601E4D9AAD3B435B51404EE:2D8947D98F0B09A88DC9FCD6E546A711:::	
+$ john --wordlist=cities hash6
 Loaded 4 password hashes with no different salts (LM [DES 128/128 SSE2-16])
 Press 'q' or Ctrl-C to abort, almost any other key for status
 PERTH            (bert)
