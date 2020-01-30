@@ -978,6 +978,7 @@ $pbkdf2-sha256$29000$WkR6UEU0NUM$GHyI8vXC/POt8bfLR35D.9uLvLtPCoBiUDa1O00Ef28
 $pbkdf2$131000$WkR6UEU0NUM$.L1L.AVXTBSsc0FuHRQz4PNMVXc
 $pbkdf2-sha256$29000$WkR6UEU0NUM$pd1VbFkOA/VwbhJZhJ.25kHPsKVXika2XsuKYoudcug
 </pre>
+A sample run is:
 <pre>
 $ nano pb.py
 $ cat pb.py 
