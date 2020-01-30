@@ -919,7 +919,7 @@ NT Hash:828f0524d3fffd8632ee97253183fef3
 ## E.1
 Answers:
 <pre>
-napier@napier-virtual-machine:~/steg/python/lsb$ nano apr1.py
+$ nano apr1.py
 changeme - $apr1$PkWj6gM4$V2w1yci/N1HCLzcqo3jiZ/
 123456 - $apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
 password - $apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
@@ -938,7 +938,7 @@ print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
 string="password"
 print "APR1:"+passlib.hash.apr_md5_crypt.encrypt(string, salt=salt)
 
-$ <strong style="color: blue;">python apr1.py </strong>
+$ <strong style="color: red;">python apr1.py </strong>
 APR1:$apr1$PkWj6gM4$V2w1yci/N1HCLzcqo3jiZ/
 APR1:$apr1$PkWj6gM4$opHu7xKPBmSPWdVO8vidC/
 APR1:$apr1$PkWj6gM4$OupRScHgsxe5lQj4.azPy.
