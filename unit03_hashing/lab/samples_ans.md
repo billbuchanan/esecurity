@@ -1008,3 +1008,114 @@ $ python pb.py password ZDzPE45C
 PBKDF2 (SHA1):$pbkdf2$131000$WkR6UEU0NUM$.L1L.AVXTBSsc0FuHRQz4PNMVXc
 PBKDF2 (SHA256):$pbkdf2-sha256$29000$WkR6UEU0NUM$pd1VbFkOA/VwbhJZhJ.25kHPsKVXika2XsuKYoudcug
 </pre>
+
+## H.1
+A sample run:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ nano bc.py
+napier@napier-virtual-machine:~/steg/python/lsb$ cat bc.py
+import hashlib;
+import passlib.hash;
+
+salt="ZDzPE45C"
+string="hello"
+salt2="1111111111111111111111"
+
+print "General Hashes"
+print "MD5:"+hashlib.md5(string).hexdigest()
+print "SHA1:"+hashlib.sha1(string).hexdigest()
+print "SHA256:"+hashlib.sha256(string).hexdigest()
+print "SHA512:"+hashlib.sha512(string).hexdigest()
+
+print "UNIX hashes (with salt)"
+print "DES:"+passlib.hash.des_crypt.encrypt(string, salt=salt[:2])
+print "MD5:"+passlib.hash.md5_crypt.encrypt(string, salt=salt)
+print "Sun MD5:"+passlib.hash.sun_md5_crypt.encrypt(string, salt=salt)
+print "SHA1:"+passlib.hash.sha1_crypt.encrypt(string, salt=salt)
+print "SHA256:"+passlib.hash.sha256_crypt.encrypt(string, salt=salt)
+print "SHA512:"+passlib.hash.sha512_crypt.encrypt(string, salt=salt)
+print "Bcrypt:"+passlib.hash.bcrypt.encrypt(string, salt=salt2[:22])
+napier@napier-virtual-machine:~/steg/python/lsb$ python bc.py
+General Hashes
+MD5:5d41402abc4b2a76b9719d911017c592
+SHA1:aaf4c61ddcc5e8a2dabede0f3b482cd9aea9434d
+SHA256:2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+SHA512:9b71d224bd62f3785d96d46ad3ea3d73319bfbc2890caadae2dff72519673ca72323c3d99ba5c11d7c7acc6e14b8c5da0c4663475c2e5c3adef46f73bcdec043
+UNIX hashes (with salt)
+DES:ZDVX7N5Bz.8wk
+MD5:$1$ZDzPE45C$dOTT0LUnoqs6J7mNLdyse0
+Sun MD5:$md5,rounds=34000$ZDzPE45C$$fdZ8uoSiWj6RcJOoMiaKX1
+SHA1:$sha1$480000$ZDzPE45C$LnzxSENDwEXBWKTQ1fc9/6BervKU
+SHA256:$5$rounds=535000$ZDzPE45C$TTN/Qd.elve1rHLazTSL0KCFxi7z5X9B/5l3xwFniaD
+SHA512:$6$rounds=656000$ZDzPE45C$6VWOiufRnOnxxetIEuLTZiM709Z3SBuNxhCf0Y0N4MUOgSTE85Nf9lI7FJJO4Autc2WEahI4URTibVYNy9V8w.
+Bcrypt:$2b$12$111111111111111111111u/oq5MIbCQah3/a.C6KTM0d7mD3wwZw.
+</pre>
+
+## L.3
+<pre>
+$ hashcat -m 0 bfield.hash rockyou.txt 
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 54
+8686 digests; 423623 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+INFO: Removed 48467 hashes found in potfile.
+
+Dictionary cache built:
+* Filename..: rockyou.txt
+* Passwords.: 14344391
+* Bytes.....: 139921497
+* Keyspace..: 14344384
+* Runtime...: 1 sec
+
+918c3d1d8ac71df1a6c95a0407db3e35:njimko          
+74cf7b73890729e7fe254c52d0838613:nitelife        
+40da4fc12d91011e7d5783c60c89c687:nirvana88       
+cd098dcb28426b386e2478cc1fae3551:niroshan        
+b5da44cbaab293884a6bc0ad739263fa:nintendo2       
+a590351c72b9e2f599d811cdba71e938:ninjax          
+e287555a4a59ca14d9245d2c4171fb89:ninja666        
+4593b12596f75c7467552db8cfb69650:ninguem         
+75f287c3315f44f9468dd9610de3a366:nine999         
+19f60e1296d8dda0ba697b5dbbb5e761:nincsen         
+5264b5abc7024da723dc6eaa9235526c:nikol1          
+7eb86783ed219ac7e68c4eea10a0b11e:nikodemus       
+eaa01bc7f7edb9dde5e9fb3b15013332:nikki75         
+72a04413aa1a15f601aa8cd0da073ec3:nightshadow     
+d7981c305d9a7a4fdcaba1eb6721de6b:nightmare3      
+bbfce983b6a0eab91928b0ab07594e8f:moffitt         
+4f5854c3caf75317aa0454840b2da6d3:nicolette1      
+c4edaf1aab98ca062f4ecc6883256bf2:mnbbnm          
+a056c888fd268ee001d9ae257915c41e:nicolas15       
+4b0f4761b8020fa4dccebb638e4ae3cb:mkonji          
+ef0256e05069f3ee0a568fdcc03af116:nick91          
+f623d7d7ee0f2f8ebf624f45071245c1:mitcho          
+d504d64a1062b1bac22de2b01b4ef0c3:mister12        
+4d85e8c7d14c1dd1497f039e1c807b24:nice1234        
+392da4c651b8e054c40e3d893c1c7cde:missy911        
+
+</pre>
