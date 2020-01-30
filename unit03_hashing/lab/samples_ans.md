@@ -250,12 +250,100 @@ Stopped: Thu Jan 30 16:06:48 2020
 </pre>
 
 ## B.3 
+The answers are:
 <pre>
 orange
 apple
 banana
 pear
 peach
+</pre>
+Here is a sample run:
+<pre>
+napier@napier-virtual-machine:~/steg/python/lsb$ nano hash2
+napier@napier-virtual-machine:~/steg/python/lsb$ nano fruits
+napier@napier-virtual-machine:~/steg/python/lsb$ cat hash2
+FE01D67A002DFA0F3AC084298142ECCD
+1F3870BE274F6C49B3E31A0C6728957F
+72B302BF297A228A75730123EFEF7C41
+8893DC16B1B2534BAB7B03727145A2BB
+889560D93572D538078CE1578567B91A
+napier@napier-virtual-machine:~/steg/python/lsb$ cat fruits 
+apple
+orange
+kiwi
+lemon
+grape
+banana
+pear
+peach
+napier@napier-virtual-machine:~/steg/python/lsb$ hashcat -m 0 hash2 fruits 
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 5 digests; 5 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Dictionary cache built:
+* Filename..: fruits
+* Passwords.: 8
+* Bytes.....: 48
+* Keyspace..: 8
+* Runtime...: 0 secs
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+1f3870be274f6c49b3e31a0c6728957f:apple           
+fe01d67a002dfa0f3ac084298142eccd:orange          
+72b302bf297a228a75730123efef7c41:banana          
+8893dc16b1b2534bab7b03727145a2bb:pear            
+889560d93572d538078ce1578567b91a:peach           
+                                                 
+Session..........: hashcat
+Status...........: Cracked
+Hash.Type........: MD5
+Hash.Target......: hash2
+Time.Started.....: Thu Jan 30 16:11:51 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:11:51 2020 (0 secs)
+Guess.Base.......: File (fruits)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    16388 H/s (0.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 5/5 (100.00%) Digests, 1/1 (100.00%) Salts
+Progress.........: 8/8 (100.00%)
+Rejected.........: 0/8 (0.00%)
+Restore.Point....: 0/8 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: apple -> peach
+
+Started: Thu Jan 30 16:11:51 2020
+Stopped: Thu Jan 30 16:11:53 2020
 </pre>
 
 ## B.6
