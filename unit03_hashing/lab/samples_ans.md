@@ -491,9 +491,97 @@ Stopped: Thu Jan 30 16:22:40 2020
 ## B.6
 <pre>
 celtic
+??
+aberdeen
+livingston
+</pre>
+A sample run:
+<pre>
+$ nano football
+$ cat football 
+celtic
+rangers
+hearts
+inverness
 dundee
 aberdeen
 motherwell
+hamilton
+hibernian
+kilmarnock
+livingston
+motherwell
+$ cat hash3
+635450503029fc2484f1d7eb80da8e25bdc1770e1dd14710c592c8929ba37ee9
+b3cb6d04f9ccbf6dfe08f40c11648360ca421f0c531e69f326a72dc7e80a0912
+bc5fb9abe8d5e72eb49cf00b3dbd173cbf914835281fadd674d5a2b680e47d50
+6ac16a68ac94ca8298c9c2329593a4a4130b6fed2472a98424b7b4019ef1d968
+$ rm ~/.hashcat/hashcat.potfile
+$ hashcat -m 1400 hash3 football
+hashcat (v5.1.0-42-g471a8cc) starting...
+
+OpenCL Platform #1: Intel(R) Corporation
+========================================
+* Device #1: Intel(R) Core(TM) i7-8850H CPU @ 2.60GHz, 495/1982 MB allocatable, 2MCU
+
+Hashes: 4 digests; 4 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Applicable optimizers:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Salt
+* Raw-Hash
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+ATTENTION! Pure (unoptimized) OpenCL kernels selected.
+This enables cracking passwords and salts > length 32 but for the price of drastically reduced performance.
+If you want to switch to optimized OpenCL kernels, append -O to your commandline.
+
+Watchdog: Hardware monitoring interface not found on your system.
+Watchdog: Temperature abort trigger disabled.
+
+Dictionary cache hit:
+* Filename..: football
+* Passwords.: 12
+* Bytes.....: 111
+* Keyspace..: 12
+
+The wordlist or mask that you are using is too small.
+This means that hashcat cannot use the full parallel power of your device(s).
+Unless you supply more work, your cracking speed will drop.
+For tips on supplying more work, see: https://hashcat.net/faq/morework
+
+Approaching final keyspace - workload adjusted.  
+
+635450503029fc2484f1d7eb80da8e25bdc1770e1dd14710c592c8929ba37ee9:celtic
+bc5fb9abe8d5e72eb49cf00b3dbd173cbf914835281fadd674d5a2b680e47d50:aberdeen
+6ac16a68ac94ca8298c9c2329593a4a4130b6fed2472a98424b7b4019ef1d968:livingston
+                                                 
+Session..........: hashcat
+Status...........: Exhausted
+Hash.Type........: SHA2-256
+Hash.Target......: hash3
+Time.Started.....: Thu Jan 30 16:42:24 2020 (0 secs)
+Time.Estimated...: Thu Jan 30 16:42:24 2020 (0 secs)
+Guess.Base.......: File (football)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    26495 H/s (0.01ms) @ Accel:1024 Loops:1 Thr:1 Vec:8
+Recovered........: 3/4 (75.00%) Digests, 0/1 (0.00%) Salts
+Progress.........: 12/12 (100.00%)
+Rejected.........: 0/12 (0.00%)
+Restore.Point....: 12/12 (100.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidates.#1....: celtic -> motherwell
+
+Started: Thu Jan 30 16:42:24 2020
+Stopped: Thu Jan 30 16:42:26 2020
+
 </pre>
 
 ## B.7
