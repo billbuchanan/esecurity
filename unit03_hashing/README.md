@@ -28,7 +28,7 @@ The key concepts are: MD2. MD4. MD5. SHA-1. Salting. Collisions. Murmur and FNV.
 
 * Week 3 Presentation (PDF) - Hashing: [here](https://github.com/billbuchanan/esecurity/blob/master/unit03_hashing/lecture/chapter03_hashing_authentication.pdf)
 * Week 3 Presentation (video) - Hashing: [here](https://youtu.be/3D11YGD4vFQ)
-* Week 3 Presentation (live lecture) - Hashing: [here](https://youtu.be/AAmXgUTCKMs)
+* Week 3 Presentation (live lecture) - Hashing: [here](https://youtu.be/gh2CI5m2W6Y)
 
 ## Lab
 
