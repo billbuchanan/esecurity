@@ -34,7 +34,7 @@ The voice over lecture is here:
 
 [![](http://img.youtube.com/vi/3D11YGD4vFQ/0.jpg)](https://www.youtube.com/watch?v=3D11YGD4vFQ "")
 
-And the classroom lecture from 2019 is here:
+And the classroom lecture from 2020 is here:
 
 [![](http://img.youtube.com/vi/gh2CI5m2W6Y/0.jpg)](https://www.youtube.com/watch?v=gh2CI5m2W6Y "")
 
