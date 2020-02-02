@@ -186,8 +186,7 @@ FE01D:
 We have hashed a SHA-256 value of the following and put it into a file named 
 file.txt:
 <pre>
-106a5842fc5fce6f663176285ed1516dbb
-1e3d15c05abab12fdca46d60b539b7
+106a5842fc5fce6f663176285ed1516dbb1e3d15c05abab12fdca46d60b539b7
 </pre>
 
 By adding a word of “help” in a word file of words.txt, prove that the following cracks the hash (where file.txt contains the hashed value):
