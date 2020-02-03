@@ -129,9 +129,11 @@ Use the following command to view the keys:
 ### B.2	
 Use following command to view the output file:
 
+<pre>
 cat private.pem
+</pre>
 
-	What can be observed at the start and end of the file:
+What can be observed at the start and end of the file:
 
 
 ### B.3	
