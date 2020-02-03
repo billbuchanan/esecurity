@@ -23,7 +23,7 @@ An introduction video is here:
 
 [![](http://img.youtube.com/vi/z9DaFxDuxxA/0.jpg)](http://www.youtube.com/watch?v=z9DaFxDuxxA "")
 
-We will be using a Ubuntu machine for the practical elements of the module. The VM can either be sourced on vSoC or can be downloaded from [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj). You can download VMWare Workstation or VMWare Fusion from [here](https://softcentre.soc.napier.ac.uk/users.cgi). A demo of using the VM is here:
+We will be using a Ubuntu machine for the practical elements of the module. The VM can either be sourced on vSoC or can be downloaded from [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=yyElRx). You can download VMWare Workstation or VMWare Fusion from [here](https://softcentre.soc.napier.ac.uk/users.cgi). A demo of using the VM is here:
 
 [![](http://img.youtube.com/vi/tIQYpjaELcA/0.jpg)](http://www.youtube.com/watch?v=tIQYpjaELcA "")
 
