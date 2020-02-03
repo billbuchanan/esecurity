@@ -14,15 +14,6 @@ The key concepts are: MD2. MD4. MD5. SHA-1. Salting. Collisions. Murmur and FNV.
 * Defines the usage of signed hashes (eg HMAC).
 * Outlines the usage of OTP and Timed Passwords.
 
-## What you should know at the end of unit?
-
-* How the lengths of the hashes vary with the number of bits in the hash.
-* How we can calculate the strengths on passwords.
-* Understand how salt is applied to the hashing process.
-* Define how collisions can occur within hashing.
-* Implement hash cracking methods (John the Ripper and Hashcat).
-* Defines the usage of signed hashes (eg HMAC).
-* Outlines the usage of One-time Passwords (OTP) and Timed Passwords.
 
 ## Presentations
 
