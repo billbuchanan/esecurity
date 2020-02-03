@@ -140,7 +140,7 @@ Next we view the RSA key pair:
 openssl rsa -in private.pem -text 
 </pre>
 
-	Which are the attributes of the key shown:
+Which are the attributes of the key shown:
 
 
 
@@ -152,37 +152,47 @@ Which number format is used to display the information on the attributes:
 
 ### B.4	
 Let’s now secure the encrypted key with 3-DES:
- 
+ <pre>
 openssl rsa -in private.pem -des3 -out key3des.pem 
+</pre>
 	
 
  
-	Why should you have a password on the usage of your private key?
+Why should you have a password on the usage of your private key?
 
 ### B.5 	
 Next we will export the public key:
 
+<pre>
+openssl rsa -in private.pem -out public.pem -outform PEM -pubout 
+</pre>
 
-openssl rsa -in private.pem -out public.pem -outform PEM -pubout 	View the output key. What does the header and footer of the file identify?
+View the output key. What does the header and footer of the file identify?
 
 
 
 ### B.6	
 
 Now create a file named “myfile.txt” and put a message into it. Next encrypt it with your public key:
-
+<pre>
 openssl rsautl -encrypt -inkey public.pem -pubin -in myfile.txt -out file.bin	
-B.7	And then decrypt with your private key:
+</pre>
+
+### B.7	
+And then decrypt with your private key:
 
 openssl rsautl -decrypt -inkey private.pem -in file.bin -out decrypted.txt	What are the contents of decrypted.txt
 
 On your VM, go into the ~/.ssh folder. Now generate your SSH keys:
 
+<pre>
 ssh-keygen -t rsa -C "your email address"
+</pre>
 
 The public key should look like this:
-
+<pre>
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLrriuNYTyWuC1IW7H6yea3hMV+rm029m2f6IddtlImHrOXjNwYyt4Elkkc7AzOy899C3gpx0kJK45k/CLbPnrHvkLvtQ0AbzWEQpOKxI+tW06PcqJNmTB8ITRLqIFQ++ZanjHWMw2Odew/514y1dQ8dccCOuzeGhL2Lq9dtfhSxx+1cBLcyoSh/lQcs1HpXtpwU8JMxWJl409RQOVn3gOusp/P/0R8mz/RWkmsFsyDRLgQK+xtQxbpbodpnz5lIOPWn5LnT0si7eHmL3WikTyg+QLZ3D3m44NCeNb+bOJbfaQ2ZB+lv8C3OxylxSp2sxzPZMbrZWqGSLPjgDiFIBL w.buchanan@napier.ac.uk
+</pre>
 
 View the private key. Outline its format?
 
@@ -190,11 +200,14 @@ View the private key. Outline its format?
 
 On your Ubuntu instance setup your new keys for ssh:
 
+<pre>
 ssh-add ~/.ssh/id_git
+</pre>
 
 Now create a Github account and upload your public key to Github (select Settings-> New SSH key or Add SSH key).  Create a new repository on your GitHub site, and add a new file to it. Next go to your Ubuntu instance and see if you can clone of a new directory:
-
+<pre>
 git clone ssh://git@github.com/<user>/<repository name>.git
+</pre>
 
 If this doesn’t work, try the https connection that is defined on GitHub.
 
@@ -202,18 +215,24 @@ If this doesn’t work, try the https connection that is defined on GitHub.
 Elliptic Curve Cryptography (ECC) is now used extensively within public key encryption, including with Bitcoin, Ethereum, Tor, and many IoT applications. In this part of the lab we will use OpenSSL to create a key pair. For this we generate a random 256-bit private key (priv), and then generate a public key point (priv multiplied by G), using a generator (G), and which is a generator point on the selected elliptic curve.
 
 
-### C.1	First we need to generate a private key with:
-
+### C.1	
+First we need to generate a private key with:
+<pre>
 openssl ecparam -name secp256k1 -genkey -out priv.pem	
-		
+</pre>		
 The file will only contain the private key (and should have 256 bits).
 
 Now use “cat priv.pem” to view your key. 
-	Can you view your key?
-C.2	We can view the details of the ECC parameters used with:
 
+Can you view your key?
+
+### C.2	
+We can view the details of the ECC parameters used with:
+<pre>
 openssl ecparam -in priv.pem -text -param_enc explicit -noout
-	Outline these values:
+</pre>
+
+Outline these values:
 
 Prime (last two bytes):
 
@@ -224,10 +243,14 @@ B:
 Generator (last two bytes):
 
 Order (last two bytes):
-C.3	Now generate your public key based on your private key with:
 
+### C.3	
+Now generate your public key based on your private key with:
+<pre>
 openssl ec -in priv.pem -text -noout
-	How many bits and bytes does your private key have:
+</pre>
+
+How many bits and bytes does your private key have:
 
 
 
@@ -239,14 +262,17 @@ What is the ECC method that you have used?
 
 
 
-If you want to see an example of ECC, try here: https://asecuritysite.com/encryption/ecc    
-D	Elliptic Curve Encryption
-D.1	In the following Bob and Alice create elliptic curve key pairs. Bob can encrypt a message for Alice with her public key, and she can decrypt with her private key. Copy and paste the program from here:
+If you want to see an example of ECC, try here: https://asecuritysite.com/encryption/ecc 
+
+## D	Elliptic Curve Encryption
+### D.1	
+In the following Bob and Alice create elliptic curve key pairs. Bob can encrypt a message for Alice with her public key, and she can decrypt with her private key. Copy and paste the program from here:
 
 https://asecuritysite.com/encryption/elc
 
 Code used:
 
+```python
 import OpenSSL
 import pyelliptic
 
@@ -278,6 +304,7 @@ signature = bob.sign("Alice")
 print 
 print "Bob verified: "+ str(pyelliptic.ECC(pubkey=bob.get_pubkey()).verify
 (signature, "Alice"))
+```
 
 For a message of “Hello. Alice”, what is the ciphertext sent (just include the first four characters):
 
@@ -288,7 +315,8 @@ How is the signature used in this example?
 
 
 
-D.2 	Let’s say we create an elliptic curve with y2 = x3 + 7, and with a prime number of 89, generate the first five (x,y) points for the finite field elliptic curve. You can use the Python code at the following to generate them:
+### D.2 	
+Let’s say we create an elliptic curve with y2 = x3 + 7, and with a prime number of 89, generate the first five (x,y) points for the finite field elliptic curve. You can use the Python code at the following to generate them:
 
 https://asecuritysite.com/encryption/ecc_points
 
@@ -297,8 +325,10 @@ First five points:
 
 
 
-D.3	Elliptic curve methods are often used to sign messages, and where Bob will sign a message with his private key, and where Alice can prove that he has signed it by using his public key. With ECC, we can use ECDSA, and which was used in the first version of Bitcoin. Enter the following code:
+### D.3	
+Elliptic curve methods are often used to sign messages, and where Bob will sign a message with his private key, and where Alice can prove that he has signed it by using his public key. With ECC, we can use ECDSA, and which was used in the first version of Bitcoin. Enter the following code:
 
+```python
 from ecdsa import SigningKey,NIST192p,NIST224p,NIST256p,NIST384p,NIST521p,SECP256k1
 import base64
 import sys
@@ -322,6 +352,7 @@ print "Signature:\t",base64.b64encode(signature)
 print "========================="
 
 print "Signatures match:\t",vk.verify(signature, msg)
+```
 
 What are the signatures (you only need to note the first four characters) for a message of “Bob”, for the curves of NIST192p, NIST521p and SECP256k1:
 
@@ -340,19 +371,21 @@ What do you observe from the different hash signatures from the elliptic curve m
 
 
 
-E	RSA
-E.1	We will follow a basic RSA process. If you are struggling here, have a look at the following page:
+## E	RSA
+### E.1	We will follow a basic RSA process. If you are struggling here, have a look at the following page:
 
 https://asecuritysite.com/encryption/rsa
 
 First, pick two prime numbers:
 
 p=
+
 q=
 
 Now calculate N (p.q) and PHI [(p-1).(q-1)]:
 
 N=
+
 PHI = 
 
 Now pick a value of e which does not share a factor with PHI [gcd(PHI,e)=1]:
@@ -360,22 +393,24 @@ Now pick a value of e which does not share a factor with PHI [gcd(PHI,e)=1]:
 e=
 
 Now select a value of d, so that (e.d) (mod PHI) = 1:
+
 [Note: You can use this page to find d: https://asecuritysite.com/encryption/inversemod]
 
 d=
 
 Now for a message of M=5, calculate the cipher as:
 
-C = Me (mod N) = 
+C = M<sup>e</sup> (mod N) = 
 
 Now decrypt your ciphertext with:
 
-M = Cd (mod N) =
+M = C<sup>d</sup> (mod N) =
 
 Did you get the value of your message back (M=5)? If not, you have made a mistake, so go back and check.
 
 Now run the following code and prove that the decrypted cipher is the same as the message: 
 
+```python
 p=11
 q=3
 N=p*q
@@ -390,7 +425,7 @@ cipher = M**e % N
 print cipher
 message = cipher**d % N
 print message
-
+```
 
 
 Select three more examples with different values of p and q, and then select e in order to make sure that the cipher will work:
@@ -398,25 +433,29 @@ Select three more examples with different values of p and q, and then select e i
 
 
 
-E.2	In the RSA method, we have a value of e, and then determine d from (d.e) (mod PHI)=1. But how do we use code to determine d? Well we can use the Euclidean algorithm. The code for this is given at:
+### E.2	
+In the RSA method, we have a value of e, and then determine d from (d.e) (mod PHI)=1. But how do we use code to determine d? Well we can use the Euclidean algorithm. The code for this is given at:
 
 https://asecuritysite.com/encryption/inversemod
 
 Using the code, can you determine the following:
 
+<pre>
 Inverse of 53 (mod 120) = 
 Inverse of 65537 (mod 1034776851837418226012406113933120080) = 
+</pre>
 
 Using this code, can you now create an RSA program where the user enters the values of p, q, and e, and the program determines (e,N) and (d,N)?
 
 
-E.3	Run the following code and observe the output of the keys. If you now change the key generation key from ‘PEM’ to ‘DER’, how does the output change:
+### E.3	
+Run the following code and observe the output of the keys. If you now change the key generation key from ‘PEM’ to ‘DER’, how does the output change:
 
 
 
 
 
-
+```python
 from Crypto.PublicKey import RSA
 
 key = RSA.generate(2048)
@@ -426,18 +465,23 @@ binPubKey =  key.publickey().exportKey('PEM')
 
 print binPrivKey
 print binPubKey
+```
 
 
-E.4	A simple RSA program to encrypt and decrypt with RSA is given next. Prove its operation:
-
+### E.4	
+A simple RSA program to encrypt and decrypt with RSA is given next. Prove its operation:
+```python
 import rsa
 (bob_pub, bob_priv) = rsa.newkeys(512)
 ciphertext = rsa.encrypt('Here is my message', bob_pub)
 message = rsa.decrypt(ciphertext, bob_priv)
 print(message.decode('utf8'))
-F	PGP
-F.1	The following is a PGP key pair. Using https://asecuritysite.com/encryption/pgp, can you determine the owner of the keys:
+```
 
+## F	PGP
+### F.1	
+The following is a PGP key pair. Using https://asecuritysite.com/encryption/pgp, can you determine the owner of the keys:
+<pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 Version: OpenPGP.js v4.4.5
 Comment: https://openpgpjs.org
@@ -479,14 +523,19 @@ BgH/cP12s3xCwxtVt+Zds8NdqysDO6yve2ha7cc+Vl8AP+YKqFT9IkMZJW/a
 qV+0VXeqyyru86F+xfrEKHdbAlqzMA==
 =5NaF
 -----END PGP PRIVATE KEY BLOCK-----
-F.2	Using the code at the following link, generate a key:
+</pre>
+
+### F.2	
+Using the code at the following link, generate a key:
 https://asecuritysite.com/encryption/openpgp
-F.3	An important element in data loss prevention is encrypted emails. In this part of the lab we will use an open source standard: PGP.  
 
-No	Description	Result
+### F.3	
+An important element in data loss prevention is encrypted emails. In this part of the lab we will use an open source standard: PGP.  
+
 1	Create a key pair with (RSA and 2,048-bit keys):
-
+<pre>
 gpg --gen-key
+</pre>
 
 Now export your public key using the form of:
 
@@ -536,7 +585,7 @@ gpg –d myfile.asc > myfile.txt
 
 	Can you decrypt the message:
 5	Next using this public key file, send Bill (w.buchanan@napier.ac.uk) a question (http://asecuritysite.com/public.txt):
-
+<pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQENBFxEQeMBCACtgu58j4RuE34OW3Xoy4PIXlLv/8P+FUUFs8Dk4WO5zUJN2NfN
@@ -592,10 +641,15 @@ fs6DMRGrWTEZENJ2EVofO8DUJanaTi4ImIJF6GidWmt+YoL1d5THZEWBXyNvRIeZ
 K+FwAZm7a5gBTCgeafvUDbw3Drecm6y7YTuoFHF32laHNK8/9Lu0T5JTX9jhYvTr
 1BrwqYij2gvKYWAk5gkJdgUuOdNVLCn1RaeliGetiL3BEVZsfE3bHANFSl07Bw==
 =DvmI
------END PGP PUBLIC KEY BLOCK-----	Did you receive a reply:
+-----END PGP PUBLIC KEY BLOCK-----	
+</pre>
+
+
+Did you receive a reply:
+
 6	Next send your public key to Bill (w.buchanan@napier.ac.uk), and ask for an encrypted message from him.
 	
-G	TrueCrypt
+## G	TrueCrypt
 
 No	Description	Result
 1	Go to your Kali instance (User: root, Password: toor). Now Create a new volume and use an encrypted file container (use tc_yourname) with a Standard TrueCrypt volume.
@@ -657,7 +711,7 @@ H	Reflective statements
 
 
 
-I	What I should have learnt from this lab?
+## I	What I should have learnt from this lab?
 The key things learnt:
 
 •	The basics of the RSA method.
@@ -665,7 +719,7 @@ The key things learnt:
 •	To illustrate how the private key is used to sign data, and then using the public key to verify the signature.
 Additional
 The following is code which performs RSA key generation, and the encryption and decryption of a message (https://asecuritysite.com/encryption/rsa_example):
-
+```python
 from Crypto.PublicKey import RSA
 from Crypto.Util import asn1
 from base64 import b64decode
@@ -708,6 +762,7 @@ message = cipher.decrypt(ciphertext)
 print
 print "====Decrypted==="
 print "Message:",message
+```
 
 Can you decrypt this:
 
