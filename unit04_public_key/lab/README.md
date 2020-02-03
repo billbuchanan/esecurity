@@ -43,7 +43,7 @@ ssAIbCaBlQkzfbPvrMzdTIP+AXg6++K9SnO9N/FRPYzjUSEmpRp+ox31WymvczcU
 RmyUquF+/zNnSBVgtY1rzwaYi05XfuxG0WHVHPTtRyJ5pF4HSqiuvk6Z/4z3bw==
 =ZrP+
 -----END PGP PUBLIC KEY BLOCK-----
-<pre>
+</pre>
 
 Using the following Web page, determine the owner of the key, and the ID on the key:
 
