@@ -789,4 +789,5 @@ CoZf0lNZQS/X2avLEiwtNtEvUbLGpBDgbvnNotoYspjqpg==
 -----END RSA PRIVATE KEY-----
 
 ## H.1
-![https://github.com/billbuchanan/esecurity/blob/master/unit04_public_key/lab/tc.png]
+Password: napier
+![tc](https://github.com/billbuchanan/esecurity/blob/master/unit04_public_key/lab/tc.png)
