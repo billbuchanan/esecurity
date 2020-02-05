@@ -2,7 +2,7 @@
 Try not to look at these answers, unless you really have too ..
 
 # OpenSSL RSA
-## A.4
+## B.1
 What is the type of public key method used? RSA
 
 How long is the default key: 1024
@@ -26,13 +26,13 @@ ctDJBhSj+EtiKFbwWsRhAkAnEPn+6m3djTwJMw82DxK1q2fcIjTR0ng8pyrF2iIR
 P7oBP8I4hGix/FOrV8M8virK6iCsslEcZBo39FkEqc0N
 -----END RSA PRIVATE KEY-----
 </pre>
-## A.5
+## B.2
 Start and end are:
 <pre>
 -----BEGIN RSA PRIVATE KEY-----
 -----END RSA PRIVATE KEY-----
 </pre>
-## A.6
+## B.3
 We get **modulus** (N), **publicExponent** (e), **privateExponent** (d), **prime1** (p), **prime2** (q). The other parameters are stored to speed up the RSA process, such as **exponent1** (d mod p-1), **exponent2** (d mod q-1) and **coefficient** (inv q mod p).
 <pre>
 Private-Key: (1024 bit)
@@ -104,6 +104,8 @@ ctDJBhSj+EtiKFbwWsRhAkAnEPn+6m3djTwJMw82DxK1q2fcIjTR0ng8pyrF2iIR
 P7oBP8I4hGix/FOrV8M8virK6iCsslEcZBo39FkEqc0N
 -----END RSA PRIVATE KEY-----
 </pre>
+## B.4
+If someone gets your private key they could decrypt things sent to you with your public key, or sign things on your behalf.
 ## B.5
 We see a PUBLIC KEY string:
 <pre>
