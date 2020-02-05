@@ -362,7 +362,17 @@ Decrypt: Test123
 
 Bob verified: True
 </pre>
+## D.2
+y<sup>2</sup> = x<sup>3 + 7 (mod 89)
+<pre>
+A:  0
+B:  7
+Prime number:		89
+Elliptic curve is:		y^2=x^3+ 7
+Finding the first 20 points
 
+(14, 9) (15, 0) (16, 3) (17, 5) (22, 8) (24, 6) (40, 4) (60, 2) (70, 1) (71, 7)
+</pre>
 
 # RSA
 ## E.1
