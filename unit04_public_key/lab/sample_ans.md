@@ -145,6 +145,47 @@ napieraccount@ubuntu:~/test$ cat file.bin
 :�H�n�D.Y��?rѐ��XRfZ'����Rs��5|o��{�W��I�f��^9��LP.�z���bunn_�RX�N��%�9���w_��<�x��ɯ��G1�={|"�p��F��94.P[_
  </pre>
 
+# ECC
+## C.1
+<pre>
+napieraccount@ubuntu:~/test$ openssl ecparam -name secp256k1 -genkey -out priv.pem
+napieraccount@ubuntu:~/test$ cat priv.pem 
+-----BEGIN EC PARAMETERS-----
+BgUrgQQACg==
+-----END EC PARAMETERS-----
+-----BEGIN EC PRIVATE KEY-----
+MHQCAQEEIIjZk1BI+xwWQZ6XetT17JrQgGLdQzvDnTB6iqLEFsGCoAcGBSuBBAAK
+oUQDQgAE4VZg4yjli491gWC+f7mNAtI8pdRyHYXhUVjVTFlVXKvflEd3BxRiMUWC
+KJPzklyIgOZFAOMYzSv5YvMA/YovWQ==
+-----END EC PRIVATE KEY-----
+</pre>
+## C.2
+Values are A, B, Generator (G) and Prime (p), and where G is the generator point. The curve is:
+
+y<sup>2</sup>=x<sup>3</sup>+a x + b (mod p)
+
+<pre>
+napieraccount@ubuntu:~/test$ openssl ecparam -in priv.pem -text -param_enc explicit -noout
+Field Type: prime-field
+Prime:
+    00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:
+    ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:fe:ff:
+    ff:fc:2f
+A:    0
+B:    7 (0x7)
+Generator (uncompressed):
+    04:79:be:66:7e:f9:dc:bb:ac:55:a0:62:95:ce:87:
+    0b:07:02:9b:fc:db:2d:ce:28:d9:59:f2:81:5b:16:
+    f8:17:98:48:3a:da:77:26:a3:c4:65:5d:a4:fb:fc:
+    0e:11:08:a8:fd:17:b4:48:a6:85:54:19:9c:47:d0:
+    8f:fb:10:d4:b8
+Order: 
+    00:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:ff:
+    ff:fe:ba:ae:dc:e6:af:48:a0:3b:bf:d2:5e:8c:d0:
+    36:41:41
+Cofactor:  1 (0x1)
+</pre>
+
 # RSA
 ## E.1
 ```python
