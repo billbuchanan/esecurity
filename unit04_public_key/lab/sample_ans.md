@@ -185,6 +185,24 @@ Order:
     36:41:41
 Cofactor:  1 (0x1)
 </pre>
+## D.3
+We generate the public key from the private key. If we have a private key (priv) and a generator point (G). The public key is priv G. In this case we are using a curve of secp256k1.
+<pre>
+napieraccount@ubuntu:~/test$ openssl ec -in priv.pem -text -noout
+read EC key
+Private-Key: (256 bit)
+priv:
+    00:88:d9:93:50:48:fb:1c:16:41:9e:97:7a:d4:f5:
+    ec:9a:d0:80:62:dd:43:3b:c3:9d:30:7a:8a:a2:c4:
+    16:c1:82
+pub: 
+    04:e1:56:60:e3:28:e5:8b:8f:75:81:60:be:7f:b9:
+    8d:02:d2:3c:a5:d4:72:1d:85:e1:51:58:d5:4c:59:
+    55:5c:ab:df:94:47:77:07:14:62:31:45:82:28:93:
+    f3:92:5c:88:80:e6:45:00:e3:18:cd:2b:f9:62:f3:
+    00:fd:8a:2f:59
+ASN1 OID: secp256k1
+</pre>
 
 # RSA
 ## E.1
