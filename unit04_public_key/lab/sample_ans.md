@@ -313,7 +313,7 @@ How many bit and bytes does your public key have (Note the 04 is not part of the
 What is the ECC method that you have used? **secp256k1**
 
 # ECC Encryption
-
+## D.1
 ```python
 import OpenSSL
 import pyelliptic
@@ -372,6 +372,16 @@ Elliptic curve is:		y^2=x^3+ 7
 Finding the first 20 points
 
 (14, 9) (15, 0) (16, 3) (17, 5) (22, 8) (24, 6) (40, 4) (60, 2) (70, 1) (71, 7)
+</pre>
+## D.3
+<pre>
+napier@napier-virtual-machine:~$ python ecc1.py 
+Message:	Hello
+Type:		NIST192p
+=========================
+Signature:	ntghRZKzExfLcoR2TJOw9J+ZJ+Pwq1+n/5UPUQqM5qoM9BKu/hUV/KMFvVIgDmU1
+=========================
+Signatures match:	True
 </pre>
 
 # RSA
