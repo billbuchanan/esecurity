@@ -440,7 +440,7 @@ import Padding
 
 val='fox'
 password='hello'
-cipher=''
+cipher='b436bd84d16db330359edebf49725c62'
 
 import sys
 
@@ -465,13 +465,18 @@ key = hashlib.sha256(password).digest()
 ciphertext=binascii.unhexlify(cipher)
 
 plaintext = decrypt(ciphertext,key,AES.MODE_ECB)
-print plaintext
+print ('Cipher: '+ cipher)
+print ('Password: '+ password)
 plaintext = Padding.removePadding(plaintext,mode='CMS')
-print "  decrypt: "+plaintext
-
-
-plaintext=val
+print ("  decrypt: "+plaintext)
 ```
+
+A sample run gives:
+<pre>
+Cipher: b436bd84d16db330359edebf49725c62
+Password: hello
+  decrypt: germany
+ </pre>
 ## E.2
 Answers:
 * germany
