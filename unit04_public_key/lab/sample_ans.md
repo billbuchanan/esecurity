@@ -98,7 +98,10 @@ napieraccount@ubuntu:~/.ssh$ cat id_rsa.pub
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCjH32w6ZwaLvaFS2ngOdsc7LVvYiqMKg+z42lwX8Hs58N69gjnPFzrHDPr/BnoIGOEkAGUQxbbUJwLXPiy7X682e6S235+Gh3jSW/xKuGbF9Zq+a/gESZ7t4ReBNweg90Baz24438Zodr6wA7AUdQSO9H1qdb7r4gNN5lvr1zMRhitfZW4UtTF/kXyE5KIDicU2zOFwCJ+AmeuBJGx3NI3YX03JWloZqB2y8zRsBNJ8A8BpeszN95p75Xni1AiHLCXM2HdW87mbdD/lsdrgUTYpMco7srcybeI/1ukbbOsPG6tDbEz3o0KFHgvDWc/XfFG/9I/8mOK1pcQRLj9bYRFHd2O4qdKgSTwtw/PDFAQ+pvCjIzylQp/sTCYI/6KvEEiHxWrY10jF+LDe4CDrmxSFxbgXYIjVMFAwCb0fyxud8V4filZwyFAoeSJWW2lHIFiEJpshQhRvu2zlM1vZHBVmKdVtBBVhq5vJ69SKfMgA2Ms7DRhLoqeqcMmzM+egDBEfvW50w6TeAsB3zoocAkPAdaLmORMGLFS1J/KIeme2LpEryC5FaG8/gziM7RsqjrAcQ/ipeIb+fNYT6POX5z/KVM6x7VcdkV0vr/k+Zkb9qeVcsIlBUAQIAfz24wOQCYZ6UnB9va88JWnjVSgwxeL5KmqgHDelFt50LgXrN/KOw== w.buchanan@napier.ac.uk
 </pre>
 
-For the private key, we are using 128-bit AES.
+For the RSA private key, protecting it with 128-bit AES, CBC, and the salt used is "231906D9476629A1F38BF98A15E72E03":
+<pre>
+AES-128-CBC,231906D9476629A1F38BF98A15E72E03
+</pre>
 
 # OpenSSL RSA
 ## B.1
