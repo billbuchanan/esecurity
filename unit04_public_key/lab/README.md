@@ -538,34 +538,41 @@ gpg --gen-key
 </pre>
 
 Now export your public key using the form of:
-
+<pre>
 gpg --export -a "Your name" > mypub.key
-
+</pre>
 Now export your private key using the form of:
-
+<pre>
 gpg --export-secret-key -a "Your name" > mypriv.key
-	
+</pre>	
+
 How is the randomness generated?
 
 
 
 Outline the contents of your key file:
-2	Now send your lab partner your public key in the contents of an email, and ask them to import it onto their key ring (if you are doing this on your own, create another set of keys to simulate another user, or use Bill’s public key – which is defined at http://asecuritysite.com/public.txt and send the email to him):
 
+### 2	
+Now send your lab partner your public key in the contents of an email, and ask them to import it onto their key ring (if you are doing this on your own, create another set of keys to simulate another user, or use Bill’s public key – which is defined at http://asecuritysite.com/public.txt and send the email to him):
+<pre>
 gpg --import theirpublickey.key
+</pre>
 
 Now list your keys with:
-
+<pre>
 gpg --list-keys
-	Which keys are stored on your key ring and what details do they have:
+</pre>
+Which keys are stored on your key ring and what details do they have:
 
 
 
-3	Create a text file, and save it. Next encrypt the file with their public key:
-
+### 3	
+Create a text file, and save it. Next encrypt the file with their public key:
+<pre>
 gpg -e -a -u "Your Name" -r "Your Lab Partner Name" hello.txt
+</pre>
 
-	What does the –a option do:
+What does the –a option do:
 
 
 What does the –r option do:
@@ -577,77 +584,58 @@ What does the –u option do:
 Which file does it produce and outline the format of its contents:
 
 
-4	Send your encrypted file in an email to your lab partner, and get one back from them.
+### 4	
+Send your encrypted file in an email to your lab partner, and get one back from them.
 
 Now create a file (such as myfile.asc) and decrypt the email using the public key received from them with:
-
+<pre>
 gpg –d myfile.asc > myfile.txt
+</pre>
 
-	Can you decrypt the message:
-5	Next using this public key file, send Bill (w.buchanan@napier.ac.uk) a question (http://asecuritysite.com/public.txt):
+Can you decrypt the message:
+
+### 5	
+Next using this public key file, send Bill (w.buchanan@napier.ac.uk) a question (http://asecuritysite.com/public.txt):
+
 <pre>
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
-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
-=DvmI
+mQENBF48dkABCACnQz3dsgokvcZTOiiRrteBSMI2CGRDYlPzyvG52XrQ8A0YQcgY
+JmaHFxNGiyXEYqlrNTey9e8i+abiQKuPBRZ4tLjq7hlcDs+lne4gXgQiX7nwO0Jg
+ydp0tncKvnB9nCCgmh99YRC9N3/X0ObWtqUsFH7BOfsI18QalntqOA59W34ph4OB
++MyCxgXVcnI14w9oNvxEkAPCyQ4aSZiDEWpO4ITDl6+EyLZZYiMK4jcYNPdt2D+a
+X7C+xh7m0egi6p8r61siTGi3iCtHj6rxVgJuh7E4Q1gR9blVGNwrrl+OxfgQwPg1
+zBlpgk6Wmijn8kFd0Yo6jAwE6BzMOWZsDgg9ABEBAAG0LkJpbGwgQnVjaGFuYW4g
+KFRlc3QpIDx3LmJ1Y2hhbmFuQG5hcGllci5hYy51az6JAVQEEwEIAD4WIQQDIH7a
+zNq1SlIPpXf++x/U2051FAUCXjx2QAIbAwUJB4YfgAULCQgHAgYVCgkICwIEFgID
+AQIeAQIXgAAKCRD++x/U2051FDmgB/9erztIZoQFXsL+ZO83+td8IkjMjhN1meBE
+voq6nM9ihaa44rwU/bwdcOl+emcEyxbHTDYs9j0vFBUSzK8zJIwcCIIT7b4HXA9g
+vnf3+Om/6tENy8RVQOPued6hlDXhR3CiNuZ7xrwwwVSmdSPSGjtvPq2N+4iWdr0m
+KKq/FGXFMZTgmKcwp+fkroazOX9gWxGRf5xbZLrWyM2+DQD1DiEU/IibhtLKxoiY
+LZ8yKBgfT7s6dG07wV/6KALWc+D3fTutkxxA/kQtAHzxo9tBeuMNwn3FHDhrgn81
+3PIGdMJUVds2K+O0fTKXhQifbTLIoitC6OwSbFzhJ91SbvNXLc8IuQENBF48dkAB
+CADoJivwlYuMOeUVSQi7VIFr06j4jG2J2yp3t6tMEPoimnuj/5sjwDLM1q9vu1wA
+0Fx0S3/e9dapLy7M1R8+qWEvFtBKUPxZyF+LwXaETl0on1PR64h4VShbYf1AnzrO
+D2jkpsIKPorFSdd7UBJ7t/rQmUHtTZfgfsZwoA9Cho4LoXjkTR42AOsWYUqtAATx
+6XCpFEukkIHzNWmaZpd7sDnJV9Ov9k2vcVxRAE8J2ZZkXO0qmGL+cCVIQyxlD7XH
+fzPbRMDpFxN5npbJTMy2fK4z3Ijj8riISpr9ssZbY+MRvrV4isxt+fbPkjuGtJoY
+fCA7RHAggtAOJ9sjTbJYlI95ABEBAAGJATwEGAEIACYWIQQDIH7azNq1SlIPpXf+
++x/U2051FAUCXjx2QAIbDAUJB4YfgAAKCRD++x/U2051FExICACDnSUpfYpLOcT3
+jVzPmyAW+KqJWza8S1suUVThEMqyXfogqpdD/SLVLtpJZpFu6lbtSQZ7R6M/uVkH
+0BfHiM2cKQU3ovSOo9yNbSmT45D72eVA/Uggu9lnPpma7MY864nqcjtaEQbTGdgL
+GYWPoyAU4Ko34xJ5Cltp16CDZLk+eTcRUD6l3qbvR/P9/eajWP7q9fBW1rz1R3xn
+jvXEsxT6cvQQlRGvCuuE25OX75OdUAiRg8rVwtWTgrOvIfY+G9HECZdw9e5/VfkA
+RtuyTKiKVNSPCbPqYXCnZjBy/0NQiSz8h1OPYtwJ74l16Hz0XWzBy5YeFisl0wU3
+kJ6Zg7/d
+=oYa9
 -----END PGP PUBLIC KEY BLOCK-----	
 </pre>
 
 
 Did you receive a reply:
 
-6	Next send your public key to Bill (w.buchanan@napier.ac.uk), and ask for an encrypted message from him.
+### 6	
+Next send your public key to Bill (w.buchanan@napier.ac.uk), and ask for an encrypted message from him.
 	
 ## G	TrueCrypt
 
