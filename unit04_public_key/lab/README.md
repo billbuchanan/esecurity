@@ -208,7 +208,7 @@ ssh-add ~/.ssh/id_git
 
 Now create a Github account and upload your public key to Github (select Settings-> New SSH key or Add SSH key).  Create a new repository on your GitHub site, and add a new file to it. Next go to your Ubuntu instance and see if you can clone of a new directory:
 <pre>
-git clone ssh://git@github.com/<user>/<repository name>.git
+git clone ssh://git@github.com/**user/repository name**.git
 </pre>
 
 If this doesn’t work, try the https connection that is defined on GitHub.
@@ -318,7 +318,7 @@ How is the signature used in this example?
 
 
 ### D.2 	
-Let’s say we create an elliptic curve with y2 = x3 + 7, and with a prime number of 89, generate the first five (x,y) points for the finite field elliptic curve. You can use the Python code at the following to generate them:
+Let’s say we create an elliptic curve with y<sup>2</sup> = x<sup>3</sup> + 7, and with a prime number of 89, generate the first five (x,y) points for the finite field elliptic curve. You can use the Python code at the following to generate them:
 
 https://asecuritysite.com/encryption/ecc_points
 
