@@ -3,8 +3,6 @@
 # Lab 4: Asymmetric (Public) Key
 Objective: The key objective of this lab is to provide a practical introduction to public key encryption, and with a focus on RSA and Elliptic Curve methods. This includes the creation of key pairs and in the signing process.
 
-Web link (Weekly activities): https://asecuritysite.com/esecurity/unit04
-
 Video demo: https://youtu.be/6T9bFA2nl3c 
 
 ## A	RSA Encryption
