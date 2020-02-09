@@ -757,7 +757,7 @@ Can you decrypt this:
 FipV/rvWDyUareWl4g9pneIbkvMaeulqSJk55M1VkiEsCRrDLq2fee8g2oGrwxx2j6KH+VafnLfn+QFByIKDQKy+GoJQ3B5bD8QSzPpoumJhdSILcOdHNSzTseuMAM1CSBawbddL2KmpW2zmeiNTrYeA+T6xE9JdgOFrZ0UrtKw=
 
 The private key is:
-
+<pre>
 -----BEGIN RSA PRIVATE KEY-----
 MIICXgIBAAKBgQCqRucTX4+UBgKxGUV5TB3A1hZnUwazkLlsUdBbM4hXoO+n3O7v
 jk1UfhItDrVgkl3Mla7CMpyIadlOhSzn8jcvGdNY/Xc+rV7BLfR8FeatOIXGqV+G
@@ -773,5 +773,6 @@ ol02BsZl4rfJt/gUrzMMwcbw6YFPDwhDtKU7ktvpjEa0e2gt/HYKIVROvMaTIGSa
 XPZbzVsKdu0rmlh7NRJ1AkEAttA2r5H88nqH/9akdE9Gi7oO5Yvd8CM2Nqp5Am9g
 CoZf0lNZQS/X2avLEiwtNtEvUbLGpBDgbvnNotoYspjqpg==
 -----END RSA PRIVATE KEY-----
+</pre>
 
 
