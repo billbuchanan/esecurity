@@ -87,7 +87,9 @@ The following are sample questions for public key:
 
 ## Examples
 
-RSA Examples: [here](https://asecuritysite.com/public/rsa_examples.pdf)
+RSA Examples: [here](https://asecuritysite.com/public/rsa_examples.pdf).
+RSA Keygen: [here](https://asecuritysite.com/encryption/rsa_keygen).
+ECC Keygen: [here](https://asecuritysite.com/encryption/ecc_keygen).
 
 ## Quick demos
 
