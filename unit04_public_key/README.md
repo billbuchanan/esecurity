@@ -71,6 +71,11 @@ Cipher: 96708304500902540927682601709667939
 
 Can you crack the cipher and find the value, if you know we are using using 60 bit primes [example](https://medium.com/asecuritysite-when-bob-met-alice/cracking-rsa-a-challenge-generator-2b64c4edb3e7)?
 
+## A bit of fun
+
+* A Python program to implement RSA in just 12 lines [here](https://asecuritysite.com/encryption/rsa12).
+* A Python program to crack RSA in just 12 lines [here](https://asecuritysite.com/encryption/rsa12_2).
+
 ## Sample Exam Questions
 
 The following are sample questions for public key:
