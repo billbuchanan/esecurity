@@ -75,6 +75,7 @@ Can you crack the cipher and find the value, if you know we are using using 60 b
 
 * A Python program to implement RSA in just 12 lines [here](https://asecuritysite.com/encryption/rsa12).
 * A Python program to crack RSA in just 12 lines [here](https://asecuritysite.com/encryption/rsa12_2).
+* Elliptic Curve methods are used in key handshaking (ECDH). If you want to see the curves that are used click [here](https://asecurity.site/encryption/ecdh3).
 
 ## Sample Exam Questions
 
