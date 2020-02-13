@@ -16,17 +16,17 @@ Bob Select x=6, Alice selects y=9
 
 Now calculate (using a calculator):
 
-Bob’s A value (gx mod N):	
+Bob’s A value (g<sup>x</sup> mod N):	
 	
-Alice’s B value (gY mod N):
+Alice’s B value (g<sup>y</sup> mod N):
 
 ### A.2	
 Now they exchange the values. Next calculate the shared key:
 
 
-Bob’s value (Bx mod N):	
+Bob’s value (B<sup>x</sup> mod N):	
 	
-Alice’s value (AY mod N):
+Alice’s value (A<sup>y</sup> mod N):
 
 Do they match? [Yes] [No]
 
