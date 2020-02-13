@@ -69,8 +69,9 @@ openssl dhparam -out dhparams.pem 768 -text
 View your key with:
 
 <pre>
-cat dhparams.pem	What is the value of g:
+cat dhparams.pem	
 </pre>
+What is the value of g:
 
 How many bits does the prime number have?
 
