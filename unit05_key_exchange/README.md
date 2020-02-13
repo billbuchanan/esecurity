@@ -10,22 +10,22 @@ What you should know at the end of unit?
 
 ## Presentations
 
-* Week 5 Presentation (lecture - Part 1) - Key Exchange: here
-* Week 5 Presentation (lecture - Part 2) - Key Exchange: here
-* Week 5 Presentation (PDF) - Key Exchange: here
-* Week 5 Presentation (video) - Key Exchange: here
+* Week 5 Presentation (lecture - Part 1) - Key Exchange: [here](https://youtu.be/l_osjo8r13Q)
+* Week 5 Presentation (lecture - Part 2) - Key Exchange: [here](https://youtu.be/95AuvZNm0Yg)
+* Week 5 Presentation (PDF) - Key Exchange: [here](https://asecuritysite.com/public/unit05_key_exchange.pdf)
+* Week 5 Presentation (video) - Key Exchange: [here](https://youtu.be/poC1Pc-KDSo)
 
 ## Lab
 
-* Week 5 Lab (PDF): here
-* Week 5 Lab (Demo): here
+* Week 5 Lab (PDF): [here](https://asecuritysite.com/public/new_lab05.pdf)
+* Week 5 Lab (Demo): [here](https://www.youtube.com/watch?v=Lnw4FhiOwiU&feature=youtu.be)
 
 ## Sample Exam Questions
 
 The following are sample questions for key exchange:
 
 * Eve listens to Bob and Alice's communcication for their Diffie-Hellman handshaking. In order to generate the same key as Bob and Alice, which values will Eve try to determine, and how is it likely to be difficult to gain these?
-* For the following key exchanges, Bob generates x, and Alice generates y. Prove the shared key. [Examples]
+* For the following key exchanges, Bob generates x, and Alice generates y. Prove the shared key. [Examples](https://asecuritysite.com/public/diffie_examples.pdf)
   * x=3, y=4, G=4 and N=7. Share=1.
   * x=6, y=15, G=5 and N=23. Share=2.
   * x=5, y=7, G=10 and N=541. Share=193.
@@ -39,14 +39,14 @@ The following are sample questions for key exchange:
 
 ## Examples
 
-* Diffie-Hellman Examples: [here]
-* ECDH Step-by-step: [here]
+* Diffie-Hellman Examples: [here](https://asecuritysite.com/public/diffie_examples.pdf)
+* ECDH Step-by-step: [here](https://asecuritysite.com/encryption/js08)
 
 ## Quick demos
 
-* Introduction to Diffie-Hellman: [here]
-* ECDH [here]
-* Picking the Generator Value (G): [here]
+* Introduction to Diffie-Hellman: [here](https://www.youtube.com/watch?v=wyNPhNAsmJ0)
+* ECDH [here](https://youtu.be/uQQz3MX-d8I)
+* Picking the Generator Value (G): [here](https://www.youtube.com/watch?v=-TjSuch3VGU)
 
 ## Any questions?
 
