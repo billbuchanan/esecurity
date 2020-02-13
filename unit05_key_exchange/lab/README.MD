@@ -3,9 +3,6 @@
 ## Lab 5: Key Exchange
 Objective: Key exchange allows us to pass a shared secret key between Bob and Alice. The main methods for doing this are either encrypting with the public key, the Diffie Hellman Method and the Elliptic Curve Diffie Hellman (ECDH) method. This lab investigates these methods.
 
-Web link (Weekly activities):
-https://github.com/billbuchanan/esecurity/tree/master/unit05_key_exchange
-
 Web link (Demo): https://youtu.be/Lnw4FhiOwiU
 
 ## A	Diffie-Hellman
