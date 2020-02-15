@@ -124,7 +124,7 @@ Order:
 Cofactor:  1 (0x1)
 </pre>
 
-** Prime, A, B and Generator**
+**Prime, A, B and Generator**
 
 Now we can create our key pair:
 <pre>
@@ -133,18 +133,26 @@ openssl ecparam -in secp256k1.pem -genkey -noout -out mykey.pem
 
 Name three 160-bit curves:
 
-** secp112r1, secp112r2, ... **
+**secp112r1, secp112r2, ...**
 
 By doing a search on the Internet, which curve does Bitcoin use?
 
 **secp256k1**
 
 
-Can you find other application around that uses this curve or others?
+### Curve 2559 is a popular curve. Using Google, can you find some popular uses of Curve 25519?
+Tor network, IoT, etc
 
+### Can you explain how you would use these EC parameters to perform the ECDH key exchange?
+Alice generates a, and then a value of aG (mod p).
 
-Can you explain how you would use these EC parameters to perform the ECDH key exchange?
+Bob generates b, and then a value of bG (mod p).
 
+Alice passes aG (mod p) to Bob.
+
+Bob passes bG (mod p) to Alice.
+
+Alice computes abG (mod p), and Bob also computes abG (mod p), and they have a shared secret.
 
 
 
