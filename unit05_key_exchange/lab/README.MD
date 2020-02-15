@@ -118,11 +118,7 @@ Name three 160-bit curves:
 By doing a search on the Internet, which curve does Bitcoin use?
 
 
-
-Can you find other application around that use this curve or others?
-
-
-
+Curve 2559 is a popular curve. Using Google, can you find some popular uses of Curve 25519?
 
 
 
@@ -138,11 +134,11 @@ Can you explain how you would use these EC parameters to perform the ECDH key ex
 
 ## C	Discrete Logarithms
 ### C.1	
-ElGamal and Diffie Hellman use discrete logarithms. This involves a generator value (g) and a prime number. A basic operation is gx (mod p). If p=11, and g=2, determine the results (the first two have already been completed):
+ElGamal and Diffie Hellman use discrete logarithms. This involves a generator value (g) and a prime number. A basic operation is g<sup>x</sup> (mod p). If p=11, and g=2, determine the results (the first two have already been completed):
 
+g=2, p=11
 
-x	g=2, p=11
-gx (mod p)
+x	g<sup>x</sup> (mod p)
 1	2
 2	4
 3	
