@@ -1,4 +1,9 @@
-# Examples of Go:
+# Demo
+Here is a quick demo:
+
+https://www.youtube.com/watch?v=KxQCCpgmfXI&feature=youtu.be
+
+#Examples of Go:
 
 * Hashing with Go. https://asecuritysite.com/encryption/gohash
 * Schnorr with Go.  https://asecuritysite.com/encryption/goschnorr
