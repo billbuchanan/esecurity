@@ -1,7 +1,7 @@
 # Demo
 Here is a quick demo:
 
-https://www.youtube.com/watch?v=KxQCCpgmfXI&feature=youtu.be
+[![Alt text](https://img.youtube.com/vi/KxQCCpgmfXI/0.jpg)](https://www.youtube.com/watch?v=KxQCCpgmfXI)
 
 #Examples of Go:
 
