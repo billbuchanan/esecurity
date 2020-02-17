@@ -1,9 +1,19 @@
-# Demo
+# Golang examples
+Golang is a language developed by Google, and produces an executable output and which also matches well with the C programming langauge. It is generally faster than Python, and also integrates well with GitHub code. To install a library, we basically get the GitHub link and get the code:
+
+<pre>
+go get [Git url]
+</pre>
+and then to build we use:
+<pre>
+go build mycode.go
+</pre>
+## Demo
 Here is a quick demo:
 
 [![Alt text](https://img.youtube.com/vi/KxQCCpgmfXI/0.jpg)](https://www.youtube.com/watch?v=KxQCCpgmfXI)
 
-# Examples of Go:
+## Examples of Go:
 
 * Hashing with Go. https://asecuritysite.com/encryption/gohash
 * Schnorr with Go.  https://asecuritysite.com/encryption/goschnorr
