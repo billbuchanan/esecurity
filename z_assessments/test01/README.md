@@ -3,6 +3,10 @@
 # Test 1
 There will be four main questions in the exam: Symmetric Key (Unit 2), Hashing (Unit 3), Public Key (Unit 4), and Key Exchange (Unit 5). An outline is [here](https://www.youtube.com/watch?v=Oj3T2UO1WDw&feature=emb_title).
 
+Test date: 13 Mar 2020 (open book test, taken over Moodle). 
+
+Test time: Lab time for campus-based students (11am) or 6pm onwards for distance students.
+
 ## 1. Symmetric Key
 Key principles: Salting, AES, ECB, CBC, Key entropy.
 
