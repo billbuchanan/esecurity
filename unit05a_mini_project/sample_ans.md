@@ -104,9 +104,18 @@ We can see the word "Salted__".
 
 When we convert we get:
 <pre>
-[53 61 6C 74 65 64 5F 5F 24]  [1F A8 67 63 B8 53 41 90 ] [06C55D9F685D35C3ABA13BE5FAFBD4]
+(53 61 6C 74 65 64 5F 5F 24)  (1F A8 67 63 B8 53 41 90) (06C55D9F685D35C3ABA13BE5FAFBD4)
 </pre>
-The format is signature ("Salted__"), Salt, and Cipher.
+The format is (signature "Salted__"), (Salt), and (Cipher).
+
+For encryption/decryption:
+<pre>
+napieraccount@ubuntu:~$ cat enc.txt 
+U2FsdGVkX18kH6hnY7hTQZAGxV2faF01w6uhO+X6+9Q=
+napieraccount@ubuntu:~$ openssl enc -aes-256-cbc  -pass pass:"qwerty" -d -base64 -S 241fa86763b85341 -in enc.txt -out out.txt
+napieraccount@ubuntu:~$ cat out.txt 
+Hello
+</pre>
 
 
 
