@@ -62,4 +62,31 @@ PBKDF2 (SHA1):$pbkdf2$1000$C3KthONMn8IY3JK8E0Y/0w$KDpgt4.NFrl.WBzjAsWXJ/T0Kgk
 PBKDF2 (SHA256):$pbkdf2-sha256$1000$C3KthONMn8IY3JK8E0Y/0w$ZQaitGxMChAxH.aFdG/WMquvQjigz8EIlDB6jUyKa3w
 </pre>
 
+## 4.
+<pre>
+napieraccount@ubuntu:~$ echo -n Hello | openssl md5 -hmac qwerty
+(stdin)= 7f43007a026d9696566dc8c7bb2172e4
+napieraccount@ubuntu:~$ echo -n Hello | openssl sha1 -hmac qwerty
+(stdin)= 8c7cd4cb162bc91e4ee4573aba50ca00474e7c5d
+napieraccount@ubuntu:~$ echo -n Hello | openssl sha256 -hmac qwerty
+(stdin)= c51283c48610dd9b433ce4bf9e7b0b44b808f98bb056fca45953101b1d8fc973
+</pre>
+
+## 5.
+<pre>
+napieraccount@ubuntu:~$ cat 1.js
+var crypto = require('crypto');
+
+var key = 'qwerty';
+var message = 'Hello';
+var hash = crypto.createHmac('md5', key).update(message);
+
+console.log(hash.digest('hex'));
+console.log(hash.digest('base64'));
+
+napieraccount@ubuntu:~$ node 1.js
+7f43007a026d9696566dc8c7bb2172e4
+</pre>
+
+
 
