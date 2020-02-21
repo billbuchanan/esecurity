@@ -57,14 +57,14 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
             <tr>
     <td bgcolor="#990000" class="table1"><strong>5</strong></td>
     <td bgcolor="#990000" class="table1"><strong>14 Feb 2020 </strong></td>
-    <td>Key Exchange <a href="https://asecuritysite.com/esecurity/unit05">Unit</a></td>
-    <td>Lab [<a href="https://asecuritysite.com/public/new_lab05.pdf" target="_blank">Link</a>]</td>
+    <td>Key Exchange <a href="https://github.com/billbuchanan/esecurity/tree/master/unit05_key_exchange">Unit</a></td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/tree/master/unit05_key_exchange/lab" target="_blank">Link</a>]</td>
 </tr>
                 <tr>
     <td bgcolor="#990000" class="table1"><strong>6</strong></td>
     <td bgcolor="#990000" class="table1"><strong>21 Feb 2020</strong></td>
     <td>Guest lecture</td>
-    <td>Mini-project/Coursework [<a href="https://asecuritysite.com/public/lab_mini_project.pdf" target="_blank">Link</a>]</td>
+    <td>Mini-project/Coursework [<a href="https://github.com/billbuchanan/esecurity/tree/master/unit05a_mini_project" target="_blank">Link</a>]</td>
 </tr>
                     <tr>
     <td bgcolor="#990000" class="table1"><strong>7</strong></td>
