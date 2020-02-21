@@ -89,5 +89,24 @@ napieraccount@ubuntu:~$ node 1.js
 7f43007a026d9696566dc8c7bb2172e4
 </pre>
 
+## 5.
+<pre>
+napieraccount@ubuntu:~$ echo -n Hello | openssl enc -aes-256-cbc  -pass pass:"qwerty" -e -base64 -S 241fa86763b85341 
+U2FsdGVkX18kH6hnY7hTQZAGxV2faF01w6uhO+X6+9Q=
+</pre>
+
+<pre>
+napieraccount@ubuntu:~$ echo -n Hello | openssl enc -aes-256-cbc  -pass pass:"qwerty" -e  -S 241fa86763b85341 
+Salted__$�gc�SA��]�h]5ë�;����
+</pre>
+
+We can see the word "Salted__".
+
+When we convert we get:
+<pre>
+[53 61 6C 74 65 64 5F 5F 24]  [1F A8 67 63 B8 53 41 90 ] [06C55D9F685D35C3ABA13BE5FAFBD4]
+</pre>
+The format is signature ("Salted__"), Salt, and Cipher.
+
 
 
