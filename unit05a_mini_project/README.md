@@ -308,8 +308,8 @@ By right-clicking on the page, can you integrate the ECC and RSA code into your 
 
 ## With node.js we can do the same operations as the JavaScript implementations, but run it from a command prompt (Note: you may have to use npm install crypto-js):
 
-// Node.js example Run with:
 ```Javascript
+// Node.js example Run with:
 // node crypto.js message password
 
 message ="Hello"
