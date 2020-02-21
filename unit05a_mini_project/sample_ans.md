@@ -72,7 +72,8 @@ napieraccount@ubuntu:~$ echo -n Hello | openssl sha256 -hmac qwerty
 (stdin)= c51283c48610dd9b433ce4bf9e7b0b44b808f98bb056fca45953101b1d8fc973
 </pre>
 
-## 5.
+For HMAC:
+
 <pre>
 napieraccount@ubuntu:~$ cat 1.js
 var crypto = require('crypto');
