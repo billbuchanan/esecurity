@@ -182,7 +182,7 @@ A hint is given in the Appendix.
 For AES CBC a sample run is:
 
 
-<pre.
+<pre>
 Type:		AES (CBC)
 Message:	Hello
 Password:	qwerty
