@@ -4,7 +4,7 @@
 
 Objective: In this lab we will build a basic infrastructure for integrating and testing cryptograph. 
 
-Open up your Ubuntu instance within vsoc.napier.ac.uk and conduct this lab.
+Open up your Ubuntu instance and conduct this lab. The lab is [here](https://github.com/billbuchanan/esecurity/blob/master/unit05a_mini_project/lab_mini_project.pdf).
 
 You can watch a demo [here](https://www.youtube.com/watch?v=1YC-nP3nCO4).
 
