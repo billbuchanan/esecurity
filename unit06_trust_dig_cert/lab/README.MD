@@ -7,7 +7,8 @@ Objective: Digital certificates are used to define a trust infrastructure within
 
 ## A	Introduction
 
-### A.1	From:
+### A.1	
+From:
 
 Web link (Digital Certificate): http://asecuritysite.com/encryption/digitalcert
 
@@ -29,7 +30,8 @@ What is L used for:
 
 
 
-### A.2	Now open-up the ZIP file for the certificate, and view the CER file.
+### A.2	
+Now open-up the ZIP file for the certificate, and view the CER file.
 
 What other information can you gain from the certificate:
 
@@ -39,7 +41,8 @@ Which hashing method has been used:
 
 Is the certificate trusted on your system: [Yes][No]
 
-### A.3	Make a connection to the www.live.com Web site:
+### A.3	
+Make a connection to the www.live.com Web site:
 <pre>
 openssl s_client -connect www.live.com:443
 </pre>
@@ -83,9 +86,11 @@ Can you find a site with an “T” rating?
 
 
 
-### A.5	Which the certificates in A.2, for Example 2 to Example 6. Complete the following table:
+### A.5	
+Which the certificates in A.2, for Example 2 to Example 6. Complete the following table:
 
 Cert	Organisation (Issued to)	Date range when valid	Size of public key	Issuer	Root CA	Hash method	Is it trusted?
+
 2	
 
 						
@@ -102,7 +107,8 @@ Cert	Organisation (Issued to)	Date range when valid	Size of public key	Issuer	Ro
 
 						
 
-### A.6	Now download the DER files from:
+### A.6	
+Now download the DER files from:
 
 Web link (Digital Certificate): http://asecuritysite.com/der.zip
 
@@ -117,7 +123,8 @@ Now we will create our own self-signed certificates.
 
 No	Description	Result
 
-### B.1	Create your own certificate from:
+### B.1	
+Create your own certificate from:
 
 Web link (Create Certificate): http://asecuritysite.com/encryption/createcert
 
@@ -131,7 +138,8 @@ Can you view the DER file?
 We have a root certificate authority of My Global Corp, which is based in Washington, US, and the administrator is admin@myglobalcorp.com and we are going to issue a certificate to My Little Corp, which is based in Glasgow, UK, and the administrator is admin@mylittlecorp.com.
 
 
-### B.2	Create your RSA key pair with:
+### B.2	
+Create your RSA key pair with:
 <pre>
 openssl genrsa -out ca.key 2048
 </pre>
@@ -224,7 +232,8 @@ Which are the standard headers and footers used:
 
 
 
-### B.7	Enter and run the following program, and verify its operation:
+### B.7	
+Enter and run the following program, and verify its operation:
 
 ```python
 import OpenSSL.crypto
@@ -265,7 +274,8 @@ print "Country:", components['C']
 
 Web link (CSR): https://asecuritysite.com/encryption/csr
 
-### D.8	Now check the signing on these certificate requests:
+### D.8	
+Now check the signing on these certificate requests:
 <pre>
 -----BEGIN NEW CERTIFICATE REQUEST-----
 MIICyTCCAbECAQAwajELMAkGA1UEBhMCVUsxDTALBgNVBAgTBE5vbmUxEjAQBgNV
