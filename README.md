@@ -69,8 +69,8 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
                     <tr>
     <td bgcolor="#990000" class="table1"><strong>7</strong></td>
     <td bgcolor="#990000" class="table1"><strong>28 Feb 2020 </strong></td>
-    <td>Trust and Digital Certificates <a href="https://asecuritysite.com/esecurity/unit06">Unit</a></td>
-    <td>Lab [<a href="https://asecuritysite.com/public/new_lab06.pdf" target="_blank">Link</a>]</td>
+    <td>Trust and Digital Certificates <a href="https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert">Unit</a></td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert/lab" target="_blank">Link</a>]</td>
 </tr>
                         <tr>
     <td bgcolor="#990000" class="table1"><strong>8</strong></td>
