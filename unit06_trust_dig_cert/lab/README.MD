@@ -6,7 +6,7 @@ Objective: Digital certificates are used to define a trust infrastructure within
 
 
 ## A	Introduction
-No	Description	Result
+
 ### A.1	From:
 
 Web link (Digital Certificate): http://asecuritysite.com/encryption/digitalcert
