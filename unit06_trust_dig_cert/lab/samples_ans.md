@@ -7,6 +7,14 @@
 
 ### A.1	
 
+Serial Number: 702958
+
+Effective date: 4/24/2008 9:18:42 PM
+
+Name:  CN=Fred Smith, OU=None, E=fred@home, O=Nowhere, L=Edinburgh, S=Lothian, C=GB
+
+Issuer: Self signed
+
 What is CN used for: Common Name
 
 What is OU used for: Organisational Unit
@@ -14,7 +22,6 @@ What is OU used for: Organisational Unit
 What is O used for: Organisational
 
 What is L used for: Location
-
 
 
 ### A.3	
@@ -81,29 +88,27 @@ SSL-Session:
     PSK identity hint: None
     SRP username: None
     TLS session ticket lifetime hint: 36000 (seconds)
-    TLS session ticket:
-    0000 - 00 00 00 00 9f 3a 0d cc-5c 36 33 40 99 33 db 87   .....:..\63@.3..
-    0010 - a4 9f 2b 34 57 bb 51 2b-ca f6 9e 71 c2 b1 54 ca   ..+4W.Q+...q..T.
-    0020 - a2 49 b8 14 d5 61 02 5f-d4 b2 a3 a4 a0 41 85 f5   .I...a._.....A..
-    0030 - 0a a1 92 07 f6 d9 52 23-5a 87 ba 2e d5 78 70 08   ......R#Z....xp.
-    0040 - 8d 23 cc ff de 2c d8 1d-20 ba f0 af f2 66 62 20   .#...,.. ....fb 
-    0050 - 5f a3 ed 29 8f 8e 5d a5-65 a3 05 4a 71 9b b6 8e   _..)..].e..Jq...
-    0060 - 6b 66 9a 4c ec 38 93 63-3b 47 ad 15 ab 72 3a 54   kf.L.8.c;G...r:T
-    0070 - a5 25 07 94 38 67 49 89-ee f2 47 09 f7 d5 4b 0b   .%..8gI...G...K.
-    0080 - a2 60 9b 07 47 6e 61 fc-b7 3b e1 55 e7 e7 d7 6e   .`..Gna..;.U...n
-    0090 - 96 05 08 e4 60 a7 e6 80-40 66 dc 85 34 a7 fa 5a   ....`...@f..4..Z
-    00a0 - 2d 6d 11 31 d6 63 d0 86-bc ff f9 bd fa 0a f6 e6   -m.1.c..........
-    00b0 - 17 7d dc bd 40 23 9a 46-58 bc de c5 6e 83 b0 2c   .}..@#.FX...n..,
-    00c0 - cc 43 7d e5 bb 04 aa 21-51 e8 1b c3 eb fe d6 56   .C}....!Q......V
-    00d0 - 8b 20 b0 9d 58 eb c7 6d-2f 51 5c ad 60 f3 36 40   . ..X..m/Q\.`.6@
-    00e0 - 7a a6 ce 9b 9a 2f 2b e4-ce 4c 95 61 44 6d 58 b7   z..../+..L.aDmX.
-    00f0 - 8b b2 a4 ff 17 6a 3e 05-d2 7f 2d 39 e2 cd 9d 54   .....j>...-9...T
-    0100 - f2 45 18 e0                                       .E..
-
-    Start Time: 1582994186
-    Timeout   : 7200 (sec)
-    Verify return code: 0 (ok)
-    Extended master secret: yes
+ ...
     </pre>
+    
+Can you identity the certificate chain?
+<pre>
+Certificate chain
+ 0 s:C = US, ST = Washington, L = Redmond, O = Microsoft Corporation, CN = outlook.com
+   i:C = US, O = DigiCert Inc, CN = DigiCert Cloud Services CA-1
+ 1 s:C = US, O = DigiCert Inc, CN = DigiCert Cloud Services CA-1
+   i:C = US, O = DigiCert Inc, OU = www.digicert.com, CN = DigiCert Global Root CA
+   </pre>
+
+What is the subject on the certificate?
+<pre>
+outlook.com
+</pre>
+
+Who is the issuer on the certificate?
+<pre>
+DigiCert Cloud Services CA-1
+</pre>
+
 
 
