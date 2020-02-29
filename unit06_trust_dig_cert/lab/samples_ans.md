@@ -11,7 +11,7 @@ Serial Number: 702958
 
 Effective date: 4/24/2008 9:18:42 PM
 
-Name:  CN=Fred Smith, OU=None, E=fred@home, O=Nowhere, L=Edinburgh, S=Lothian, C=GB
+Name:  Fred Smith
 
 Issuer: Self signed
 
