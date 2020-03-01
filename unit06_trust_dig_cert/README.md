@@ -14,14 +14,14 @@ The key concepts are:
 
 ## Presentations
 
-* Week 6 Presentation (PDF) - Digital Certs: [here](https://asecuritysite.com/public/chapter06_digital_cert.pdf).
-* Week 6 Presentation (lecture) - Digital Certs: [here](https://youtu.be/2ptgq8u0I5g).
-* Week 6 Presentation (video) - Digital Certs: [here](https://youtu.be/ZJ2G8KC1zDs).
+* Week 7 Presentation (PDF) - Digital Certs: [here](https://asecuritysite.com/public/chapter06_digital_cert.pdf).
+* Week 7 Presentation (lecture) - Digital Certs: [here](https://youtu.be/2ptgq8u0I5g).
+* Week 7 Presentation (video) - Digital Certs: [here](https://youtu.be/ZJ2G8KC1zDs).
 
 ## Lab
 
-* Week 6 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert/lab).
-* Week 6 Lab (video) - Digital Certs: [here](https://www.youtube.com/watch?v=-uNQFv0GTZc).
+* Week 7 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert/lab).
+* Week 7 Lab (video) - Digital Certs: [here](https://www.youtube.com/watch?v=-uNQFv0GTZc).
 
 ## Sample Exam Questions
 
