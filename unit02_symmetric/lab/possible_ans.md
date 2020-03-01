@@ -648,3 +648,26 @@ var decipher = crypto.createDecipheriv('rc4', key,'' );
 var text = decipher.update( new Buffer(ciphertext,"hex"), 'hex','utf8');
 console.log("Decipher:\t",text);
 ```
+A sample run is:
+<pre>
+$ <b>nano fruit2.js</b>
+$ <b>cat fruit2.js</b>
+var crypto = require('crypto');
+
+var keyname="napier";
+
+var key = crypto.createHash('sha256').update(keyname).digest();
+
+var cipher = crypto.createCipheriv('rc4', key,'' );
+var ciphertext = '8d1cc8bdf6da'
+console.log("Ciphertext:\t",ciphertext);
+
+
+var decipher = crypto.createDecipheriv('rc4', key,'' );
+var text = decipher.update( new Buffer(ciphertext,"hex"), 'hex','utf8');
+console.log("Decipher:\t",text);
+
+$ <b>node fruit2.js </b>
+Ciphertext:	 8d1cc8bdf6da
+Decipher:	 orange
+</pre>
