@@ -702,11 +702,12 @@ H	Reflective statements
 ## I	What I should have learnt from this lab?
 The key things learnt:
 
-•	The basics of the RSA method.
-•	The process of generating RSA and Elliptic Curve key pairs.
-•	To illustrate how the private key is used to sign data, and then using the public key to verify the signature.
-Additional
+* The basics of the RSA method.
+* The process of generating RSA and Elliptic Curve key pairs.
+* To illustrate how the private key is used to sign data, and then using the public key to verify the signature.
+## Additional
 The following is code which performs RSA key generation, and the encryption and decryption of a message (https://asecuritysite.com/encryption/rsa_example):
+
 ```python
 from Crypto.PublicKey import RSA
 from Crypto.Util import asn1
@@ -753,8 +754,9 @@ print "Message:",message
 ```
 
 Can you decrypt this:
-
+<pre>
 FipV/rvWDyUareWl4g9pneIbkvMaeulqSJk55M1VkiEsCRrDLq2fee8g2oGrwxx2j6KH+VafnLfn+QFByIKDQKy+GoJQ3B5bD8QSzPpoumJhdSILcOdHNSzTseuMAM1CSBawbddL2KmpW2zmeiNTrYeA+T6xE9JdgOFrZ0UrtKw=
+</pre>
 
 The private key is:
 <pre>
