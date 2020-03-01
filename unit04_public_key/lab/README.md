@@ -5,6 +5,8 @@ Objective: The key objective of this lab is to provide a practical introduction 
 
 Video demo: https://youtu.be/6T9bFA2nl3c 
 
+Note: If you are using Python 3, instead of "pip install pycrypto" you can install pycryptodome with "pip3 install pycryptodome".
+
 ## A	RSA Encryption
 ### A.1	
 
