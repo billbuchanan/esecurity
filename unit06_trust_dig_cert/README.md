@@ -28,7 +28,7 @@ The key concepts are:
 The following are sample questions on digital certificates:
 
 * Bob has just produced a key pair, in a Base-64 format, and now wants to send this to Alice. What advice would you give him on sending the key pair to Alice?
-* Where would I find this info? Have a think about the certificate which is distributed. You can observe it [here](https://www.youtube.com/watch?v=GLOObdTy5uY).
+  * Where would I find this info? Have a think about the certificate which is distributed. You can observe it [here](https://www.youtube.com/watch?v=GLOObdTy5uY).
 * Bob sends an encrypted message to Alice, and also sends his digital certificate to Alice to prove his identity. How does Alice prove that it is Bob who sent the message?
 
 ## Any questions?
