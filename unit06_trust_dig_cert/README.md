@@ -30,6 +30,7 @@ The following are sample questions on digital certificates:
 * Bob has just produced a key pair, in a Base-64 format, and now wants to send this to Alice. What advice would you give him on sending the key pair to Alice?
   * Where would I find this info? Have a think about the certificate which is distributed. You can observe it [here](https://www.youtube.com/watch?v=GLOObdTy5uY).
 * Bob sends an encrypted message to Alice, and also sends his digital certificate to Alice to prove his identity. How does Alice prove that it is Bob who sent the message?
+* Your CEO calls you and is unhappy that your company's Web site has received a F grade on [SSLLab](https://www.ssllabs.com/ssltest/), and that it is highlighting a problem with the digital certificate on the site. What problem(s) related to the digital certificate might cause the site to have such a poor rating?
 
 ## Any questions?
 
