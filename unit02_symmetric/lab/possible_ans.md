@@ -597,6 +597,7 @@ console.log("Decipher\t",chacha20.decrypt(key,nonce, new Buffer(ciphertext,"hex"
 ```
 A sample run is:
 <pre>
+$ <b>npm install chacha20</b>
 $ <b>cat fruit.js</b>
 var chacha20 = require("chacha20");
 var crypto = require('crypto');
