@@ -595,6 +595,34 @@ console.log("Ciphertext:\t",ciphertext);
 
 console.log("Decipher\t",chacha20.decrypt(key,nonce, new Buffer(ciphertext,"hex")).toString());
 ```
+A sample run is:
+<pre>
+$ cat fruit.js
+var chacha20 = require("chacha20");
+var crypto = require('crypto');
+
+var keyname="qwerty";
+
+var key = crypto.createHash('sha256').update(keyname).digest();
+
+var nonce = new Buffer.alloc(8);
+
+nonce.fill(0);
+
+console.log( key);
+
+var ciphertext="e96924f16d6e" 
+// var ciphertext="ea783afc66"
+// var ciphertext="e47a2bfe646a"
+
+console.log("Ciphertext:\t",ciphertext);
+
+console.log("Decipher\t",chacha20.decrypt(key,nonce, new Buffer(ciphertext,"hex")).toString())
+$ node fruit.js 
+<Buffer 65 e8 4b e3 35 32 fb 78 4c 48 12 96 75 f9 ef f3 a6 82 b2 71 68 c0 ea 74 4b 2c f5 8e e0 23 37 c5>
+Ciphertext:	 e96924f16d6e
+Decipher	 banana
+</pre>
 ## G.2
 Answers:
 * 8d1cc8bdf6da - orange
