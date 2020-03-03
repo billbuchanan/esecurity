@@ -14,14 +14,14 @@ The key concepts are:
 
 ## Presentations
 
-* Week 7 Presentation (PDF) - Digital Certs: [here](https://github.com/billbuchanan/esecurity/blob/master/unit06_trust_dig_cert/lab/new_lab06.pdf).
-* Week 7 Presentation (lecture) - Digital Certs: [here](https://youtu.be/2ptgq8u0I5g).
-* Week 7 Presentation (video) - Digital Certs: [here](https://youtu.be/ZJ2G8KC1zDs).
+* Unit 6 Presentation (PDF) - Digital Certs: [here](https://github.com/billbuchanan/esecurity/blob/master/unit06_trust_dig_cert/lab/new_lab06.pdf).
+* Unit 6 Presentation (lecture) - Digital Certs: [here](https://youtu.be/2ptgq8u0I5g).
+* Unit 6 Presentation (video) - Digital Certs: [here](https://youtu.be/ZJ2G8KC1zDs).
 
 ## Lab
 
-* Week 7 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert/lab).
-* Week 7 Lab (video) - Digital Certs: [here](https://www.youtube.com/watch?v=-uNQFv0GTZc).
+* Unit 6 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/tree/master/unit06_trust_dig_cert/lab).
+* Unit 6 Lab (video) - Digital Certs: [here](https://www.youtube.com/watch?v=-uNQFv0GTZc).
 
 ## Sample Exam Questions
 
@@ -35,5 +35,4 @@ The following are sample questions on digital certificates:
 ## Any questions?
 
 Slackspace: esecurity2020.slack.com
-
 
