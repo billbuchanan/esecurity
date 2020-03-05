@@ -306,10 +306,10 @@ pub:
 ASN1 OID: secp256k1
 </pre>
 
-How many bits and bytes does your private key have: **256 bits (8 bytes)**
+How many bits and bytes does your private key have: **256 bits (32 bytes)**
 
 
-How many bit and bytes does your public key have (Note the 04 is not part of the elliptic curve point): **512 bits (16 bytes)**
+How many bit and bytes does your public key have (Note the 04 is not part of the elliptic curve point): **512 bits (64 bytes)**
 
 
 
