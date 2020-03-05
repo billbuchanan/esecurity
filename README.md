@@ -75,8 +75,8 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
                         <tr>
     <td bgcolor="#990000" class="table1"><strong>8</strong></td>
     <td bgcolor="#990000" class="table1"><strong>6 Mar 2020</strong></td>
-    <td>Tunnelling <a href="https://asecuritysite.com/esecurity/unit07">Unit</a></td>
-    <td>Lab [<a href="https://asecuritysite.com//public/new_lab07.pdf" target="_blank">Link</a>]</td>
+    <td>Tunnelling <a href="hhttps://github.com/billbuchanan/esecurity/tree/master/unit07_tunnelling">Unit</a></td>
+    <td>Lab [<a href="https://github.com/billbuchanan/esecurity/tree/master/unit07_tunnelling/lab" target="_blank">Link</a>]</td>
 </tr>
 <tr>
     <td bgcolor="#990000" class="table1"><strong>9</strong></td>
