@@ -81,7 +81,7 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
 <tr>
     <td bgcolor="#990000" class="table1"><strong>9</strong></td>
     <td bgcolor="#990000" class="table1"><strong>13 Mar 2020</strong></td>
-    <td>Test 1 (Units 1-5) [<a href="https://asecuritysite.com/esecurity/guide" target="_blank">Study guide</a>]</td>
+    <td>Test 1 (Units 1-5) [<a href="https://github.com/billbuchanan/esecurity/tree/master/z_assessments/test01" target="_blank">Study guide</a>]</td>
 </tr>
                             <tr>
     <td bgcolor="#990000" class="table1"><strong>10</strong></td>
