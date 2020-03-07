@@ -7,7 +7,10 @@ A PDF version of the questions is [here](https://github.com/billbuchanan/esecuri
 
 Test date: 13 Mar 2020 (open book test, taken over Moodle). 
 
-Test time: Lab time for campus-based students (11am) or 6pm onwards for distance students.
+Test time: Lab time for campus-based students (11am) or 6pm onwards for distance students
+
+## Exam details
+It is an open book test. No copying and pasting is allowed for the questions, and answers will be checked against on-line sources for copying. A copied answer is likely to be graded with a score of zero.
 
 ## 1. Symmetric Key
 Key principles: Salting, AES, ECB, CBC, Key entropy.
