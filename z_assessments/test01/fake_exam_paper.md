@@ -1,7 +1,6 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
 
 # Fake example paper
-Note this paper was not an open book test.
 
 ## Question 1
 
@@ -22,6 +21,8 @@ Outline answers:
 ### Part B
 
 The following is a password entry, outline the information that can be gained from this password entry and the process that is used when the user logs in. If the salt was lost, outline if it would be possible to recover the original password. For the size of salt used, how could you estimate the increase in difficulty in cracking the salted password? [5]
+
+![esecurity](https://asecuritysite.com/public/hash.png)
 
 Outline answers:
 
