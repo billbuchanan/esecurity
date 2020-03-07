@@ -26,7 +26,7 @@ The following is a password entry, outline the information that can be gained fr
 
 Outline answers:
 
-Identify user name, salt, hash [2]. Process [1]. 8×6=48 bits for salt … for every password 2^{48} new hashes [2].
+Identify user name, salt, hash [2]. Process [1]. 8×6=48 bits for salt … for every password 2<sup>48</sup> new hashes [2].
 
 ## Question 2
 
@@ -42,7 +42,7 @@ Outline answers:
 
 1. Standard Diffie-Hellman calculation [3].
 2. Standard RSA calculation [3].
-3. Standard method of selecting for RSA [2]. N too small ... easy to crack [1]. e to small then Me less than N, easy to crack [1]. e too large … large overhead in calculations [1] and p and q constrained by key size (and computation limits) [1]. Session key from Eve to Mallory could have been compromised [1]. Trent could have pretended to be Eve [1].
+3. Standard method of selecting for RSA [2]. N too small ... easy to crack [1]. e to small then M^e less than N, easy to crack [1]. e too large … large overhead in calculations [1] and p and q constrained by key size (and computation limits) [1]. Session key from Eve to Mallory could have been compromised [1]. Trent could have pretended to be Eve [1].
 
 ## Question 3
 
