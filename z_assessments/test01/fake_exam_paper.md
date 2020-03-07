@@ -25,7 +25,7 @@ The following is a password entry, outline the information that can be gained fr
 
 Outline answers:
 
-Identify user name, salt, hash [2]. Process [1]. 8×6=48 bits for salt … for every password 248 new hashes [2].
+Identify user name, salt, hash [2]. Process [1]. 8×6=48 bits for salt … for every password 2^{48} new hashes [2].
 
 ## Question 2
 
