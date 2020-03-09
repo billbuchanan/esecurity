@@ -16,7 +16,7 @@ Some test details are:
 
 * It is an open book test. 
 * No copying and pasting is allowed for the questions, and answers will be checked against on-line sources for copying. 
-* A copied answer is likely to be graded with a score of zero.
+* A copied answer is likely to be graded with a score of zero, and copying and pasting from on-line content could be highlighted for an issue.
 * No chat windows should be open for the test.
 
 ## Sample questions
