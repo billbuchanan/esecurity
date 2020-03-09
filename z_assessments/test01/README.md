@@ -7,11 +7,17 @@ A PDF version of the questions is [here](https://github.com/billbuchanan/esecuri
 
 Test date: 13 Mar 2020 (open book test, taken over Moodle). 
 
-Test time: Lab time for campus-based students (11am) or 6pm onwards for distance students
+## Test time: 
 
-## Exam details
-It is an open book test. No copying and pasting is allowed for the questions, and answers will be checked against on-line sources for copying. A copied answer is likely to be graded with a score of zero.
+* Lab time for campus-based students (11am in C27) or 6pm onwards for distance students. 
+* With distance students, Bill will connect over Skype just before the test. Please make sure you send you Skype ID in the afternoon before the test. Bill will connect to you over Skype, and define how to start the test.  
 
+Some test details are:
+
+* It is an open book test. 
+* No copying and pasting is allowed for the questions, and answers will be checked against on-line sources for copying. 
+* A copied answer is likely to be graded with a score of zero.
+* No chat windows should be open for the test.
 
 ## Sample questions
 
