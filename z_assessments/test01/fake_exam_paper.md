@@ -16,7 +16,7 @@ Outline answers:
 
 1. Only lower case and numbers used [1]. The company needs to add a wider range of characters [1]. Small salt value [1] and short password [1].
 2. Max time to crack all passwords = 36^8/(1×10^{12})=2.82 seconds [2]. Average will be 1.42 seconds. The salt will be included with the hashed value.
-3. Discussion around reduction in strength [2]. Calculation becomes 26×366×10= 565,963,407,360. Key entropy = 39.0 bits [2]. We have 26 letters for the first character, then there will 36 possible characters for the next six characters, and then 10 digits at the end.
+3. Discussion around reduction in strength [2]. Calculation becomes 26×36<sup>6</sup>×10= 565,963,407,360. Key entropy = 39.0 bits [2]. We have 26 letters for the first character, then there will 36 possible characters for the next six characters, and then 10 digits at the end.
 
 ### Part B
 
