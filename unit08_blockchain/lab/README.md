@@ -1,6 +1,6 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
 
-# Lab 8: Bitcoin and Blockchain
+# Lab 8: Blockchain and Cryptocurrencies
 
 At the end of this lab, remember to stop your Blockchain (Control-C from the console that is running Geth), and shut down your VM. You may also want to use “rm -r mynapier” in order to delete your blockchain.
 
