@@ -22,13 +22,13 @@ The key concepts are:
 
 ## Presentations
 
-* Week 8 Presentation (PDF) - Cryptocurrencies and Blockchain: here
-* Week 8 Presentation (lecture) - Cryptocurrencies and Blockchain: here
-* Week 8 Presentation (video) - Cryptocurrencies and Blockchain: here
+* Week 8 Presentation (PDF) - Cryptocurrencies and Blockchain: [here](http://www.asecuritysite.com/public/unit08_blockchain.pdf).
+* Week 8 Presentation (lecture) - Cryptocurrencies and Blockchain: [here](https://www.youtube.com/watch?v=rzqLeLFo2mk).
+* Week 8 Presentation (video) - Cryptocurrencies and Blockchain: [here](https://www.youtube.com/watch?v=zi9uCkcS72w).
 
 ## Lab
 
-* Week 8 Lab (PDF): here
+* Week 8 Lab (PDF): [here](https://asecuritysite.com/public/new_lab08_linux.pdf).
 
 ## Sample Exam Questions
 
@@ -68,14 +68,14 @@ The following are sample questions:
 
 In the test, there is no need for any practical skills in setting up a Blockchain. If you are interested, though, the following provide some practical demos of using the Ethereum blockchain:
 
-* Introduction to Blockchain (Intro): [here]
-* A "Hello World" application: [here]
-* Contracts and addresses: [here]
+* Introduction to Blockchain (Intro): [here](https://www.youtube.com/watch?v=Gl3Suylr-7E).
+* A "Hello World" application: [here](https://www.youtube.com/watch?v=6-RYefqkhjg).
+* Contracts and addresses: [here](https://www.youtube.com/watch?v=afIrT_h3vXk).
 
 A few demos of some principles
 
-* Base58 (used in Bitcoins). Base58.
-* Bitcoin keys. Bitcoin keys.
-* Bitcoin details. Bitcoin details.
-* Elliptic Curve (Keys). Elliptic Curve (Keys). Elliptic Curv is a public key method. This page outline the generation of ECC keys in Bitcoin.
-* Blockchain work. Work. Determine Blockchain work.
+* Base58 (used in Bitcoins). [Base58](https://asecuritysite.com/encryption/base58).
+* Bitcoin keys. [Bitcoin keys](https://asecuritysite.com/encryption/Bitcoin).
+* Bitcoin details. [Bitcoin details](https://asecuritysite.com/encryption/bit).
+* Elliptic Curve (Keys). [Elliptic Curve (Keys)](https://asecuritysite.com/encryption/ecc). Elliptic Curv is a public key method. This page outline the generation of ECC keys in Bitcoin.
+* Blockchain work. Work. [Determine Blockchain work](https://asecuritysite.com/encryption/block).
