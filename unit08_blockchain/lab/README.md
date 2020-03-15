@@ -8,7 +8,7 @@ Aim:		To provide a foundation in understanding in Bitcoin and Blockchain.
 
 ## Activities
 ### L1.1	Using blockchain.info:
-Find the details of the genesis block: 
+Find the details of the genesis block [here](https://www.blockchain.com/btc/block/0): 
 
 * Date created:
 * Reward:
@@ -19,9 +19,9 @@ Find the details of the genesis block:
 * When did the genesis block creator stop trading?
 
 
-### L1.2	Using blockchain.info.
+### L1.2	Using blockchain.info:
 
-Determine the following 
+Determine the following [here](https://www.blockchain.com/charts):
 
 * Total bitcoins in circulation:
 * Most recent hash block (last four hex digits):
