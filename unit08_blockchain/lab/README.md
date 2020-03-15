@@ -7,50 +7,34 @@ At the end of this lab, remember to stop your Blockchain (Control-C from the con
 Aim:		To provide a foundation in understanding in Bitcoin and Blockchain.
 
 ## Activities
-### L1.1	Using blockchain.info, find the details of the genesis block: 
+### L1.1	Using blockchain.info:
+Find the details of the genesis block: 
 
-Date created:
-
-Reward:
-
-Number of transactions:
-
-Size of block:
-
-Which account received the mining reward for the genesis block (last four digits):
-
-How many USD does the original miner have in the account they used for the first genesis record:
-
-When did the genesis block creator stop trading?
+* Date created:
+* Reward:
+* Number of transactions:
+* Size of block:
+* Which account received the mining reward for the genesis block (last four digits):
+* How many USD does the original miner have in the account they used for the first genesis record:
+* When did the genesis block creator stop trading?
 
 
 ### L1.2	Using blockchain.info.
 
 Determine the following 
 
-Total bitcoins in circulation:
-
-Most recent hash block (last four hex digits):
-
-Block reward per block:
-
-Difficulty:
-
-Average time between blocks:
-
-Market capitalisation (USD):
-
-24 hr price (USD):
-
-24hr transactions (USD):
-
-Hash rate:
-
-Last successful miner:
-
-Maximum block size:
-
-Balance for 1GbVUSW5WJmRCpaCJ4hanUny77oDaWW4to:
+* Total bitcoins in circulation:
+* Most recent hash block (last four hex digits):
+* Block reward per block:
+* Difficulty:
+* Average time between blocks:
+* Market capitalisation (USD):
+* 24 hr price (USD):
+* 24hr transactions (USD):
+* Hash rate:
+* Last successful miner:
+* Maximum block size:
+* Balance for 1GbVUSW5WJmRCpaCJ4hanUny77oDaWW4to:
 
 
 ### L1.3	
