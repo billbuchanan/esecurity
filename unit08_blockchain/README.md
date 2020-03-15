@@ -28,7 +28,7 @@ The key concepts are:
 
 ## Lab
 
-* Week 8 Lab (PDF): [here](https://asecuritysite.com/public/new_lab08_linux.pdf).
+* Week 8 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08_linux.pdf). If you want to do it on Windows, there tutorial is [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08.pdf).
 
 ## Sample Exam Questions
 
