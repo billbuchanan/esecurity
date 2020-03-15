@@ -72,7 +72,7 @@ In the test, there is no need for any practical skills in setting up a Blockchai
 * A "Hello World" application: [here](https://www.youtube.com/watch?v=6-RYefqkhjg).
 * Contracts and addresses: [here](https://www.youtube.com/watch?v=afIrT_h3vXk).
 
-A few demos of some principles
+## A few demos of some principles
 
 * Base58 (used in Bitcoins). [Base58](https://asecuritysite.com/encryption/base58).
 * Bitcoin keys. [Bitcoin keys](https://asecuritysite.com/encryption/Bitcoin).
