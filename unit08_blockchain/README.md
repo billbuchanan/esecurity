@@ -77,5 +77,5 @@ In the test, there is no need for any practical skills in setting up a Blockchai
 * Base58 (used in Bitcoins). [Base58](https://asecuritysite.com/encryption/base58).
 * Bitcoin keys. [Bitcoin keys](https://asecuritysite.com/encryption/Bitcoin).
 * Bitcoin details. [Bitcoin details](https://asecuritysite.com/encryption/bit).
-* Elliptic Curve (Keys). [Elliptic Curve (Keys)](https://asecuritysite.com/encryption/ecc). Elliptic Curv is a public key method. This page outline the generation of ECC keys in Bitcoin.
+* Elliptic Curve (Keys). [Elliptic Curve (Keys)](https://asecuritysite.com/encryption/ecc). Elliptic Curve is a public key method. This page outline the generation of ECC keys in Bitcoin.
 * Blockchain work. Work. [Determine Blockchain work](https://asecuritysite.com/encryption/block).
