@@ -5,7 +5,7 @@
 ## Presentations
 This provides an outline of tunnelling, including for SSL/TLS and IPSec:
 
-* Presentation (Lecture): [here](https://www.youtube.com/watch?v=X6uOIa5h3IM)
+* Presentation (Lecture): [here](https://youtu.be/fz4eO53kOIU)
 * Presentation (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit07_tunnelling/lecture/unit07_tunnelling.pdf)
 * Presentation (Video): [here](https://youtu.be/JA9zfKtVwwE)
 

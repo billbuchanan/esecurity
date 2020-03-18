@@ -1,30 +1,44 @@
 ![esecurity](https://raw.githubusercontent.com/billbuchanan/esecurity/master/z_associated/esecurity_graphics.jpg)
 
 # Test 1
-There will be four main questions in the exam: Symmetric Key (Unit 2), Hashing (Unit 3), Public Key (Unit 4), and Key Exchange (Unit 5). An outline is [here](https://www.youtube.com/watch?v=Oj3T2UO1WDw&feature=emb_title).
+There will be four main questions in the exam: Symmetric Key (Unit 2), Hashing (Unit 3), Public Key (Unit 4), and Key Exchange (Unit 5). An outline is [here](https://www.youtube.com/watch?v=Oj3T2UO1WDw&feature=emb_title), and some learning outcomes are [here](https://github.com/billbuchanan/esecurity/blob/master/z_assessments/test01/learning_outcomes.md).
+
+A PDF version of the questions is [here](https://github.com/billbuchanan/esecurity/blob/master/z_assessments/test01/2020_fake_exam_questions.pdf) and a fake example paper is [here](https://github.com/billbuchanan/esecurity/blob/master/z_assessments/test01/fake_exam_paper.md).
 
 Test date: 13 Mar 2020 (open book test, taken over Moodle). 
 
-Test time: Lab time for campus-based students (11am) or 6pm onwards for distance students.
+## Test time: 
 
-## 1. Symmetric Key
+* Lab time for campus-based students (11am in C27) or 6pm onwards for distance students. 
+* With distance students, Bill will connect over Skype just before the test. Please make sure you send you Skype ID in the afternoon before the test. Bill will connect to you over Skype, and define how to start the test.  
+
+Some test details are:
+
+* It is an open book test. 
+* No copying and pasting is allowed for the questions, and answers will be checked against on-line sources for copying. 
+* A copied answer is likely to be graded with a score of zero, and copying and pasting from on-line content could be highlighted for an issue.
+* No chat windows should be open for the test.
+
+## Sample questions
+
+### 1. Symmetric Key
 Key principles: Salting, AES, ECB, CBC, Key entropy.
 
-* Computing power increases each year. Outline the challenge this gives when protecting encrypted data. [Ref: Symmetric Key]
-* What are the possible advantages of using stream ciphers over block ciphers? [Ref: Symmetric Key]
-* The AES method is recommended by NIST for symmetric key encryption. What are the main stages involved in the AES process? [Ref: Symmetric Key]
-* Bob encrypts his data using symmetric key encryption and sends it to Alice. Every time he produces the ciphertext it changes, and he is worried that Alice will not be able to decipher the cipher text. He encrypts "Hello" and gets a different cipher stream each time. Why does the cipher text change? [Ref: Symmetric Key]
-* Bob is sending encrypted data to Alice, and Eve is listening. After listening for a while, Eve is able to send a valid encrypted message to Alice. By outlining ECB, discuss how this might be possible. [Ref: Symmetric Key]
-* Bob is using a password to generate a 128-bit encryption key. Explain why the key space is unlikely to be 2128, and why key entropy could be used to measure the equivalent key size. [Ref: Symmetric Key]
-* Bob says that the number of bytes used for the cipher text will change directly with the number of bytes used in the plain text. Alice disagrees and says that most encryption methods involve having block sizes. Who is correct? Explain why. [Ref: Symmetric Key]
-* With block encryption, how do we know where the ciphered data actually ends? Does it just use an end-of-file character or a NULL character? [Ref: Symmetric Key]
-* Alice says she is confused that Bob is sending her the same message as a cipher, but every time the cipher text changes. Apart from using the shared encryption key, what does Alice use to decipher the cipher text? [Ref: Symmetric Key]
-* Why would Eve have an aversion to salt? [Ref: Symmetric Key]
-* Bob tells Alice that she won't be able to view the cipher text, but when she looks at the messages, they seem to be full of printable characters. What format is Bob likely to be using for the encoding of the cipher text, and what would you ask Alice to look for, in order to confirm your guess? [Ref: Symmetric Key]
-* Alice has been reading her crypto books, and she reads that there should be an '=' symbol at the end of the encoding. She observes her encoding of cipher messages to Bob and sees that some do not have an '=' sign at the end. Is there a problem with her encoder? If not, how often, on average, should she see an '=' sign at the end of her ciphered messages? [Ref: Symmetric Key]
+1. Computing power increases each year. Outline the challenge this gives when protecting encrypted data. [Ref: Symmetric Key]
+2. What are the possible advantages of using stream ciphers over block ciphers? [Ref: Symmetric Key]
+3. The AES method is recommended by NIST for symmetric key encryption. What are the main stages involved in the AES process? [Ref: Symmetric Key]
+4. Bob encrypts his data using symmetric key encryption and sends it to Alice. Every time he produces the ciphertext it changes, and he is worried that Alice will not be able to decipher the cipher text. He encrypts "Hello" and gets a different cipher stream each time. Why does the cipher text change? [Ref: Symmetric Key]
+5. Bob is sending encrypted data to Alice, and Eve is listening. After listening for a while, Eve is able to send a valid encrypted message to Alice. By outlining ECB, discuss how this might be possible. [Ref: Symmetric Key]
+6. Bob is using a password to generate a 128-bit encryption key. Explain why the key space is unlikely to be 2<sup>128</sup>, and why key entropy could be used to measure the equivalent key size. [Ref: Symmetric Key]
+7. Bob says that the number of bytes used for the cipher text will change directly with the number of bytes used in the plain text. Alice disagrees and says that most encryption methods involve having block sizes. Who is correct? Explain why. [Ref: Symmetric Key]
+8. With block encryption, how do we know where the ciphered data actually ends? Does it just use an end-of-file character or a NULL character? [Ref: Symmetric Key]
+9. Alice says she is confused that Bob is sending her the same message as a cipher, but every time the cipher text changes. Apart from using the shared encryption key, what does Alice use to decipher the cipher text? [Ref: Symmetric Key]
+10. Why would Eve have an aversion to salt? [Ref: Symmetric Key]
+11. Bob tells Alice that she won't be able to view the cipher text, but when she looks at the messages, they seem to be full of printable characters. What format is Bob likely to be using for the encoding of the cipher text, and what would you ask Alice to look for, in order to confirm your guess? [Ref: Symmetric Key]
+12. Alice has been reading her crypto books, and she reads that there should be an '=' symbol at the end of the encoding. She observes her encoding of cipher messages to Bob and sees that some do not have an '=' sign at the end. Is there a problem with her encoder? If not, how often, on average, should she see an '=' sign at the end of her ciphered messages? [Ref: Symmetric Key]
 
 
-## 2. Hashing
+### 2. Hashing
 Key principles: Hashing, Hashing Formats, Time to crack, operation of converting passwords to password with salt.
 
 * Bob uses a six-character password with lower case [a-z]. How many passwords are possible? His password system then tells him he needs to add numeric value [0-9]. If he adds it at the end, how many passwords are possible, and what is the key entropy? [Ref: Symmetric Key]
@@ -50,7 +64,7 @@ questions and answers."
 * There has been a major data breach within your company, and you are to appear on Sky News to report it. Your company has used PBKDF2 to hash its passwords. How do you explain to your customers that their passwords are unlikely to be breached? [Ref: Hashing]
 
 
-## 3. Public Key
+### 3. Public Key
 Key topics: RSA, Elliptic Curve, Using public/private key for security/identity, PGP, GCD
 
 * Explain how public key provides both privacy and identity verification. [Ref: Public key]
@@ -68,7 +82,7 @@ Key topics: RSA, Elliptic Curve, Using public/private key for security/identity,
 * Bob says that Elliptic Curve Cryptography (ECC) is an easy method to crack. Explain to Bob how ECC operates, and why it can be a secure method. [Ref: Public key]
 
 
-## 4. Key Exchange
+### 4. Key Exchange
 Key topics: Diffie-Hellman, Simple DH calculations, ECDH operation, Passing with public key.
 
 * For Diffie-Hellman: G=2,351; N=5,683; x=7 and y=14. What is the shared key? [Ref: Key Exchange]
