@@ -28,7 +28,7 @@ The key concepts are:
 
 ## Lab
 
-* Week 8 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08_linux.pdf). If you want to do it on Windows, there tutorial is [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08.pdf).
+* Week 8 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08_linux.pdf). If you want to do it on Windows, there tutorial is [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08.pdf). A demo of Geth is [here](https://www.youtube.com/watch?v=Gl3Suylr-7E).
 
 ## Sample Exam Questions
 
