@@ -10,7 +10,7 @@ The key concepts are:
 * Ethereum.
 * Smart Contracts.
 
-The lecture this week is [oneline](https://zoom.us/j/868440093).
+The lecture this week is on [Zoom](https://zoom.us/j/868440093).
 
 ## What you should know at the end of unit?
 
