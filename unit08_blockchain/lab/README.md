@@ -203,7 +203,7 @@ INFO [03-20|20:54:31.497] Loaded most recent local header
 </pre>
 Next open up another console, and we will connect to geth and create a new account:
 <pre>
-napier@napier-virtual-machine:~$ geth attach /home/napier/mynapier/geth.ipc
+napier@napier-virtual-machine:~$ sudo geth attach /home/napier/mynapier/geth.ipc
 WARN [03-20|20:54:56.172] Sanitizing cache to Go's GC limits       provided=1024 updated=666
 Welcome to the Geth JavaScript console!
 
