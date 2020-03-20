@@ -166,7 +166,7 @@ Open custom.json, and copy and paste the following details for your genesis bloc
 </pre>
 Next run geth and create the genesis block details:
 <pre>
-napier@napier-virtual-machine:~$ **geth --nousb --datadir=mynapier init custom.json **
+napier@napier-virtual-machine:~$ geth --nousb --datadir=mynapier init custom.json 
 WARN [03-20|20:53:53.824] Sanitizing cache to Go's GC limits       provided=1024 updated=666
 INFO [03-20|20:53:53.832] Maximum peer count                       ETH=25 LES=0 total=25
 INFO [03-20|20:53:53.834] Allocated cache and file handles         database=/home/napier/mynapier/geth/chaindata cache=16 handles=16
