@@ -10,6 +10,8 @@ The key concepts are:
 * Ethereum.
 * Smart Contracts.
 
+The lecture this week is on [Zoom](https://zoom.us/j/868440093).
+
 ## What you should know at the end of unit?
 
 * How distributed ledger technology differs from a traditional financial transaction.
@@ -28,7 +30,7 @@ The key concepts are:
 
 ## Lab
 
-* Week 8 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08_linux.pdf). If you want to do it on Windows, there tutorial is [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08.pdf).
+* Week 8 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08_linux.pdf). If you want to do it on Windows, there tutorial is [here](https://github.com/billbuchanan/esecurity/blob/master/unit08_blockchain/lab/new_lab08.pdf). A demo of Geth is [here](https://www.youtube.com/watch?v=Gl3Suylr-7E).
 
 ## Sample Exam Questions
 
