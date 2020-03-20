@@ -153,7 +153,7 @@ Open custom.json, and copy and paste the following details for your genesis bloc
         "chainId": 15,
         "homesteadBlock": 0,
         "eip150Block": 0,
-        "eip158Block": 0
+        "eip155Block": 0
     },
     "difficulty": "1",
     "gasLimit": "0x3d0900",
