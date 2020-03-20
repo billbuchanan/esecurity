@@ -51,7 +51,7 @@ resp, content = httplib2.Http().request("https://blockchain.info/q/latesthash")
 print "Latest hash: ",content
 
 resp, content = httplib2.Http().request("https://blockchain.info/q/bcperblock")
-print "Block reward per block: ",int(content)/100000000.0
+print "Block reward per block: ",float(content)/100000000.0
 
 resp, content = httplib2.Http().request("https://blockchain.info/q/getblockcount")
 print "Longest block: ",content
