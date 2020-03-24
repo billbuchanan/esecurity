@@ -156,7 +156,7 @@ Open custom.json, and copy and paste the following details for your genesis bloc
         "eip155Block": 0
     },
     "difficulty": "1",
-    "gasLimit": "0x3d0900",
+    "gasLimit": "0x5268"
     "alloc": {
         "39a18a459b2475925e3014679707e4970a6a836d": { "balance": "300000000000000" },
         "3a5b61aeb069dc7df1b8f1b58e883118ea8bef3f": { "balance": "400000000000000" },
