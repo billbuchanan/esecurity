@@ -111,8 +111,8 @@ The VM for the module can be downloaded [here](https://livenapierac-my.sharepoin
 <tr><td colspan="3">Easter Break</td></tr>
         <tr>
     <td bgcolor="#990000" class="table1"><strong>14</strong></td>
-    <td bgcolor="#990000" class="table1"><strong>Week beginning 27 April 2020 (TBC)</strong></td>
-    <td colspan="2">Test 2 (Units 6-10)</td>
+    <td bgcolor="#990000" class="table1"><strong>Week beginning 27 April 2020</strong></td>
+    <td colspan="2"></td>
 </tr>
             <tr>
     <td bgcolor="#990000" class="table1"><strong>15</strong></td>
