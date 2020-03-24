@@ -158,9 +158,9 @@ Open custom.json, and copy and paste the following details for your genesis bloc
     "difficulty": "1",
     "gasLimit": "0x3d0900",
     "alloc": {
-        "39a18a459b2475925e3014679707e4970a6a836d": { "balance": "30000000" },
-        "3a5b61aeb069dc7df1b8f1b58e883118ea8bef3f": { "balance": "40000000" },
-        "a2cda8c68259cc314bd12b67873ce7380b3dc496": { "balance": "0x400000000000000" }
+        "39a18a459b2475925e3014679707e4970a6a836d": { "balance": "300000000000000" },
+        "3a5b61aeb069dc7df1b8f1b58e883118ea8bef3f": { "balance": "400000000000000" },
+        "a2cda8c68259cc314bd12b67873ce7380b3dc496": { "balance": "0x400000000000000000" }
     }
 }
 </pre>
@@ -302,7 +302,7 @@ null
 
 We can transfer again:
 <pre>
-> eth.sendTransaction({from: 0x617fc4cd5602417088f587c1fb4e7ae4a938f28b, to: '0xce1373ddfa2232dc9ca82d98420be7a2e11962b5',value:100000})
+> eth.sendTransaction({from: 0x617fc4cd5602417088f587c1fb4e7ae4a938f28b, to: '0xce1373ddfa2232dc9ca82d98420be7a2e11962b5',value:1000000000})
 "0x2e25093e25cbf511c2892cb38b45a5c9f6f9b2785774cd5830cf5bd978839165"
 > eth.getBalance("0xce1373ddfa2232dc9ca82d98420be7a2e11962b5")
 0
