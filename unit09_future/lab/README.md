@@ -200,7 +200,6 @@ print "D value: ",binascii.hexlify(d)
 ### L1.5	
 With ZKP, Alice can prove that he still knows something to Bob, without revealing her secret. At the basis of many methods is the Fiat-Shamir method:
 
-
  
 Ref: https://asecuritysite.com/encryption/fiat
 
@@ -216,7 +215,7 @@ The value of n is a prime number. Now increase the value of n, and determine the
 
 
 
-
+```Python
 import sys
 import random
 
@@ -251,9 +250,11 @@ print 'r=',Result
 if (t==Result):
 	print 'Alice has proven she knows x'
 else:
-	print 'Alice has not proven she knows x'        
+	print 'Alice has not proven she knows x'
+```
 
-L1.6	We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
+### L1.6	
+We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
 
 https://asecuritysite.com/encryption/fiat2
 
@@ -264,7 +265,8 @@ How does the password get converting into a form which can be used in the Fiat-S
 
 
 
-L1.7	The Diffie-Hellman method can be used to perform a zero-knowledge proof implementation. Copy the code from the following link and verify that it works:
+### L1.7	
+The Diffie-Hellman method can be used to perform a zero-knowledge proof implementation. Copy the code from the following link and verify that it works:
 
 https://asecuritysite.com/encryption/diffiez
 
@@ -273,7 +275,7 @@ https://asecuritysite.com/encryption/diffiez
 
 
 
-
+```Python
 var xtea = require('xtea');
 
 var plaintext = new Buffer('ABCDEFGH', 'utf8');
@@ -282,11 +284,13 @@ var ciphertext = xtea.encrypt( plaintext, key );
 
 console.log('Cipher:\t'+ ciphertext.toString('hex') );
 console.log('Decipher:\t'+ xtea.decrypt( ciphertext, key ).toString() );
+```
 
 A sample run is:
-
+<pre>
 Cipher:	52deb267335dd52a49837931c233cea8
 Decipher:	ABCDEFGH
+</pre>
 
 
 What is the block and key size of XTEA?
@@ -305,7 +309,7 @@ If possible, run the code on another machine, and estimate the rate of encryptio
 
 L2.3	RC4 is a stream cipher created by Ron Rivest and has a variable key length.  Run the following Python code and test it:
 
-
+```Python
 def KSA(key):
     keylength = len(key)
 
@@ -366,7 +370,7 @@ keystream = RC4(key)
 
 for c in plaintext:
 	sys.stdout.write("%02X" % (ord(c) ^ keystream.next()))
-
+```
 
 Now go to https://tools.ietf.org/html/rfc6229 and test a few key generation values and see if you get the same key stream.
 
@@ -390,15 +394,15 @@ What are the main advantages of having a variable key size and having a stream c
 
 
 
-L1.4	The ELLI method can be used to identify an RFID tag.
+### L1.4
+The ELLI method can be used to identify an RFID tag.
 
  
-
 Can you run the following code and determine that it works (C and D should be the same)? Can you also explain how it works?
 
 
 
-
+```Python
 from os import urandom
 from eccsnacks.curve25519 import scalarmult, scalarmult_base
 import binascii
@@ -423,10 +427,11 @@ print "B value: ",binascii.hexlify(b)
 
 print "C value: ",binascii.hexlify(c)
 print "D value: ",binascii.hexlify(d)
+```
 
-3	Zero-knowledge proof (ZKP)
-L1.5	With ZKP, Alice can prove that he still knows something to Bob, without revealing her secret. At the basis of many methods is the Fiat-Shamir method:
-
+## 3	Zero-knowledge proof (ZKP)
+### L1.5	
+With ZKP, Alice can prove that he still knows something to Bob, without revealing her secret. At the basis of many methods is the Fiat-Shamir method:
 
  
 Ref: https://asecuritysite.com/encryption/fiat
@@ -442,8 +447,7 @@ x:       Proved: Y/N
 The value of n is a prime number. Now increase the value of n, and determine the effect that this has on the time taken to compute the proof:
 
 
-
-
+```Python
 import sys
 import random
 
@@ -478,9 +482,11 @@ print 'r=',Result
 if (t==Result):
 	print 'Alice has proven she knows x'
 else:
-	print 'Alice has not proven she knows x'        
+	print 'Alice has not proven she knows x' 
+```
 
-L1.6	We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
+### L1.6	
+We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
 
 https://asecuritysite.com/encryption/fiat2
 
@@ -491,7 +497,8 @@ How does the password get converting into a form which can be used in the Fiat-S
 
 
 
-L1.7	The Diffie-Hellman method can be used to perform a zero-knowledge proof implementation. Copy the code from the following link and verify that it works:
+### L1.7	
+The Diffie-Hellman method can be used to perform a zero-knowledge proof implementation. Copy the code from the following link and verify that it works:
 
 https://asecuritysite.com/encryption/diffiez
 
