@@ -23,6 +23,8 @@ print res1
 print res2
 ```
 
+Repl.it: https://repl.it/@billbuchanan/powex
+
 Now add some code to determine the time taken to perform each of the two operations, and compare them:
 
 Can you now put each of the methods into a loop, and perform each calculation 1,000 times?
