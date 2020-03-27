@@ -138,18 +138,19 @@ keystream = RC4(key)
 for c in plaintext:
 	sys.stdout.write("%02X" % (ord(c) ^ keystream.next()))
 ```
+Repl.it: https://repl.it/@billbuchanan/rc4tut
 
 Now go to https://tools.ietf.org/html/rfc6229 and test a few key generation values and see if you get the same key stream.
 
 Tests:
 
-Key: 0102030405 		Key stream (first six bytes):
+Key: 0102030405 Key stream (first six bytes):
 
-Key:						Key stream (first six bytes):
+Key:		Key stream (first six bytes):
 
-Key:						Key stream (first six bytes):
+Key:		Key stream (first six bytes):
 
-Key:						Key stream (first six bytes):
+Key:		Key stream (first six bytes):
 
 How does the Python code produce a key stream length which matches the input data stream:
 
