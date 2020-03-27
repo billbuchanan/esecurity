@@ -270,8 +270,7 @@ The Diffie-Hellman method can be used to perform a zero-knowledge proof implemen
 
 https://asecuritysite.com/encryption/diffiez
 
-<iframe height="400px" width="100%" src="https://repl.it/@billbuchanan/diffiez?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
-
+Repl.it: https://repl.it/@billbuchanan/diffiez
  
 
 
