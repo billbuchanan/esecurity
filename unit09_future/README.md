@@ -23,6 +23,6 @@ The key concepts are:
 ## A few demos and articles
 
 * Format Preserving Encryption (FPE): [here](https://asecuritysite.com/encryption/fpe).
-* Light-weight crypto: [here](https://asecuritysite.com/encryption/fpe).
+* Light-weight crypto: [here](https://asecuritysite.com/encryption/#light).
 * ZKP: [here](https://asecuritysite.com/subjects/chapter100).
 
