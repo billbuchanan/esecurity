@@ -49,11 +49,14 @@ console.log('Cipher:\t'+ ciphertext.toString('hex') );
 console.log('Decipher:\t'+ xtea.decrypt( ciphertext, key ).toString() );
 ```
 
+Repl.it: https://repl.it/@billbuchanan/xteajs
+
 A sample run is:
 <pre>
 Cipher:	52deb267335dd52a49837931c233cea8
 Decipher:	ABCDEFGH
 </pre>
+
 
 
 What is the block and key size of XTEA?
