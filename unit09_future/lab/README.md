@@ -4,8 +4,8 @@
 
 Aim:		To provide a foundation in some of the up-and-coming methods in cryptography.
 
-## 2	Light-weight crypto
-### L2.1	
+## Light-weight crypto
+### L1	
 In many operations within public key methods we use the exponential operation:
 
 g<sup>x</sup> (mod p)
@@ -33,7 +33,7 @@ Now measure the times taken. What do you observe?
 Now increase the range for x (so that it is relatively large) and make n a large prime number. What do you observe from the performance:
 
 
-### L2.2	
+### L2	
 Normally light-weight crypto has to be fast and efficient. The XTEA method is one of the fastest around. Some standard open source code in Node.js is (use npm install xtea):
 
 ```Node.js
@@ -68,7 +68,7 @@ If possible, run the code on another machine, and estimate the rate of encryptio
 
 
 
-### L2.3	
+### L3	
 RC4 is a stream cipher created by Ron Rivest and has a variable key length.  Run the following Python code and test it:
 
 ```Python
@@ -159,7 +159,7 @@ What are the main advantages of having a variable key size and having a stream c
 
 
 
-### L1.4	
+### L4	
 The ELLI method can be used to identify an RFID tag.
 
  
@@ -197,7 +197,7 @@ print "D value: ",binascii.hexlify(d)
 
 ## 3	Zero-knowledge proof (ZKP)
 
-### L1.5	
+### L5	
 With ZKP, Alice can prove that he still knows something to Bob, without revealing her secret. At the basis of many methods is the Fiat-Shamir method:
 
  
@@ -253,7 +253,7 @@ else:
 	print 'Alice has not proven she knows x'
 ```
 
-### L1.6	
+### L6	
 We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
 
 https://asecuritysite.com/encryption/fiat2
@@ -270,7 +270,7 @@ The Diffie-Hellman method can be used to perform a zero-knowledge proof implemen
 
 https://asecuritysite.com/encryption/diffiez
 
- 
+Repl.it: [here] (https://repl.it/@billbuchanan/diffiez)
 
  
 
