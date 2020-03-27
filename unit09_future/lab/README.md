@@ -260,6 +260,8 @@ else:
 	print 'Alice has not proven she knows x'
 ```
 
+Repl.it: https://repl.it/@billbuchanan/zktut
+
 ### L6	
 We can now expand this method by creating a password, and then making this the secret. Copy and run the code here:
 
