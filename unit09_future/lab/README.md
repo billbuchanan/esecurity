@@ -4,6 +4,8 @@
 
 Aim:		To provide a foundation in some of the up-and-coming methods in cryptography.
 
+**New feature:** Repl.it code additions.
+
 ## Light-weight crypto
 ### L1	
 In many operations within public key methods we use the exponential operation:
