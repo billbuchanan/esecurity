@@ -64,10 +64,10 @@ Try each of the hashing methods (HSXXX), and observe how the JWT changes:
 
 
 ### A.3	
-Now, match the following parameters to the correct signing secret. For the following the message is “{ isa: 14321}”, and the signing keys used are either “napier”, “napier123”, “qwerty” or “fox123”:
+Now, match the following parameters to the correct signing secret. For the following the message is “{ isa: 14321}”, and the signing keys used are either "napier", "napier123", "qwerty" or "fox123":
 
 <pre>
-eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.InsgaXNhOiAxNDMyMX0i.czeOHowkTpZQqG5pZneOlnpdBGMCnTLXaPImNmSr9w
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.InsgaXNhOiAxNDMyMX0i.czeOHowkTpZQ2qG5pZneOlnpdBGMCnTLXaPImNmSr9w
 </pre>
 Secret: 
 <pre>
@@ -79,6 +79,7 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.InsgaXNhOiAxNDMyMX0i.uSXNmESTf_NUk0QC8IJyPf
 </pre>
 Secret: 
 
+Repl.it: https://repl.it/@billbuchanan/jwt2
 
 ### A.4	
 The following JWT has been signed with the passphrase of “fox123”:
