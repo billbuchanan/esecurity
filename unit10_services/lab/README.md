@@ -491,8 +491,9 @@ services:
 ```
 
 Next create the policy in the file “example.rego” (and which uses the Rego policy language), and add the following:
+```Rego
 package httpapi.authz
-<pre>
+
 # bob is alice's manager, and betty is charlie's.
 subordinates = {"alice": [], "charlie": [], "bob": ["alice"], "betty": ["charlie"]}
 
@@ -514,7 +515,7 @@ allow {
   input.path = ["finance", "salary", username]
   subordinates[input.user][_] = username
 }
-</pre>
+```
 
 Now run docker-compose to run the Docker container:
 <pre>
