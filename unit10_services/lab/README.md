@@ -96,6 +96,7 @@ Can you determine the message?
 
 When was the token issued, and when was its expiry time?
 
+Repl.it: https://repl.it/@billbuchanan/jwt3
 
 ### A.5	
 The following JWT was signed with a three-character word [a-z]. Can you determine the secret phrase:
