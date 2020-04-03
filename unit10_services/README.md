@@ -16,20 +16,19 @@ The key concepts are:
 
 ## Material
 
-* Week 10 Lecture (Video): here
-* Week 10 Lecture (PDF): here
-* Week 10 Lab (PDF): here
-* Source material: here
+* Week 10 Lecture (Video): [here](https://youtu.be/iddk9k_-shc).
+* Week 10 Lecture (PDF): [here](https://asecuritysite.com/public/unit09_host_services.pdf)
+* Week 10 Lab (PDF): [here](https://github.com/billbuchanan/esecurity/blob/master/unit10_services/lab/unit10_tokens.pdf).
 
 ## Related topics
 
 The following are some related presentations:
 
-* JSON Web Tokens: here
-* Fernet Tokens: here
-* Fernet Tokens (with PBKDF2): here
-* Fernet Tokens (with Key rotation): here
-* Fernet Tokens (Autokeying): here
+* JSON Web Tokens: [here](https://asecuritysite.com/encryption/js_jwt).
+* Fernet Tokens: [here](https://asecuritysite.com/encryption/fernet).
+* Fernet Tokens (with PBKDF2): [here](https://asecuritysite.com/encryption/fernet2).
+* Fernet Tokens (with Key rotation): [here](https://asecuritysite.com/encryption/fernet3).
+* Fernet Tokens (Autokeying): [here](https://asecuritysite.com/encryption/fer).
 
 
 
