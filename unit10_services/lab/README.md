@@ -104,6 +104,9 @@ The following JWT was signed with a three-character word [a-z]. Can you determin
 eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.IntcImlzc1wiOiBcImZyZWRcIixcInN1YmplY3RcIjpcImxvZ2luXCIsXCJkZXBhcnRtZW50XCI6IFwic2FsZXNcIixcImlhdFwiOiBcIjE1MjUxOTMzNzdcIixcImV4cFwiOiBcIjE1MjUyMzY1NzdcIn0i.zyd0cy8p4xgpeoyOQ8G61xnA5Cmg5w095tNH9IWg9Wc
 </pre>
 
+Don't look here, if you don't one an answer just now:
+
+Repl.it: https://repl.it/@billbuchanan/jwt4
 
 ### A.6	
 The following JWT has a secret phrase of “napier”:
