@@ -181,8 +181,7 @@ Can you decrypt the token?
 
 Generate several tokens, and outline the values which change on the token?
 
-
-
+Repl.it (Python 3.8): https://repl.it/@billbuchanan/fer01 
 
 ### B.2	
 The following Fernet token uses a password of “napier”. 
