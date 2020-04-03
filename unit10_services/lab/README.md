@@ -33,6 +33,8 @@ var decoded = jwt.decode(token, secret);
 console.log("Decoded: ",decoded); 
 ```
 
+Repl.it: https://repl.it/@billbuchanan/jwt
+
 ### A.2	
 Now try different messages, but keep the secret the same:
 
