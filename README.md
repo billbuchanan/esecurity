@@ -19,6 +19,11 @@ If you need to update the code, go into the esecurity folder, and run:
 git pull
 </pre>
 
+Make your own VM:
+* pip3 install pycrytodome
+* pip3 install padding
+* pip3 install libnum
+
 The VM for the module can be downloaded [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj)
 
 ## Draft Timetable
