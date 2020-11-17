@@ -20,9 +20,11 @@ git pull
 </pre>
 
 Make your own VM:
+* sudo apt install python3-pip
 * pip3 install pycrytodome
 * pip3 install padding
 * pip3 install libnum
+* pip3 install passlib
 
 The VM for the module can be downloaded [here](https://livenapierac-my.sharepoint.com/:u:/g/personal/b_buchanan_napier_ac_uk/Ed074id3TQVNneDepApeUa8B1TMsUw4P7nXtIZTDzFkkig?e=WEpvHj)
 
